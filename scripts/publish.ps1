@@ -179,6 +179,9 @@ foreach ($s in @($srcs) + @($lic | ForEach-Object { [pscustomobject]@{ url = $_;
 $sf = Join-Path $work "SHA256SUMS.txt"
 [IO.File]::WriteAllLines($sf, $sums, (New-Object Text.UTF8Encoding($false)))
 & gh release upload $tag $sf --clobber
+if (-not $failed.Count -and ($existing -contains "NGUON-CHUA-TAI-DUOC.txt")) {
+    & gh release delete-asset $tag "NGUON-CHUA-TAI-DUOC.txt" -y 2>$null | Out-Null   # lượt trước thiếu, nay đã đủ: gỡ danh sách cũ
+}
 if ($failed.Count) {
     $ff = Join-Path $work "NGUON-CHUA-TAI-DUOC.txt"
     [IO.File]::WriteAllLines($ff, $failed, (New-Object Text.UTF8Encoding($false)))
