@@ -1,0 +1,158 @@
+{
+ "id": "fluidsynth",
+ "version": "2.6.1",
+ "method": "evidence",
+ "confidence": "probable",
+ "components": [
+  {
+   "name": "FluidSynth (libfluidsynth-3.dll, fluidsynth.exe)",
+   "version": "2.6.1 (tag v2.6.1 = 71e85b2ca6bf)",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.6.1.tar.gz",
+   "bytes": 2273951,
+   "evidence": "FileVersion 2.6.1 on both binaries; .github/workflows/windows.yml msvc-build x64 osal=cpp11 job produces the '*-win10-x64-cpp11' release zip (publish-release job uploads it); static MSVC runtime (CMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded); no glib (osal=cpp11)"
+  },
+  {
+   "name": "gcem (submodule, header-only)",
+   "version": "commit 012ae73c6d0a",
+   "license": "Apache-2.0",
+   "url": "https://github.com/kthohr/gcem/archive/012ae73c6d0a2cb09ffe86475f5c6fba3926e200.tar.gz",
+   "bytes": 57846,
+   "evidence": "git ls-tree v2.6.1: gcem -> 012ae73c...; CMakeLists find_package(GCEM REQUIRED); checkout submodules: true"
+  },
+  {
+   "name": "Signalsmith Audio basics (submodule, header-only; limiter/reverb)",
+   "version": "commit 012d2be17b0e",
+   "license": "MIT",
+   "url": "https://github.com/Signalsmith-Audio/basics/archive/012d2be17b0eb6839628f8c73687c4ccccc1bb01.tar.gz",
+   "bytes": 19071,
+   "evidence": "git ls-tree v2.6.1: signalsmith-audio-basics -> 012d2be1...; enable-signalsmith default on"
+  },
+  {
+   "name": "Signalsmith linear (FetchContent by basics)",
+   "version": "0.3.1 (5668673560146a9c)",
+   "license": "MIT",
+   "url": "https://github.com/Signalsmith-Audio/linear/archive/refs/tags/0.3.1.tar.gz",
+   "bytes": 50773,
+   "evidence": "basics CMakeLists GIT_TAG 0.3.1"
+  },
+  {
+   "name": "Signalsmith dsp (FetchContent by basics)",
+   "version": "v1.7.1 (2d20161915e7)",
+   "license": "MIT",
+   "url": "https://github.com/Signalsmith-Audio/dsp/archive/refs/tags/v1.7.1.tar.gz",
+   "bytes": 35777,
+   "evidence": "basics CMakeLists GIT_TAG v1.7.1"
+  },
+  {
+   "name": "Signalsmith hilbert-iir (FetchContent by basics)",
+   "version": "1.0.0 (9e42e09714c8)",
+   "license": "MIT",
+   "url": "https://github.com/Signalsmith-Audio/hilbert-iir/archive/refs/tags/1.0.0.tar.gz",
+   "bytes": 248117,
+   "evidence": "basics CMakeLists GIT_TAG 1.0.0"
+  },
+  {
+   "name": "libsndfile (sndfile.dll, prebuilt libsndfile-1.2.2-win64)",
+   "version": "1.2.2",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz",
+   "bytes": 730760,
+   "evidence": "windows.yml LIBSNDFILE_URL_X64 .../1.2.2/libsndfile-1.2.2-win64.zip copied to bin; sndfile.dll FileVersion 1.2.2.0, string 'libsndfile-1.2.2'; libsndfile CI builds it with vcpkg triplet x64-windows-static (codecs below statically inside sndfile.dll)"
+  },
+  {
+   "name": "FLAC (static in sndfile.dll)",
+   "version": "1.4.2",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/xiph/flac/releases/download/1.4.2/flac-1.4.2.tar.xz",
+   "bytes": 1013700,
+   "evidence": "sndfile.dll string 'reference libFLAC 1.4.2'; vcpkg 2023.08.09 port libflac 1.4.2"
+  },
+  {
+   "name": "Opus (static in sndfile.dll)",
+   "version": "1.4",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/xiph/opus/releases/download/v1.4/opus-1.4.tar.gz",
+   "bytes": 1063408,
+   "evidence": "sndfile.dll string 'libopus 1.4'; vcpkg port opus 1.4"
+  },
+  {
+   "name": "libvorbis (static in sndfile.dll)",
+   "version": "1.3.7",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/xiph/vorbis/releases/download/v1.3.7/libvorbis-1.3.7.tar.xz",
+   "bytes": 1203792,
+   "evidence": "sndfile.dll string 'Xiph.Org libVorbis I 20200704' (=1.3.7)"
+  },
+  {
+   "name": "libogg (static in sndfile.dll)",
+   "version": "1.3.5 (probable)",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/xiph/ogg/releases/download/v1.3.5/libogg-1.3.5.tar.xz",
+   "bytes": 429076,
+   "evidence": "no version string; vcpkg port libogg 1.3.5 at tag 2023.08.09 (libsndfile 1.2.2 released 2023-08-13, vcpkg manifest without builtin-baseline)"
+  },
+  {
+   "name": "LAME (static in sndfile.dll)",
+   "version": "3.100",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://downloads.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz",
+   "bytes": 1524133,
+   "evidence": "sndfile.dll string 'LAME3.100'"
+  },
+  {
+   "name": "mpg123 (static in sndfile.dll)",
+   "version": "1.31.3 (probable)",
+   "license": "LGPL-2.1-only",
+   "url": "https://www.mpg123.de/download/mpg123-1.31.3.tar.bz2",
+   "bytes": 1094474,
+   "evidence": "mpg123 code present (strings) but no version string; vcpkg port mpg123 1.31.3 at tag 2023.08.09"
+  },
+  {
+   "name": "SDL3 (SDL3.dll, copied into bin although FluidSynth is configured -Denable-sdl3=0)",
+   "version": "3.2.10",
+   "license": "Zlib",
+   "url": "https://github.com/libsdl-org/SDL/releases/download/release-3.2.10/SDL3-3.2.10.tar.gz",
+   "bytes": 15876292,
+   "evidence": "windows.yml SDL3_URL SDL3-devel-3.2.10-VC.zip; Install step COPY SDL3.dll; SDL3.dll FileVersion 3.2.10.0"
+  }
+ ],
+ "buildRecipe": [
+  {
+   "name": ".github/workflows/windows.yml @v2.6.1 (msvc-build + publish-release)",
+   "url": "https://raw.githubusercontent.com/FluidSynth/fluidsynth/v2.6.1/.github/workflows/windows.yml",
+   "bytes": 14339
+  },
+  {
+   "name": "CMakeLists.txt @v2.6.1",
+   "url": "https://raw.githubusercontent.com/FluidSynth/fluidsynth/v2.6.1/CMakeLists.txt",
+   "bytes": 39112
+  },
+  {
+   "name": "libsndfile .github/workflows/action.yml @1.2.2 (win64 static vcpkg build)",
+   "url": "https://raw.githubusercontent.com/libsndfile/libsndfile/1.2.2/.github/workflows/action.yml",
+   "bytes": 8028
+  },
+  {
+   "name": "libsndfile vcpkg.json @1.2.2",
+   "url": "https://raw.githubusercontent.com/libsndfile/libsndfile/1.2.2/vcpkg.json",
+   "bytes": 1034
+  },
+  {
+   "name": "vcpkg 2023.08.09 (ports used to infer ogg/mpg123 versions)",
+   "url": "https://github.com/microsoft/vcpkg/archive/refs/tags/2023.08.09.tar.gz",
+   "bytes": 3974895
+  },
+  {
+   "name": "prebuilt libsndfile-1.2.2-win64.zip (exact binary input)",
+   "url": "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2-win64.zip",
+   "bytes": 2036867
+  },
+  {
+   "name": "prebuilt SDL3-devel-3.2.10-VC.zip (exact binary input)",
+   "url": "https://github.com/libsdl-org/SDL/releases/download/release-3.2.10/SDL3-devel-3.2.10-VC.zip",
+   "bytes": 13954322
+  }
+ ],
+ "residualGaps": "FluidSynth, SDL3, libsndfile, FLAC, opus, vorbis, LAME are exact (CI file + version resources/strings). sndfile.dll is a third-party prebuilt (libsndfile 1.2.2 release) built with the runner's unpinned vcpkg (no builtin-baseline, no surviving log): libogg 1.3.5 and mpg123 1.31.3 are inferred from vcpkg tag 2023.08.09 and are only 'probable'; vcpkg port patches for those codecs are in the vcpkg archive listed as build recipe. Submodule/FetchContent tags (Signalsmith) are git tags, not commit-pinned in the CMake (tag->commit recorded). FluidSynth testdata submodule not shipped."
+}

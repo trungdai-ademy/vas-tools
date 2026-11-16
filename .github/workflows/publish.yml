@@ -1,0 +1,45 @@
+# Phát hành các gói phần mềm của repo này (manifest.json) — mỗi gói một bản phát hành <id>-<phiên bản>: tệp đúng mã băm VAS ghim + mã nguồn + giấy phép.
+# Chạy khi đẩy lên main (manifest đổi) hoặc bấm tay (Actions → Phát hành gói → Run workflow). Chạy lại an toàn: gói đã phát hành thì bỏ qua.
+name: Phát hành gói
+on:
+  push:
+    branches: [main]
+    paths: [manifest.json, "nguon/**", "scripts/**", ".github/workflows/**"]
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Chỉ phát hành gói này (để trống = mọi gói)"
+        required: false
+        default: ""
+permissions:
+  contents: write
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      ids: ${{ steps.ids.outputs.ids }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: ids
+        shell: pwsh
+        run: |
+          $ids = @((Get-Content manifest.json -Raw | ConvertFrom-Json).packages.id)
+          if ("${{ github.event.inputs.id }}") { $ids = @($ids | Where-Object { $_ -eq "${{ github.event.inputs.id }}" }) }
+          "ids=$(ConvertTo-Json -Compress @($ids))" >> $env:GITHUB_OUTPUT
+  publish:
+    needs: list
+    if: needs.list.outputs.ids != '[]'
+    runs-on: windows-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        id: ${{ fromJson(needs.list.outputs.ids) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Phát hành ${{ matrix.id }}
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: ./scripts/publish.ps1 -Id "${{ matrix.id }}"

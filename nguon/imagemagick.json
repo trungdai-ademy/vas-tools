@@ -1,0 +1,357 @@
+{
+ "id": "imagemagick",
+ "version": "7.1.2-34",
+ "method": "evidence",
+ "confidence": "exact",
+ "components": [
+  {
+   "name": "ImageMagick",
+   "version": "7.1.2-34 (tag object fbaaaaaa, commit a0c4bf729a26a5c2feb28b0365b47a8db736078a)",
+   "license": "ImageMagick",
+   "url": "https://github.com/ImageMagick/ImageMagick/archive/a0c4bf729a26a5c2feb28b0365b47a8db736078a.tar.gz",
+   "bytes": 14690417,
+   "evidence": "NOTICE.txt header \"[ ImageMagick 7.1.2-34 (2026-10-14) ]\"; git ls-remote refs/tags/7.1.2-34^{}; release workflow windows_portable job builds this tag. Official release tarball also available: https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-34/ImageMagick-7.1.2-34.tar.xz [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "aom",
+   "version": "3.15.2 (ImageMagick/aom fork commit 949b2083094619a8cf6491938d47e6c4804ed108)",
+   "license": "BSD-2-Clause",
+   "url": "https://github.com/ImageMagick/aom/archive/949b2083094619a8cf6491938d47e6c4804ed108.tar.gz",
+   "bytes": 6672851,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 3.15.2) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://aomedia.googlesource.com/aom source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "brotli",
+   "version": "1.2.0 (ImageMagick/brotli fork commit 6225e7a93b6bcc1f3e3b267e9523a8eaea49eb5e)",
+   "license": "MIT",
+   "url": "https://github.com/ImageMagick/brotli/archive/6225e7a93b6bcc1f3e3b267e9523a8eaea49eb5e.tar.gz",
+   "bytes": 647124,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 1.2.0) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/google/brotli source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libbzip2",
+   "version": "1.0.8 (ImageMagick/bzip2 fork commit abffe764f875f71d051efb19d4c83139375f82d7)",
+   "license": "bzip2-1.0.6",
+   "url": "https://github.com/ImageMagick/bzip2/archive/abffe764f875f71d051efb19d4c83139375f82d7.tar.gz",
+   "bytes": 819392,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 1.0.8) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://sourceware.org/bzip2/ source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "cairo",
+   "version": "1.18.6 (ImageMagick/cairo fork commit 4334da83d8f44abe5aab1a11956e3f8e6e58eac7)",
+   "license": "LGPL-2.1-only OR MPL-1.1 (SBOM lists MPL-1.1)",
+   "url": "https://github.com/ImageMagick/cairo/archive/4334da83d8f44abe5aab1a11956e3f8e6e58eac7.tar.gz",
+   "bytes": 0,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 1.18.6) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://cairographics.org source + .ImageMagick build config [url check: HTTP 200 verified; size not measured (exceeds 20 MB cap, no Content-Length)]"
+  },
+  {
+   "name": "libcroco",
+   "version": "0.6.13 (ImageMagick/croco fork commit 178785cdc6faecad555a4e6fe4fda2b625046e8e)",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://github.com/ImageMagick/croco/archive/178785cdc6faecad555a4e6fe4fda2b625046e8e.tar.gz",
+   "bytes": 226609,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 0.6.13) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://gitlab.com/inkscape/libcroco source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libde265",
+   "version": "1.1.3 (ImageMagick/de265 fork commit 5a0bf9f624d810de6af20e41ac3cfd92bf7de508)",
+   "license": "LGPL-3.0-or-later",
+   "url": "https://github.com/ImageMagick/de265/archive/5a0bf9f624d810de6af20e41ac3cfd92bf7de508.tar.gz",
+   "bytes": 326375,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 1.1.3) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/strukturag/libde265 source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "openexr",
+   "version": "3.5.2 (ImageMagick/exr fork commit 85a96b21d3cdcae99fbea6f32f62eba9ca4a9fdd)",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/ImageMagick/exr/archive/85a96b21d3cdcae99fbea6f32f62eba9ca4a9fdd.tar.gz",
+   "bytes": 0,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 3.5.2) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/AcademySoftwareFoundation/openexr source + .ImageMagick build config [url check: HTTP 200 verified; size not measured (exceeds 20 MB cap, no Content-Length)]"
+  },
+  {
+   "name": "libffi",
+   "version": "3.8.0 (ImageMagick/ffi fork commit 91982d4ac97b179dd1fb878caef2ed2847bc38b6)",
+   "license": "MIT",
+   "url": "https://github.com/ImageMagick/ffi/archive/91982d4ac97b179dd1fb878caef2ed2847bc38b6.tar.gz",
+   "bytes": 1581996,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 3.8.0) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://sourceware.org/libffi source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "freetype",
+   "version": "2.14.3 (ImageMagick/freetype fork commit 6cf8b1a08bdec1d41246f51bcd12e5a62c9845e2)",
+   "license": "FTL OR GPL-2.0-or-later",
+   "url": "https://github.com/ImageMagick/freetype/archive/6cf8b1a08bdec1d41246f51bcd12e5a62c9845e2.tar.gz",
+   "bytes": 4184263,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 2.14.3) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://www.freetype.org source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "fribidi",
+   "version": "1.0.17 (ImageMagick/fribidi fork commit f62e4ce7160f0c9d70a6a448c83122c920370324)",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/ImageMagick/fribidi/archive/f62e4ce7160f0c9d70a6a448c83122c920370324.tar.gz",
+   "bytes": 2724133,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 1.0.17) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/fribidi/fribidi source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "gdk-pixbuf",
+   "version": "2.44.8 (ImageMagick/gdk-pixbuf fork commit 92a234886a0337480770ef93dc74ea920bf39ab3)",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/ImageMagick/gdk-pixbuf/archive/92a234886a0337480770ef93dc74ea920bf39ab3.tar.gz",
+   "bytes": 6698819,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 2.44.8) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://gitlab.gnome.org/GNOME/gdk-pixbuf source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "glib",
+   "version": "2.64.3 (ImageMagick/glib fork commit ea0118ca0d408473d320b21262a1cdc6ce3e5f40)",
+   "license": "LGPL-2.1-or-later (tree also contains bundled PCRE 8.31 in glib/pcre, BSD-3-Clause, compiled in with PCRE_STATIC)",
+   "url": "https://github.com/ImageMagick/glib/archive/ea0118ca0d408473d320b21262a1cdc6ce3e5f40.tar.gz",
+   "bytes": 8322548,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 2.64.3) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://gitlab.gnome.org/GNOME/glib source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "harfbuzz",
+   "version": "14.6.0 (ImageMagick/harfbuzz fork commit fe24029d434c2797c18052f58f6bc7b5dcfee8d7)",
+   "license": "MIT-Modern-Variant",
+   "url": "https://github.com/ImageMagick/harfbuzz/archive/fe24029d434c2797c18052f58f6bc7b5dcfee8d7.tar.gz",
+   "bytes": 0,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 14.6.0) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/harfbuzz/harfbuzz source + .ImageMagick build config [url check: HTTP 200 verified; size not measured (exceeds 20 MB cap, no Content-Length)]"
+  },
+  {
+   "name": "libheif",
+   "version": "1.23.6 (ImageMagick/heif fork commit fb38f427d04f098c30b5c6ebda46be366841cc7b)",
+   "license": "LGPL-3.0-or-later",
+   "url": "https://github.com/ImageMagick/heif/archive/fb38f427d04f098c30b5c6ebda46be366841cc7b.tar.gz",
+   "bytes": 2312194,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 1.23.6) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/strukturag/libheif source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libhwy",
+   "version": "1.4.0 (ImageMagick/highway fork commit e1a586af5be6358bb983ff608f9678a622209ca3)",
+   "license": "Apache-2.0",
+   "url": "https://github.com/ImageMagick/highway/archive/e1a586af5be6358bb983ff608f9678a622209ca3.tar.gz",
+   "bytes": 3687651,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 1.4.0) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/google/highway source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "imath",
+   "version": "3.2.3 (ImageMagick/imath fork commit 1ec391453dd33f3432018d3a266e3d177a705235)",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/ImageMagick/imath/archive/1ec391453dd33f3432018d3a266e3d177a705235.tar.gz",
+   "bytes": 685382,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 3.2.3) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/AcademySoftwareFoundation/Imath source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libjpeg-turbo",
+   "version": "3.2.0 (ImageMagick/jpeg-turbo fork commit b91492930ceb23c0b5282e8b9fc21de54182d92e)",
+   "license": "BSD-3-Clause AND IJG AND Zlib",
+   "url": "https://github.com/ImageMagick/jpeg-turbo/archive/b91492930ceb23c0b5282e8b9fc21de54182d92e.tar.gz",
+   "bytes": 2539943,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 3.2.0) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://www.libjpeg-turbo.org/ source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libjxl",
+   "version": "0.12.0 (ImageMagick/jpeg-xl fork commit 8503118ff13ab8b11680296900da3361d6703dc1)",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/ImageMagick/jpeg-xl/archive/8503118ff13ab8b11680296900da3361d6703dc1.tar.gz",
+   "bytes": 1680269,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 0.12.0) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/libjxl/libjxl source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "lcms",
+   "version": "2.19.1 (ImageMagick/lcms fork commit d261ab6fda30fd7578a2ce7ace5c0b2c7d3fc0b8)",
+   "license": "MIT",
+   "url": "https://github.com/ImageMagick/lcms/archive/d261ab6fda30fd7578a2ce7ace5c0b2c7d3fc0b8.tar.gz",
+   "bytes": 5731112,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 2.19.1) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://www.littlecms.com source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "liblqr",
+   "version": "0.4.2 (ImageMagick/lqr fork commit a2e9e8b5b41bf0569f51482707a12d354a086f3a)",
+   "license": "LGPL-3.0-or-later",
+   "url": "https://github.com/ImageMagick/lqr/archive/a2e9e8b5b41bf0569f51482707a12d354a086f3a.tar.gz",
+   "bytes": 550036,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 0.4.2) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/carlobaldassi/liblqr source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "liblzma",
+   "version": "5.8.4 (ImageMagick/lzma fork commit 131e9a49425f51b8dd8710c57fbaa527baed3989)",
+   "license": "0BSD/public domain (liblzma); SBOM lists LGPL-2.1-or-later",
+   "url": "https://github.com/ImageMagick/lzma/archive/131e9a49425f51b8dd8710c57fbaa527baed3989.tar.gz",
+   "bytes": 2981178,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 5.8.4) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://tukaani.org/xz source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "openh264",
+   "version": "2.6.0 (ImageMagick/openh264 fork commit 5ed6416df5c4eb35e275f759792c9253c5f1f5f3)",
+   "license": "BSD-2-Clause",
+   "url": "https://github.com/ImageMagick/openh264/archive/5ed6416df5c4eb35e275f759792c9253c5f1f5f3.tar.gz",
+   "bytes": 0,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 2.6.0) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/cisco/openh264 source + .ImageMagick build config [url check: HTTP 200 verified; size not measured (exceeds 20 MB cap, no Content-Length)]"
+  },
+  {
+   "name": "openjpeg",
+   "version": "2.5.4 (ImageMagick/openjpeg fork commit 97ce1d10749b1a02d657eae491e80c572ca183b2)",
+   "license": "BSD-2-Clause",
+   "url": "https://github.com/ImageMagick/openjpeg/archive/97ce1d10749b1a02d657eae491e80c572ca183b2.tar.gz",
+   "bytes": 2159027,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 2.5.4) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://www.openjpeg.org source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "openjph",
+   "version": "0.32.0 (ImageMagick/openjph fork commit c1a1ffc1e3f90eb9397407f1f545a47e01390aef)",
+   "license": "BSD-2-Clause",
+   "url": "https://github.com/ImageMagick/openjph/archive/c1a1ffc1e3f90eb9397407f1f545a47e01390aef.tar.gz",
+   "bytes": 564275,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 0.32.0) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/aous72/OpenJPH source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "pango",
+   "version": "1.45.3 (ImageMagick/pango fork commit 0b1e4536e0005f3c36b523c17ea12322490efd45)",
+   "license": "LGPL-2.0-only",
+   "url": "https://github.com/ImageMagick/pango/archive/0b1e4536e0005f3c36b523c17ea12322490efd45.tar.gz",
+   "bytes": 713759,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 1.45.3) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://gitlab.gnome.org/GNOME/pango source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "pixman",
+   "version": "0.46.4 (ImageMagick/pixman fork commit f7b55a8d3c39380724da9fbdef72ad70be800efc)",
+   "license": "MIT",
+   "url": "https://github.com/ImageMagick/pixman/archive/f7b55a8d3c39380724da9fbdef72ad70be800efc.tar.gz",
+   "bytes": 829769,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 0.46.4) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://gitlab.freedesktop.org/pixman/pixman source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libpng",
+   "version": "1.6.59 (ImageMagick/png fork commit 1ccb8b78643c7ad5360f00719a1e952ce0be7a53)",
+   "license": "libpng-2.0",
+   "url": "https://github.com/ImageMagick/png/archive/1ccb8b78643c7ad5360f00719a1e952ce0be7a53.tar.gz",
+   "bytes": 1604004,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 1.6.59) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/pnggroup/libpng source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libraqm",
+   "version": "0.11.0 (ImageMagick/raqm fork commit a699b8b7838acb4ac8d5891f42ecf3d84a00a9ad)",
+   "license": "MIT",
+   "url": "https://github.com/ImageMagick/raqm/archive/a699b8b7838acb4ac8d5891f42ecf3d84a00a9ad.tar.gz",
+   "bytes": 323016,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 0.11.0) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/HOST-Oman/libraqm source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libraw",
+   "version": "0.22.2 (ImageMagick/raw fork commit 9f7613ef48877180225b9377c87b0f3a65a2ca8e)",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/ImageMagick/raw/archive/9f7613ef48877180225b9377c87b0f3a65a2ca8e.tar.gz",
+   "bytes": 609926,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 0.22.2) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/LibRaw/LibRaw source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "librsvg",
+   "version": "2.40.20 (ImageMagick/rsvg fork commit 7415a6765db7554ba6f0f1b3dcb0877f36ff581b)",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://github.com/ImageMagick/rsvg/archive/7415a6765db7554ba6f0f1b3dcb0877f36ff581b.tar.gz",
+   "bytes": 2169507,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 2.40.20) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://wiki.gnome.org/LibRsvg source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libtiff",
+   "version": "4.7.2 (ImageMagick/tiff fork commit 3021cd03440ba6954f8bdf2b7ad4557a36092cd8)",
+   "license": "libtiff",
+   "url": "https://github.com/ImageMagick/tiff/archive/3021cd03440ba6954f8bdf2b7ad4557a36092cd8.tar.gz",
+   "bytes": 2610697,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 4.7.2) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://gitlab.com/libtiff/libtiff source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libwebp",
+   "version": "1.6.0 (ImageMagick/webp fork commit b981ef267195cb12f2cb97e4dd23e12a1323a4ce)",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/ImageMagick/webp/archive/b981ef267195cb12f2cb97e4dd23e12a1323a4ce.tar.gz",
+   "bytes": 3835879,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 1.6.0) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://chromium.googlesource.com/webm/libwebp source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libxml2",
+   "version": "2.15.4 (ImageMagick/xml fork commit 3ba73c8312b7ac88adc1a2e62df13d0827e93a0f)",
+   "license": "MIT",
+   "url": "https://github.com/ImageMagick/xml/archive/3ba73c8312b7ac88adc1a2e62df13d0827e93a0f.tar.gz",
+   "bytes": 2972073,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 2.15.4) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://gitlab.gnome.org/GNOME/libxml2 source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libzip",
+   "version": "1.11.4 (ImageMagick/zip fork commit 745377bdab21cf5e5fc19d0bbfcde93030d3af5e)",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/ImageMagick/zip/archive/745377bdab21cf5e5fc19d0bbfcde93030d3af5e.tar.gz",
+   "bytes": 1300969,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 1.11.4) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/nih-at/libzip source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "zlib",
+   "version": "1.3.2 (ImageMagick/zlib fork commit e42706934e4e7564d960031ae62ff29d918ee06d)",
+   "license": "Zlib",
+   "url": "https://github.com/ImageMagick/zlib/archive/e42706934e4e7564d960031ae62ff29d918ee06d.tar.gz",
+   "bytes": 1562591,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 1.3.2) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/madler/zlib source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "zstd",
+   "version": "1.5.7 (ImageMagick/zstd fork commit 4d5752ffeca8defb48ad744274f4f76b2866d71d)",
+   "license": "BSD-3-Clause OR GPL-2.0-only",
+   "url": "https://github.com/ImageMagick/zstd/archive/4d5752ffeca8defb48ad744274f4f76b2866d71d.tar.gz",
+   "bytes": 2442402,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 1.5.7) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://github.com/madler/zlib source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "fontconfig",
+   "version": "2.18.3 (ImageMagick/fontconfig fork commit 943048d94dfa3d7d4a213f36f9ef7af988397cd4)",
+   "license": "MIT-Modern-Variant",
+   "url": "https://github.com/ImageMagick/fontconfig/archive/943048d94dfa3d7d4a213f36f9ef7af988397cd4.tar.gz",
+   "bytes": 666895,
+   "evidence": "Listed in official SBOM ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json (version 2.18.3) and bundle NOTICE.txt; commit pinned by clone-dependencies.sh of ImageMagick/Dependencies@d38cb0f9 (release 2026.10.13.2113, which ImageMagick 7.1.2-34 .github/build/shared/download-dependencies.sh downloads as windows-x64-static-openMP-linked-runtime.zip). Fork = upstream https://gitlab.freedesktop.org/fontconfig/fontconfig source + .ImageMagick build config [url check: HTTP 200 verified, size from Content-Length]"
+  }
+ ],
+ "buildRecipe": [
+  {
+   "name": "ImageMagick/Dependencies @d38cb0f9 (release tag 2026.10.13.2113: clone-dependencies.sh pins, .github workflows, generate-sbom.py)",
+   "url": "https://github.com/ImageMagick/Dependencies/archive/d38cb0f91e91357c3b299087f17a6b27cc05d056.tar.gz",
+   "bytes": 22235,
+   "note": "HTTP 200 verified, size from Content-Length"
+  },
+  {
+   "name": "ImageMagick/Configure @08ea96dd (release tag 2026.09.21.1729: Configure.exe source + project templates; files.zip)",
+   "url": "https://github.com/ImageMagick/Configure/archive/08ea96dd18267b90a56204a598ba2b30db20c6b7.tar.gz",
+   "bytes": 6716248,
+   "note": "HTTP 200 verified, size from Content-Length"
+  },
+  {
+   "name": "ImageMagick/Configure release 2026.09.21.1729 files.zip (build templates used by the release job)",
+   "url": "https://github.com/ImageMagick/Configure/releases/download/2026.09.21.1729/files.zip",
+   "bytes": 6680191,
+   "note": "HTTP 200 verified, size from Content-Length"
+  },
+  {
+   "name": "ImageMagick/jpeg-turbo-12 @9837071e (build config only: compiles Dependencies/jpeg-turbo with BITS_IN_JSAMPLE=12)",
+   "url": "https://github.com/ImageMagick/jpeg-turbo-12/archive/9837071e8c0e5fba6daa03f31aba4416ff5eaf7c.tar.gz",
+   "bytes": 818,
+   "note": "HTTP 200 verified, size from Content-Length"
+  },
+  {
+   "name": "ImageMagick/jpeg-turbo-16 @d16d0839 (build config only: compiles Dependencies/jpeg-turbo with BITS_IN_JSAMPLE=16)",
+   "url": "https://github.com/ImageMagick/jpeg-turbo-16/archive/d16d0839d655478b4d517ebe2aeabfecce8192d9.tar.gz",
+   "bytes": 871,
+   "note": "HTTP 200 verified, size from Content-Length"
+  },
+  {
+   "name": "Official SBOM for this exact bundle (CycloneDX)",
+   "url": "https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-34/ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json",
+   "bytes": 23464,
+   "note": "HTTP 200 verified, size from Content-Length"
+  },
+  {
+   "name": "Official aggregate Windows source archive ImageMagick-7.1.2-34-Windows.7z (ImageMagick + Windows build repo + all dependency forks; assembled by the release windows_source job from main branches at release time, HEAD-checked only)",
+   "url": "https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-34/ImageMagick-7.1.2-34-Windows.7z",
+   "bytes": 767686970,
+   "note": "HTTP 200 verified, size from Content-Length"
+  }
+ ],
+ "residualGaps": "(1) The component list and versions come from the official CycloneDX SBOM for this exact asset, ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.cdx.json. The bundle's sha256 8DCFD364... matches the GitHub release digest, and the SBOM agrees with NOTICE.txt (37 entries). The dependency commit pins come from clone-dependencies.sh in ImageMagick/Dependencies at the release tag 2026.10.13.2113 (d38cb0f9), which the 7.1.2-34 build scripts download. No build log was read. (2) Each ImageMagick/<lib> fork contains upstream source plus the .ImageMagick build config. Its version string is the SBOM's, and the fork may carry small ImageMagick-specific changes relative to the upstream release. (3) glib 2.64.3 includes PCRE 8.31 (glib/pcre, BSD-3-Clause), compiled in with PCRE_STATIC. It is noted in the glib entry but has no separate entry. (4) The jpeg-turbo-12 and -16 repos are build configs only: they recompile the jpeg-turbo source at 12/16-bit and are listed under buildRecipe. The optional deps fftw, flif and jbig are not part of the linked-runtime build and are not in the SBOM, so they are excluded. (5) The MSVC static CRT and OpenMP runtime (Microsoft, proprietary redistributable) are not open source and are not listed. Ghostscript and other external delegates named in delegates.xml are not bundled. (6) Configure.exe is a build tool (ImageMagick/Configure at tag 2026.09.21.1729) and is listed only under buildRecipe. (7) GitHub archive sizes were measured by streaming. Archives over 20 MB (cairo, exr, harfbuzz, openh264) have bytes=0, so total bytes understates the real size. The official aggregate source archive ImageMagick-7.1.2-34-Windows.7z (767,686,970 bytes, HEAD only) was assembled from main branches at release time and may not match these pins exactly."
+}

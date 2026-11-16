@@ -1,0 +1,232 @@
+{
+    "_note":  "Gói phần mềm VAS phát hành từ repo này — sinh tự động từ setup/tools-manifest.json của VAS (tools/vas-repos/make-repos.ps1). Không sửa tay.",
+    "packages":  [
+                     {
+                         "id":  "git",
+                         "boCai":  "setup",
+                         "title":  "Git for Windows (Git Bash cho Claude Code, mốc lưu dự án)",
+                         "version":  "2.56.0.2",
+                         "file":  "PortableGit-2.56.0.2-64-bit.7z.exe",
+                         "url":  "https://github.com/git-for-windows/git/releases/download/v2.56.0.windows.2/PortableGit-2.56.0.2-64-bit.7z.exe",
+                         "sha256":  "075E158EF8E1F0AB80B347E245405D3ECA735C2DC88FD8E032E137D0CA61F61B",
+                         "license":  "GPL-2.0 (Git); các thành phần MSYS2 / MinGW theo giấy phép riêng",
+                         "home":  "https://gitforwindows.org",
+                         "sourceCode":  "https://github.com/git-for-windows/git/releases/tag/v2.56.0.windows.2",
+                         "sources":  [
+                                         "https://github.com/git-for-windows/git/archive/refs/tags/v2.56.0.windows.2.tar.gz"
+                                     ],
+                         "licenseFiles":  [
+                                              "https://raw.githubusercontent.com/git-for-windows/git/v2.56.0.windows.2/COPYING"
+                                          ],
+                         "sourceGaps":  "Gói portable kèm MSYS2 runtime, bash, coreutils, OpenSSH, curl…: mã nguồn theo các kho của git-for-windows (MINGW-packages, MSYS2-packages) cho bản phát hành này.",
+                         "note":  "Bản portable trong tools\\git — VAS không cài Git vào hệ thống. Claude Code trên Windows bắt buộc có Git Bash.",
+                         "update":  {
+                                        "kind":  "github",
+                                        "repo":  "git-for-windows/git",
+                                        "asset":  "^PortableGit-([0-9.]+)-64-bit\\.7z\\.exe$"
+                                    }
+                     },
+                     {
+                         "id":  "gltfpack",
+                         "boCai":  "setup",
+                         "title":  "gltfpack (meshoptimizer)",
+                         "version":  "1.3",
+                         "file":  "gltfpack-windows-1.3.zip",
+                         "url":  "https://github.com/zeux/meshoptimizer/releases/download/v1.3/gltfpack-windows.zip",
+                         "sha256":  "F6E9C09D66AF23DA3DA71B86F0652D2413E81C734E0AECD1CD3D0E6E6E8645C0",
+                         "license":  "MIT",
+                         "home":  "https://github.com/zeux/meshoptimizer",
+                         "sourceCode":  "https://github.com/zeux/meshoptimizer/archive/refs/tags/v1.3.tar.gz",
+                         "licenseFiles":  [
+                                              "https://raw.githubusercontent.com/zeux/meshoptimizer/v1.3/LICENSE.md"
+                                          ],
+                         "update":  {
+                                        "kind":  "github",
+                                        "repo":  "zeux/meshoptimizer",
+                                        "asset":  "^gltfpack-windows\\.zip$",
+                                        "versionFromTag":  true
+                                    }
+                     },
+                     {
+                         "id":  "ytdlp",
+                         "boCai":  "thanh-phan",
+                         "title":  "yt-dlp (tải video YouTube khi người dùng đồng ý)",
+                         "version":  "2026.08.19",
+                         "file":  "yt-dlp-2026.08.19.exe",
+                         "url":  "https://github.com/yt-dlp/yt-dlp/releases/download/2026.08.19/yt-dlp.exe",
+                         "sha256":  "66674953FE251B89F4D08C5F0E35E0728679BD67AB3D7D05C0562AF101DD3E7A",
+                         "license":  "Unlicense",
+                         "home":  "https://github.com/yt-dlp/yt-dlp",
+                         "sourceCode":  "https://github.com/yt-dlp/yt-dlp/archive/refs/tags/2026.08.19.tar.gz",
+                         "licenseFiles":  [
+                                              "https://raw.githubusercontent.com/yt-dlp/yt-dlp/2026.08.19/LICENSE"
+                                          ],
+                         "update":  {
+                                        "kind":  "github",
+                                        "repo":  "yt-dlp/yt-dlp",
+                                        "asset":  "^yt-dlp\\.exe$",
+                                        "versionFromTag":  true
+                                    }
+                     },
+                     {
+                         "id":  "7zr",
+                         "boCai":  "setup",
+                         "title":  "7-Zip (7zr — giải nén gói .7z)",
+                         "version":  "26.04",
+                         "file":  "7zr-26.04.exe",
+                         "url":  "https://github.com/ip7z/7zip/releases/download/26.04/7zr.exe",
+                         "sha256":  "256FECA8E274E5DA655E2A284FABAFD9F554365EB164862089DACD4E8276D282",
+                         "license":  "LGPL-2.1-or-later (một phần BSD-3-Clause)",
+                         "home":  "https://www.7-zip.org",
+                         "sourceCode":  "https://github.com/ip7z/7zip/releases/tag/26.04",
+                         "sources":  [
+                                         "https://github.com/ip7z/7zip/archive/refs/tags/26.04.tar.gz"
+                                     ],
+                         "licenseFiles":  [
+                                              "https://raw.githubusercontent.com/ip7z/7zip/26.04/DOC/License.txt"
+                                          ],
+                         "note":  "Chỉ VAS dùng khi cài (giải nén ImageMagick, Inkscape); AI không gọi.",
+                         "update":  {
+                                        "kind":  "github",
+                                        "repo":  "ip7z/7zip",
+                                        "asset":  "^7zr\\.exe$",
+                                        "versionFromTag":  true
+                                    }
+                     },
+                     {
+                         "id":  "imagemagick",
+                         "boCai":  "setup",
+                         "title":  "ImageMagick (xử lý ảnh bằng lệnh: cắt, ghép, chữ, đổi cỡ, chuyển định dạng)",
+                         "version":  "7.1.2-34",
+                         "file":  "ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.7z",
+                         "url":  "https://download.imagemagick.org/archive/binaries/ImageMagick-7.1.2-34-portable-Q16-HDRI-x64.7z",
+                         "sha256":  "8DCFD3644B7FC20A92AEEDEB4798024E5947F25F4D7C0C313C883FBCA3D723E6",
+                         "license":  "ImageMagick License (kiểu Apache-2.0); thư viện đi kèm theo giấy phép riêng (NOTICE)",
+                         "home":  "https://imagemagick.org",
+                         "sourceCode":  "https://github.com/ImageMagick/ImageMagick/releases/tag/7.1.2-34",
+                         "sources":  [
+                                         "https://github.com/ImageMagick/ImageMagick/archive/refs/tags/7.1.2-34.tar.gz"
+                                     ],
+                         "licenseFiles":  [
+                                              "https://raw.githubusercontent.com/ImageMagick/ImageMagick/7.1.2-34/LICENSE",
+                                              "https://raw.githubusercontent.com/ImageMagick/ImageMagick/7.1.2-34/NOTICE"
+                                          ],
+                         "sourceGaps":  "Bản portable kèm các thư viện delegate (libpng, libjpeg-turbo, libwebp, freetype, zlib…): mã nguồn theo kho ImageMagick-Windows cho bản phát hành này.",
+                         "note":  "Mã băm: digest.rdf chính thức của imagemagick.org.",
+                         "update":  {
+                                        "kind":  "fixed"
+                                    }
+                     },
+                     {
+                         "id":  "glaxnimate-python",
+                         "boCai":  "setup",
+                         "title":  "Thư viện chuẩn Python 3.11 cho Glaxnimate (bản standalone 0.6.0 của KDE thiếu python311.zip → xuất bằng lệnh sập; VAS chạy glaxnimate với PYTHONHOME trỏ vào đây)",
+                         "version":  "3.11.9",
+                         "file":  "python.3.11.9.nupkg",
+                         "url":  "https://api.nuget.org/v3-flatcontainer/python/3.11.9/python.3.11.9.nupkg",
+                         "sha256":  "9283876D58C017E0E846F95B490DA3BCA0FC0A6EE1134B2870677CFB7EEC3C67",
+                         "license":  "PSF-2.0",
+                         "home":  "https://www.python.org",
+                         "sourceCode":  "https://www.python.org/ftp/python/3.11.9/Python-3.11.9.tgz",
+                         "sources":  [
+                                         "https://www.python.org/ftp/python/3.11.9/Python-3.11.9.tgz"
+                                     ],
+                         "licenseFiles":  [
+                                              "https://raw.githubusercontent.com/python/cpython/v3.11.9/LICENSE"
+                                          ],
+                         "note":  "Gói NuGet chính thức (tác giả Python Software Foundation); mã băm SHA-512 của NuGet (catalog 2024.04.02) đã đối chiếu: 41On79FZ75irnOEBGFSjDV13j1nZb8m7EbB87SmQs1XwMEhrBwf3mMc8RCAXOrERh2qW6tWYFxi2BMTN1xxVjQ==. python311.dll của Glaxnimate là 3.11.11 — cùng ABI / mã .pyc với 3.11.9 (bản Windows cuối của dòng 3.11).",
+                         "update":  {
+                                        "kind":  "fixed"
+                                    }
+                     },
+                     {
+                         "id":  "python",
+                         "boCai":  "thanh-phan",
+                         "title":  "Python 3.12 (bộ đo ảnh mẫu nhân vật)",
+                         "version":  "3.12.10",
+                         "file":  "python.3.12.10.nupkg",
+                         "url":  "https://api.nuget.org/v3-flatcontainer/python/3.12.10/python.3.12.10.nupkg",
+                         "sha256":  "0EB85C2DFCCCCF1B17352DE4C397F69194035B7D37149EACC16F1147D93DE3B8",
+                         "license":  "PSF-2.0",
+                         "home":  "https://www.python.org",
+                         "sourceCode":  "https://www.python.org/ftp/python/3.12.10/Python-3.12.10.tgz",
+                         "sources":  [
+                                         "https://www.python.org/ftp/python/3.12.10/Python-3.12.10.tgz"
+                                     ],
+                         "update":  {
+                                        "kind":  "fixed"
+                                    }
+                     },
+                     {
+                         "id":  "fluidsynth",
+                         "boCai":  "setup",
+                         "title":  "FluidSynth (trụ cột âm nhạc: render MIDI bằng bộ âm sắc SoundFont, không giao diện)",
+                         "version":  "2.6.1",
+                         "file":  "fluidsynth-v2.6.1-win10-x64-cpp11.zip",
+                         "url":  "https://github.com/FluidSynth/fluidsynth/releases/download/v2.6.1/fluidsynth-v2.6.1-win10-x64-cpp11.zip",
+                         "sha256":  "FAB7A2E4B85675B66970F97A39BBC239729C5E0F237198B5922A6A73CBC8677C",
+                         "license":  "LGPL-2.1-or-later",
+                         "home":  "https://www.fluidsynth.org",
+                         "sourceCode":  "https://github.com/FluidSynth/fluidsynth/releases/tag/v2.6.1",
+                         "sources":  [
+                                         "https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.6.1.tar.gz"
+                                     ],
+                         "licenseFiles":  [
+                                              "https://raw.githubusercontent.com/FluidSynth/fluidsynth/v2.6.1/LICENSE"
+                                          ],
+                         "sourceGaps":  "Bản Windows kèm glib, libsndfile, libogg / libvorbis / FLAC / opus, libinstpatch…: mã nguồn theo bản dựng CI của FluidSynth cho bản phát hành này.",
+                         "note":  "Mã băm: GitHub digest của bản phát hành.",
+                         "update":  {
+                                        "kind":  "github",
+                                        "repo":  "FluidSynth/fluidsynth",
+                                        "asset":  "^fluidsynth-v([0-9.]+)-win10-x64-cpp11\\.zip$"
+                                    }
+                     },
+                     {
+                         "id":  "musescore-general",
+                         "boCai":  "setup",
+                         "title":  "MuseScore General (bộ âm sắc SoundFont General MIDI cho trụ cột âm nhạc)",
+                         "version":  "0.2.0",
+                         "file":  "MuseScore_General.sf3",
+                         "url":  "https://ftp.osuosl.org/pub/musescore/soundfont/MuseScore_General/MuseScore_General.sf3",
+                         "sha256":  "5B85B6C2C61D10B2B91CDDD41EFCCE7B25CD31C8271D511C73AFAFBEF20B6FA3",
+                         "license":  "MIT",
+                         "home":  "https://musescore.org/en/handbook/3/soundfonts-and-sfz-files",
+                         "sourceCode":  "https://ftp.osuosl.org/pub/musescore/soundfont/MuseScore_General/",
+                         "sources":  [
+                                         "https://ftp.osuosl.org/pub/musescore/soundfont/MuseScore_General/MuseScore_General.sf2"
+                                     ],
+                         "licenseFiles":  [
+                                              "https://ftp.osuosl.org/pub/musescore/soundfont/MuseScore_General/MuseScore_General_License.md"
+                                          ],
+                         "note":  "Kho phát hành không công bố mã băm: tự tính 30/10/2026 từ bản tải HTTPS chính thức (ftp.osuosl.org, kho của MuseScore); dữ liệu âm sắc, không phải tệp chạy.",
+                         "update":  {
+                                        "kind":  "fixed"
+                                    }
+                     },
+                     {
+                         "id":  "7zip",
+                         "boCai":  "setup",
+                         "title":  "7-Zip (bản đầy đủ: giải nén bộ cài NSIS của LMMS / MuseScore — chỉ VAS dùng, không đăng ký cho AI)",
+                         "version":  "26.05",
+                         "file":  "7z2605-x64.exe",
+                         "url":  "https://github.com/ip7z/7zip/releases/download/26.05/7z2605-x64.exe",
+                         "sha256":  "FD99E86F57D8F429EF5ED045BF98315AF962E2309B0F1BA87A147A44C71647D0",
+                         "license":  "LGPL-2.1-or-later + BSD-3-Clause; unRAR restriction",
+                         "home":  "https://www.7-zip.org",
+                         "sourceCode":  "https://github.com/ip7z/7zip/releases/tag/26.05",
+                         "sources":  [
+                                         "https://github.com/ip7z/7zip/archive/refs/tags/26.05.tar.gz"
+                                     ],
+                         "licenseFiles":  [
+                                              "https://raw.githubusercontent.com/ip7z/7zip/26.05/DOC/License.txt"
+                                          ],
+                         "note":  "Mã băm: GitHub digest. Giải nén bằng 7zr (đã ghim), KHÔNG chạy bộ cài.",
+                         "update":  {
+                                        "kind":  "github",
+                                        "repo":  "ip7z/7zip",
+                                        "asset":  "^7z([0-9]+)-x64\\.exe$"
+                                    }
+                     }
+                 ]
+}

@@ -1,0 +1,1402 @@
+{
+ "id": "git",
+ "version": "2.56.0.2",
+ "method": "evidence",
+ "confidence": "exact",
+ "components": [
+  {
+   "name": "apr",
+   "version": "1.7.6-2",
+   "license": "spdx:Apache-2.0",
+   "url": "https://repo.msys2.org/msys/sources/apr-1.7.6-2.src.tar.zst",
+   "bytes": 901971,
+   "evidence": "PortableGit etc/package-versions.txt line 'apr 1.7.6-2'; source package base 'apr'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "apr-util",
+   "version": "1.6.5-1",
+   "license": "spdx:Apache-2.0",
+   "url": "https://repo.msys2.org/msys/sources/apr-util-1.6.5-1.src.tar.zst",
+   "bytes": 443405,
+   "evidence": "PortableGit etc/package-versions.txt line 'apr-util 1.6.5-1'; source package base 'apr-util'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "gawk",
+   "version": "5.4.1-1",
+   "license": "spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/gawk-5.4.1-1.src.tar.zst",
+   "bytes": 6693723,
+   "evidence": "PortableGit etc/package-versions.txt line 'gawk 5.4.1-1'; source package base 'gawk'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "bash",
+   "version": "5.3.015-2",
+   "license": "GPL",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-08-20T13-55-07.365148200Z/bash-5.3.015-2.src.tar.gz",
+   "bytes": 11373772,
+   "evidence": "PortableGit etc/package-versions.txt line 'bash 5.3.015-2'; source package base 'bash'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "bzip2",
+   "version": "1.0.8-4",
+   "license": "custom",
+   "url": "https://repo.msys2.org/msys/sources/bzip2-1.0.8-4.src.tar.zst",
+   "bytes": 842603,
+   "evidence": "PortableGit etc/package-versions.txt line 'bzip2 1.0.8-4'; source package base 'bzip2'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "ca-certificates",
+   "version": "20260816-1",
+   "license": "spdx:MPL-2.0 AND GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/ca-certificates-20260816-1.src.tar.zst",
+   "bytes": 282467,
+   "evidence": "PortableGit etc/package-versions.txt line 'ca-certificates 20260816-1'; source package base 'ca-certificates'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "coreutils",
+   "version": "8.32-5",
+   "license": "spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/coreutils-8.32-5.src.tar.zst",
+   "bytes": 5561991,
+   "evidence": "PortableGit etc/package-versions.txt line 'coreutils 8.32-5'; source package base 'coreutils'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "diffutils",
+   "version": "3.12-1",
+   "license": "spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/diffutils-3.12-1.src.tar.zst",
+   "bytes": 1941123,
+   "evidence": "PortableGit etc/package-versions.txt line 'diffutils 3.12-1'; source package base 'diffutils'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "docx2txt",
+   "version": "1.4-2",
+   "license": "see PKGBUILD in source package",
+   "url": "https://repo.msys2.org/msys/sources/docx2txt-1.4-2.src.tar.zst",
+   "bytes": 32186,
+   "evidence": "PortableGit etc/package-versions.txt line 'docx2txt 1.4-2'; source package base 'docx2txt'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "dos2unix",
+   "version": "7.5.7-1",
+   "license": "spdx:BSD-2-Clause",
+   "url": "https://repo.msys2.org/msys/sources/dos2unix-7.5.7-1.src.tar.zst",
+   "bytes": 996754,
+   "evidence": "PortableGit etc/package-versions.txt line 'dos2unix 7.5.7-1'; source package base 'dos2unix'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "expat",
+   "version": "2.8.5-1",
+   "license": "spdx:MIT",
+   "url": "https://repo.msys2.org/msys/sources/expat-2.8.5-1.src.tar.zst",
+   "bytes": 530748,
+   "evidence": "PortableGit etc/package-versions.txt line 'expat 2.8.5-1'; source package base 'expat'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "file",
+   "version": "5.48-1",
+   "license": "spdx:BSD-2-Clause",
+   "url": "https://repo.msys2.org/msys/sources/file-5.48-1.src.tar.zst",
+   "bytes": 2694782,
+   "evidence": "PortableGit etc/package-versions.txt line 'file 5.48-1'; source package base 'file'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "findutils",
+   "version": "4.11.0-2",
+   "license": "spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/findutils-4.11.0-2.src.tar.zst",
+   "bytes": 2454027,
+   "evidence": "PortableGit etc/package-versions.txt line 'findutils 4.11.0-2'; source package base 'findutils'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "gcc-libs",
+   "version": "15.3.0-1",
+   "license": "spdx:LGPL-2.1-or-later AND GPL-3.0-or-later WITH GCC-exception-3.1 AND GFDL-1.3-or-later",
+   "url": "https://repo.msys2.org/msys/sources/gcc-15.3.0-1.src.tar.zst",
+   "bytes": 101292942,
+   "evidence": "PortableGit etc/package-versions.txt line 'gcc-libs 15.3.0-1'; source package base 'gcc'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "gdbm",
+   "version": "1.26-1",
+   "license": "GPL3",
+   "url": "https://repo.msys2.org/msys/sources/gdbm-1.26-1.src.tar.zst",
+   "bytes": 1229478,
+   "evidence": "PortableGit etc/package-versions.txt line 'gdbm 1.26-1'; source package base 'gdbm'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "gmp",
+   "version": "6.3.0-2",
+   "license": "LGPL3",
+   "url": "https://repo.msys2.org/msys/sources/gmp-6.3.0-2.src.tar.zst",
+   "bytes": 2096699,
+   "evidence": "PortableGit etc/package-versions.txt line 'gmp 6.3.0-2'; source package base 'gmp'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "gnupg",
+   "version": "2.4.9-3",
+   "license": "spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/gnupg-2.4.9-3.src.tar.zst",
+   "bytes": 8110267,
+   "evidence": "PortableGit etc/package-versions.txt line 'gnupg 2.4.9-3'; source package base 'gnupg'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "grep",
+   "version": "1~3.0-7",
+   "license": "GPL3",
+   "url": "https://repo.msys2.org/msys/sources/grep-1~3.0-7.src.tar.zst",
+   "bytes": 1378706,
+   "evidence": "PortableGit etc/package-versions.txt line 'grep 1~3.0-7'; source package base 'grep'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "gzip",
+   "version": "1.15-1",
+   "license": "spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/gzip-1.15-1.src.tar.zst",
+   "bytes": 811076,
+   "evidence": "PortableGit etc/package-versions.txt line 'gzip 1.15-1'; source package base 'gzip'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "heimdal-libs",
+   "version": "7.8.0-5",
+   "license": "spdx:LicenseRef-Heimdal",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2025-02-17T19-44-32.968336700Z/heimdal-7.8.0-5.src.tar.gz",
+   "bytes": 9939780,
+   "evidence": "PortableGit etc/package-versions.txt line 'heimdal-libs 7.8.0-5'; source package base 'heimdal'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "iconv",
+   "version": "1.19-1",
+   "license": "LGPL",
+   "url": "https://repo.msys2.org/msys/sources/libiconv-1.19-1.src.tar.zst",
+   "bytes": 5133707,
+   "evidence": "PortableGit etc/package-versions.txt line 'iconv 1.19-1'; source package base 'libiconv'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "less",
+   "version": "710-1",
+   "license": "spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/less-710-1.src.tar.zst",
+   "bytes": 1159335,
+   "evidence": "PortableGit etc/package-versions.txt line 'less 710-1'; source package base 'less'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libassuan",
+   "version": "3.0.2-1",
+   "license": "GPL",
+   "url": "https://repo.msys2.org/msys/sources/libassuan-3.0.2-1.src.tar.zst",
+   "bytes": 1192778,
+   "evidence": "PortableGit etc/package-versions.txt line 'libassuan 3.0.2-1'; source package base 'libassuan'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libbz2",
+   "version": "1.0.8-4",
+   "license": "custom",
+   "url": "https://repo.msys2.org/msys/sources/bzip2-1.0.8-4.src.tar.zst",
+   "bytes": 842603,
+   "evidence": "PortableGit etc/package-versions.txt line 'libbz2 1.0.8-4'; source package base 'bzip2'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libcbor",
+   "version": "0.11.0-1",
+   "license": "spdx:MIT",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2024-02-05T16-30-39.000Z/libcbor-0.11.0-1.src.tar.gz",
+   "bytes": 294840,
+   "evidence": "PortableGit etc/package-versions.txt line 'libcbor 0.11.0-1'; source package base 'libcbor'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "libcurl",
+   "version": "8.22.0-1",
+   "license": "spdx:MIT",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-09-03T10-07-02.008820800Z/curl-8.22.0-1.src.tar.gz",
+   "bytes": 3399799,
+   "evidence": "PortableGit etc/package-versions.txt line 'libcurl 8.22.0-1'; source package base 'curl'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "libdb",
+   "version": "6.2.32-6",
+   "license": "spdx:AGPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/db-6.2.32-6.src.tar.zst",
+   "bytes": 44421183,
+   "evidence": "PortableGit etc/package-versions.txt line 'libdb 6.2.32-6'; source package base 'db'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libedit",
+   "version": "20240808_3.1-1",
+   "license": "BSD",
+   "url": "https://repo.msys2.org/msys/sources/libedit-20240808_3.1-1.src.tar.zst",
+   "bytes": 540843,
+   "evidence": "PortableGit etc/package-versions.txt line 'libedit 20240808_3.1-1'; source package base 'libedit'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libexpat",
+   "version": "2.8.5-1",
+   "license": "spdx:MIT",
+   "url": "https://repo.msys2.org/msys/sources/expat-2.8.5-1.src.tar.zst",
+   "bytes": 530748,
+   "evidence": "PortableGit etc/package-versions.txt line 'libexpat 2.8.5-1'; source package base 'expat'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libffi",
+   "version": "3.8.0-1",
+   "license": "spdx:MIT",
+   "url": "https://repo.msys2.org/msys/sources/libffi-3.8.0-1.src.tar.zst",
+   "bytes": 1582591,
+   "evidence": "PortableGit etc/package-versions.txt line 'libffi 3.8.0-1'; source package base 'libffi'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libfido2",
+   "version": "1.15.0-1",
+   "license": "spdx:BSD-2-Clause",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2024-06-14T09-31-36.000Z/libfido2-1.15.0-1.src.tar.gz",
+   "bytes": 673066,
+   "evidence": "PortableGit etc/package-versions.txt line 'libfido2 1.15.0-1'; source package base 'libfido2'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "libgcrypt",
+   "version": "1.12.4-1",
+   "license": "spdx:LGPL-2.1-or-later AND GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/libgcrypt-1.12.4-1.src.tar.zst",
+   "bytes": 4474749,
+   "evidence": "PortableGit etc/package-versions.txt line 'libgcrypt 1.12.4-1'; source package base 'libgcrypt'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libgdbm",
+   "version": "1.26-1",
+   "license": "GPL3",
+   "url": "https://repo.msys2.org/msys/sources/gdbm-1.26-1.src.tar.zst",
+   "bytes": 1229478,
+   "evidence": "PortableGit etc/package-versions.txt line 'libgdbm 1.26-1'; source package base 'gdbm'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libgnutls",
+   "version": "3.8.13-2",
+   "license": "spdx:GPL-3.0-or-later AND spdx:LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/msys/sources/gnutls-3.8.13-2.src.tar.zst",
+   "bytes": 7279406,
+   "evidence": "PortableGit etc/package-versions.txt line 'libgnutls 3.8.13-2'; source package base 'gnutls'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libgpg-error",
+   "version": "1.61-1",
+   "license": "spdx:LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/msys/sources/libgpg-error-1.61-1.src.tar.zst",
+   "bytes": 1127088,
+   "evidence": "PortableGit etc/package-versions.txt line 'libgpg-error 1.61-1'; source package base 'libgpg-error'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libhogweed",
+   "version": "4.0-1",
+   "license": "spdx:GPL-2.0-or-later OR LGPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/nettle-4.0-1.src.tar.zst",
+   "bytes": 2630813,
+   "evidence": "PortableGit etc/package-versions.txt line 'libhogweed 4.0-1'; source package base 'nettle'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libiconv",
+   "version": "1.19-1",
+   "license": "LGPL",
+   "url": "https://repo.msys2.org/msys/sources/libiconv-1.19-1.src.tar.zst",
+   "bytes": 5133707,
+   "evidence": "PortableGit etc/package-versions.txt line 'libiconv 1.19-1'; source package base 'libiconv'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libidn2",
+   "version": "2.3.8-1",
+   "license": "GPL3 AND LGPL",
+   "url": "https://repo.msys2.org/msys/sources/libidn2-2.3.8-1.src.tar.zst",
+   "bytes": 2147323,
+   "evidence": "PortableGit etc/package-versions.txt line 'libidn2 2.3.8-1'; source package base 'libidn2'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libintl",
+   "version": "0.22.5-1",
+   "license": "GPL",
+   "url": "https://repo.msys2.org/msys/sources/gettext-0.22.5-1.src.tar.zst",
+   "bytes": 21732949,
+   "evidence": "PortableGit etc/package-versions.txt line 'libintl 0.22.5-1'; source package base 'gettext'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libksba",
+   "version": "1.8.1-1",
+   "license": "spdx:LGPL-3.0-or-later OR GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/libksba-1.8.1-1.src.tar.zst",
+   "bytes": 724091,
+   "evidence": "PortableGit etc/package-versions.txt line 'libksba 1.8.1-1'; source package base 'libksba'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "liblz4",
+   "version": "1.10.0-1",
+   "license": "spdx:GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/lz4-1.10.0-1.src.tar.zst",
+   "bytes": 387770,
+   "evidence": "PortableGit etc/package-versions.txt line 'liblz4 1.10.0-1'; source package base 'lz4'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "liblzma",
+   "version": "5.8.4-1",
+   "license": "spdx:LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/msys/sources/xz-5.8.4-1.src.tar.zst",
+   "bytes": 1669697,
+   "evidence": "PortableGit etc/package-versions.txt line 'liblzma 5.8.4-1'; source package base 'xz'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libnettle",
+   "version": "4.0-1",
+   "license": "spdx:GPL-2.0-or-later OR LGPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/nettle-4.0-1.src.tar.zst",
+   "bytes": 2630813,
+   "evidence": "PortableGit etc/package-versions.txt line 'libnettle 4.0-1'; source package base 'nettle'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libnghttp2",
+   "version": "1.70.0-1",
+   "license": "spdx:MIT",
+   "url": "https://repo.msys2.org/msys/sources/nghttp2-1.70.0-1.src.tar.zst",
+   "bytes": 2020821,
+   "evidence": "PortableGit etc/package-versions.txt line 'libnghttp2 1.70.0-1'; source package base 'nghttp2'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libnpth",
+   "version": "1.8-1",
+   "license": "LGPL",
+   "url": "https://repo.msys2.org/msys/sources/npth-1.8-1.src.tar.zst",
+   "bytes": 319723,
+   "evidence": "PortableGit etc/package-versions.txt line 'libnpth 1.8-1'; source package base 'npth'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libopenssl",
+   "version": "3.5.9-1",
+   "license": "spdx:Apache-2.0",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-09-30T08-56-50.408104900Z/openssl-3.5.9-1.src.tar.gz",
+   "bytes": 53252605,
+   "evidence": "PortableGit etc/package-versions.txt line 'libopenssl 3.5.9-1'; source package base 'openssl'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "libp11-kit",
+   "version": "0.26.5-1",
+   "license": "spdx:BSD-3-Clause",
+   "url": "https://repo.msys2.org/msys/sources/p11-kit-0.26.5-1.src.tar.zst",
+   "bytes": 1085188,
+   "evidence": "PortableGit etc/package-versions.txt line 'libp11-kit 0.26.5-1'; source package base 'p11-kit'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libpcre",
+   "version": "8.45-5",
+   "license": "BSD",
+   "url": "https://repo.msys2.org/msys/sources/pcre-8.45-5.src.tar.zst",
+   "bytes": 1577595,
+   "evidence": "PortableGit etc/package-versions.txt line 'libpcre 8.45-5'; source package base 'pcre'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libpcre2_8",
+   "version": "10.49-1",
+   "license": "spdx:BSD-3-Clause WITH PCRE2-exception",
+   "url": "https://repo.msys2.org/msys/sources/pcre2-10.49-1.src.tar.zst",
+   "bytes": 2183626,
+   "evidence": "PortableGit etc/package-versions.txt line 'libpcre2_8 10.49-1'; source package base 'pcre2'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libpsl",
+   "version": "0.23.2-1",
+   "license": "spdx:MIT",
+   "url": "https://repo.msys2.org/msys/sources/libpsl-0.23.2-1.src.tar.zst",
+   "bytes": 6949214,
+   "evidence": "PortableGit etc/package-versions.txt line 'libpsl 0.23.2-1'; source package base 'libpsl'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libreadline",
+   "version": "8.3.006-1",
+   "license": "spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/readline-8.3.006-1.src.tar.zst",
+   "bytes": 3357587,
+   "evidence": "PortableGit etc/package-versions.txt line 'libreadline 8.3.006-1'; source package base 'readline'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libsasl",
+   "version": "2.1.28-5",
+   "license": "spdx:LicenseRef-cyrus-sasl",
+   "url": "https://repo.msys2.org/msys/sources/cyrus-sasl-2.1.28-5.src.tar.zst",
+   "bytes": 3708611,
+   "evidence": "PortableGit etc/package-versions.txt line 'libsasl 2.1.28-5'; source package base 'cyrus-sasl'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libserf",
+   "version": "1.3.10-2",
+   "license": "spdx:Apache-2.0",
+   "url": "https://repo.msys2.org/msys/sources/serf-1.3.10-2.src.tar.zst",
+   "bytes": 151396,
+   "evidence": "PortableGit etc/package-versions.txt line 'libserf 1.3.10-2'; source package base 'serf'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libsqlite",
+   "version": "3.53.4-1",
+   "license": "spdx:LicenseRef-Sqlite",
+   "url": "https://repo.msys2.org/msys/sources/sqlite-3.53.4-1.src.tar.zst",
+   "bytes": 25324161,
+   "evidence": "PortableGit etc/package-versions.txt line 'libsqlite 3.53.4-1'; source package base 'sqlite'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libssh2",
+   "version": "1.11.1-1",
+   "license": "spdx:BSD-3-Clause",
+   "url": "https://repo.msys2.org/msys/sources/libssh2-1.11.1-1.src.tar.zst",
+   "bytes": 1095467,
+   "evidence": "PortableGit etc/package-versions.txt line 'libssh2 1.11.1-1'; source package base 'libssh2'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libtasn1",
+   "version": "4.21.0-1",
+   "license": "GPL3 AND LGPL",
+   "url": "https://repo.msys2.org/msys/sources/libtasn1-4.21.0-1.src.tar.zst",
+   "bytes": 1732145,
+   "evidence": "PortableGit etc/package-versions.txt line 'libtasn1 4.21.0-1'; source package base 'libtasn1'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libunistring",
+   "version": "1.4.2-1",
+   "license": "spdx:LGPL-3.0-or-later OR GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/libunistring-1.4.2-1.src.tar.zst",
+   "bytes": 2788948,
+   "evidence": "PortableGit etc/package-versions.txt line 'libunistring 1.4.2-1'; source package base 'libunistring'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libutil-linux",
+   "version": "2.40.2-2",
+   "license": "spdx:GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/util-linux-2.40.2-2.src.tar.zst",
+   "bytes": 8864602,
+   "evidence": "PortableGit etc/package-versions.txt line 'libutil-linux 2.40.2-2'; source package base 'util-linux'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libxcrypt",
+   "version": "4.5.2-1",
+   "license": "spdx:LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/msys/sources/libxcrypt-4.5.2-1.src.tar.zst",
+   "bytes": 672527,
+   "evidence": "PortableGit etc/package-versions.txt line 'libxcrypt 4.5.2-1'; source package base 'libxcrypt'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "libzstd",
+   "version": "1.5.7-1",
+   "license": "BSD",
+   "url": "https://repo.msys2.org/msys/sources/zstd-1.5.7-1.src.tar.zst",
+   "bytes": 2401343,
+   "evidence": "PortableGit etc/package-versions.txt line 'libzstd 1.5.7-1'; source package base 'zstd'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-antiword",
+   "version": "0.37-3",
+   "license": "GPL3+",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-antiword-0.37-3.src.tar.zst",
+   "bytes": 319512,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-antiword 0.37-3'; source package base 'mingw-w64-antiword'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-brotli",
+   "version": "1.2.0-1",
+   "license": "spdx:MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-brotli-1.2.0-1.src.tar.zst",
+   "bytes": 644113,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-brotli 1.2.0-1'; source package base 'mingw-w64-brotli'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-bzip2",
+   "version": "1.0.8-4",
+   "license": "custom",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-bzip2-1.0.8-4.src.tar.zst",
+   "bytes": 818825,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-bzip2 1.0.8-4'; source package base 'mingw-w64-bzip2'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-c-ares",
+   "version": "1.34.8-1",
+   "license": "spdx:MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-c-ares-1.34.8-1.src.tar.zst",
+   "bytes": 1035656,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-c-ares 1.34.8-1'; source package base 'mingw-w64-c-ares'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-ca-certificates",
+   "version": "20260816-1",
+   "license": "MPL AND GPL",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-ca-certificates-20260816-1.src.tar.zst",
+   "bytes": 282789,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-ca-certificates 20260816-1'; source package base 'mingw-w64-ca-certificates'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-cc-libs",
+   "version": "16.2.0-4",
+   "license": "spdx:GPL-3.0-or-later WITH GCC-exception-3.1 AND GFDL-1.3-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-4.src.tar.zst",
+   "bytes": 107228968,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-cc-libs 16.2.0-4'; source package base 'mingw-w64-gcc'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-connect",
+   "version": "1.105-5",
+   "license": "GPL2+",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-connect-1.105-5.src.tar.zst",
+   "bytes": 47835,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-connect 1.105-5'; source package base 'mingw-w64-connect'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-curl-winssl",
+   "version": "8.22.0-2",
+   "license": "spdx:MIT",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-10-05T15-43-47.005265900Z/mingw-w64-curl-8.22.0-2.src.tar.gz",
+   "bytes": 3411100,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-curl-winssl 8.22.0-2'; source package base 'mingw-w64-curl'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-curl-openssl-alternate",
+   "version": "8.22.0-2",
+   "license": "spdx:MIT",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-10-05T15-43-47.005265900Z/mingw-w64-curl-8.22.0-2.src.tar.gz",
+   "bytes": 3411100,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-curl-openssl-alternate 8.22.0-2'; source package base 'mingw-w64-curl'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-docx2txt-rs",
+   "version": "0.2.0-1",
+   "license": "spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-docx2txt-rs-0.2.0-1.src.tar.zst",
+   "bytes": 53662,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-docx2txt-rs 0.2.0-1'; source package base 'mingw-w64-docx2txt-rs'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-expat",
+   "version": "2.8.5-1",
+   "license": "spdx:MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-expat-2.8.5-1.src.tar.zst",
+   "bytes": 530963,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-expat 2.8.5-1'; source package base 'mingw-w64-expat'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gcc-libs",
+   "version": "16.2.0-4",
+   "license": "spdx:GPL-3.0-or-later WITH GCC-exception-3.1 AND GFDL-1.3-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-4.src.tar.zst",
+   "bytes": 107228968,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-gcc-libs 16.2.0-4'; source package base 'mingw-w64-gcc'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gettext-runtime",
+   "version": "1.0-1",
+   "license": "spdx:GPL-3.0-or-later AND LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gettext-1.0-1.src.tar.zst",
+   "bytes": 10267655,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-gettext-runtime 1.0-1'; source package base 'mingw-w64-gettext'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-git",
+   "version": "2.56.0.2-1",
+   "license": "GPL2",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-10-05T21-33-28.231326700Z/mingw-w64-git-2.56.0.2-1.src.tar.gz",
+   "bytes": 13065454,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-git 2.56.0.2-1'; source package base 'mingw-w64-git'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-git-credential-manager",
+   "version": "2.9.1-1",
+   "license": "MIT",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-07-14T20-22-11.997190100Z/mingw-w64-git-credential-manager-2.9.1-1.src.tar.gz",
+   "bytes": 13591760,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-git-credential-manager 2.9.1-1'; source package base 'mingw-w64-git-credential-manager'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-git-credential-wincred",
+   "version": "2.56.0.2-1",
+   "license": "GPL2",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-10-05T21-33-28.231326700Z/mingw-w64-git-2.56.0.2-1.src.tar.gz",
+   "bytes": 13065454,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-git-credential-wincred 2.56.0.2-1'; source package base 'mingw-w64-git'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-git-doc-html",
+   "version": "2.56.0.2-1",
+   "license": "GPL2",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-10-05T21-33-28.231326700Z/mingw-w64-git-2.56.0.2-1.src.tar.gz",
+   "bytes": 13065454,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-git-doc-html 2.56.0.2-1'; source package base 'mingw-w64-git'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-git-extra",
+   "version": "1.1.715.85f886165-1",
+   "license": "GPL",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-09-10T22-57-20.747747200Z/mingw-w64-git-extra-1.1.715.85f886165-1.src.tar.gz",
+   "bytes": 54126,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-git-extra 1.1.715.85f886165-1'; source package base 'mingw-w64-git-extra'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-git-for-windows-addons",
+   "version": "2.56.0.2-1",
+   "license": "GPL2",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-10-05T21-33-28.231326700Z/mingw-w64-git-2.56.0.2-1.src.tar.gz",
+   "bytes": 13065454,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-git-for-windows-addons 2.56.0.2-1'; source package base 'mingw-w64-git'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-git-gui",
+   "version": "2.56.0.2-1",
+   "license": "GPL2",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-10-05T21-33-28.231326700Z/mingw-w64-git-2.56.0.2-1.src.tar.gz",
+   "bytes": 13065454,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-git-gui 2.56.0.2-1'; source package base 'mingw-w64-git'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-git-lfs",
+   "version": "3.8.0-1",
+   "license": "MIT",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-08-29T08-12-43.056934300Z/mingw-w64-git-lfs-3.8.0-1.src.tar.gz",
+   "bytes": 6741666,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-git-lfs 3.8.0-1'; source package base 'mingw-w64-git-lfs'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-git-perl",
+   "version": "2.56.0.2-1",
+   "license": "GPL2",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-10-05T21-33-28.231326700Z/mingw-w64-git-2.56.0.2-1.src.tar.gz",
+   "bytes": 13065454,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-git-perl 2.56.0.2-1'; source package base 'mingw-w64-git'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-git-send-email",
+   "version": "2.56.0.2-1",
+   "license": "GPL2",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-10-05T21-33-28.231326700Z/mingw-w64-git-2.56.0.2-1.src.tar.gz",
+   "bytes": 13065454,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-git-send-email 2.56.0.2-1'; source package base 'mingw-w64-git'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-git-subtree",
+   "version": "2.56.0.2-1",
+   "license": "GPL2",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-10-05T21-33-28.231326700Z/mingw-w64-git-2.56.0.2-1.src.tar.gz",
+   "bytes": 13065454,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-git-subtree 2.56.0.2-1'; source package base 'mingw-w64-git'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gitk",
+   "version": "2.56.0.2-1",
+   "license": "GPL2",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-10-05T21-33-28.231326700Z/mingw-w64-git-2.56.0.2-1.src.tar.gz",
+   "bytes": 13065454,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-gitk 2.56.0.2-1'; source package base 'mingw-w64-git'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gmp",
+   "version": "6.3.0-2",
+   "license": "LGPL3 AND GPL",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gmp-6.3.0-2.src.tar.zst",
+   "bytes": 2097066,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-gmp 6.3.0-2'; source package base 'mingw-w64-gmp'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gnutls",
+   "version": "3.8.13-3",
+   "license": "spdx:GPL-3.0-or-later AND spdx:LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gnutls-3.8.13-3.src.tar.zst",
+   "bytes": 7280076,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-gnutls 3.8.13-3'; source package base 'mingw-w64-gnutls'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libatomic",
+   "version": "16.2.0-4",
+   "license": "spdx:GPL-3.0-or-later WITH GCC-exception-3.1 AND GFDL-1.3-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-4.src.tar.zst",
+   "bytes": 107228968,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libatomic 16.2.0-4'; source package base 'mingw-w64-gcc'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libffi",
+   "version": "3.8.0-1",
+   "license": "spdx:MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libffi-3.8.0-1.src.tar.zst",
+   "bytes": 1582238,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libffi 3.8.0-1'; source package base 'mingw-w64-libffi'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libgcc",
+   "version": "16.2.0-4",
+   "license": "spdx:GPL-3.0-or-later WITH GCC-exception-3.1 AND GFDL-1.3-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-4.src.tar.zst",
+   "bytes": 107228968,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libgcc 16.2.0-4'; source package base 'mingw-w64-gcc'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libgomp",
+   "version": "16.2.0-4",
+   "license": "spdx:GPL-3.0-or-later WITH GCC-exception-3.1 AND GFDL-1.3-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-4.src.tar.zst",
+   "bytes": 107228968,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libgomp 16.2.0-4'; source package base 'mingw-w64-gcc'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libiconv",
+   "version": "1.19-1",
+   "license": "spdx:LGPL-2.1-or-later AND documentation:spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libiconv-1.19-1.src.tar.zst",
+   "bytes": 5131029,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libiconv 1.19-1'; source package base 'mingw-w64-libiconv'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libidn2",
+   "version": "2.3.8-4",
+   "license": "spdx:GPL-2.0-or-later AND spdx:LGPL-3.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libidn2-2.3.8-4.src.tar.zst",
+   "bytes": 2147337,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libidn2 2.3.8-4'; source package base 'mingw-w64-libidn2'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libpsl",
+   "version": "0.21.5-3",
+   "license": "spdx:MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libpsl-0.21.5-3.src.tar.zst",
+   "bytes": 6829368,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libpsl 0.21.5-3'; source package base 'mingw-w64-libpsl'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libquadmath",
+   "version": "16.2.0-4",
+   "license": "spdx:LGPL-2.1-or-later AND GFDL-1.2-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-4.src.tar.zst",
+   "bytes": 107228968,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libquadmath 16.2.0-4'; source package base 'mingw-w64-gcc'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libssh2-wincng",
+   "version": "1.11.1-2",
+   "license": "spdx:BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libssh2-1.11.1-2.src.tar.zst",
+   "bytes": 1094498,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libssh2-wincng 1.11.1-2'; source package base 'mingw-w64-libssh2'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libstdc++",
+   "version": "16.2.0-4",
+   "license": "spdx:GPL-3.0-or-later WITH GCC-exception-3.1 AND GFDL-1.3-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-4.src.tar.zst",
+   "bytes": 107228968,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libstdc++ 16.2.0-4'; source package base 'mingw-w64-gcc'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libtasn1",
+   "version": "4.21.0-1",
+   "license": "spdx:GPL-3.0-or-later AND LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libtasn1-4.21.0-1.src.tar.zst",
+   "bytes": 1732161,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libtasn1 4.21.0-1'; source package base 'mingw-w64-libtasn1'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libunistring",
+   "version": "1.4.2-1",
+   "license": "spdx:LGPL-3.0-or-later OR GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libunistring-1.4.2-1.src.tar.zst",
+   "bytes": 4770800,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libunistring 1.4.2-1'; source package base 'mingw-w64-libunistring'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libwinpthread",
+   "version": "14.0.0.r426.g4564ee4b5-1",
+   "license": "spdx:MIT AND BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-winpthreads-14.0.0.r426.g4564ee4b5-1.src.tar.zst",
+   "bytes": 54807189,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libwinpthread 14.0.0.r426.g4564ee4b5-1'; source package base 'mingw-w64-winpthreads'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libzip",
+   "version": "1.11.4-1",
+   "license": "spdx:BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libzip-1.11.4-1.src.tar.zst",
+   "bytes": 795458,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-libzip 1.11.4-1'; source package base 'mingw-w64-libzip'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-nettle",
+   "version": "4.0-1",
+   "license": "spdx:GPL-2.0-or-later AND spdx:LGPL-3.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-nettle-4.0-1.src.tar.zst",
+   "bytes": 2630115,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-nettle 4.0-1'; source package base 'mingw-w64-nettle'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-nghttp2",
+   "version": "1.70.0-1",
+   "license": "spdx:MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-nghttp2-1.70.0-1.src.tar.zst",
+   "bytes": 2021492,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-nghttp2 1.70.0-1'; source package base 'mingw-w64-nghttp2'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-odt2txt",
+   "version": "0.5-4",
+   "license": "GPL2",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-odt2txt-0.5-4.src.tar.zst",
+   "bytes": 26202,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-odt2txt 0.5-4'; source package base 'mingw-w64-odt2txt'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-openssl",
+   "version": "3.5.9-1",
+   "license": "spdx:Apache-2.0",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-09-30T09-24-18.347486000Z/mingw-w64-openssl-3.5.9-1.src.tar.gz",
+   "bytes": 53264127,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-openssl 3.5.9-1'; source package base 'mingw-w64-openssl'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-p11-kit",
+   "version": "0.26.5-1",
+   "license": "spdx:BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-p11-kit-0.26.5-1.src.tar.zst",
+   "bytes": 1094024,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-p11-kit 0.26.5-1'; source package base 'mingw-w64-p11-kit'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-pcre2",
+   "version": "10.49-1",
+   "license": "spdx:BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-pcre2-10.49-1.src.tar.zst",
+   "bytes": 2183818,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-pcre2 10.49-1'; source package base 'mingw-w64-pcre2'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-tcl",
+   "version": "8.6.18-1",
+   "license": "custom",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-tcl-8.6.18-1.src.tar.zst",
+   "bytes": 11753117,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-tcl 8.6.18-1'; source package base 'mingw-w64-tcl'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-tk",
+   "version": "8.6.18-1",
+   "license": "custom",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-tk-8.6.18-1.src.tar.zst",
+   "bytes": 4565834,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-tk 8.6.18-1'; source package base 'mingw-w64-tk'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-tzdata",
+   "version": "2026e-1",
+   "license": "custom: public domain",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-tzdata-2026e-1.src.tar.zst",
+   "bytes": 693452,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-tzdata 2026e-1'; source package base 'mingw-w64-tzdata'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-wineditline",
+   "version": "2.208-1",
+   "license": "spdx:BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-wineditline-2.208-1.src.tar.zst",
+   "bytes": 27113,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-wineditline 2.208-1'; source package base 'mingw-w64-wineditline'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-xz",
+   "version": "5.8.4-1",
+   "license": "spdx:0BSD AND LGPL-2.1-or-later AND GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-xz-5.8.4-1.src.tar.zst",
+   "bytes": 1569458,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-xz 5.8.4-1'; source package base 'mingw-w64-xz'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-zlib",
+   "version": "1.3.2-2",
+   "license": "spdx:Zlib",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-zlib-1.3.2-2.src.tar.zst",
+   "bytes": 1326375,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-zlib 1.3.2-2'; source package base 'mingw-w64-zlib'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-zstd",
+   "version": "1.5.7-2",
+   "license": "spdx:BSD-3-Clause OR GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-zstd-1.5.7-2.src.tar.zst",
+   "bytes": 2402010,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-zstd 1.5.7-2'; source package base 'mingw-w64-zstd'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mintty",
+   "version": "1~3.8.3-1",
+   "license": "spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/mintty-1~3.8.3-1.src.tar.zst",
+   "bytes": 3851112,
+   "evidence": "PortableGit etc/package-versions.txt line 'mintty 1~3.8.3-1'; source package base 'mintty'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mpfr",
+   "version": "4.2.2-1",
+   "license": "spdx:LGPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/mpfr-4.2.2-1.src.tar.zst",
+   "bytes": 1507563,
+   "evidence": "PortableGit etc/package-versions.txt line 'mpfr 4.2.2-1'; source package base 'mpfr'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "msys2-runtime",
+   "version": "3.6.10-4",
+   "license": "GPL",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-09-28T10-53-27.205004700Z/msys2-runtime-3.6.10-4.src.tar.gz",
+   "bytes": 147910549,
+   "evidence": "PortableGit etc/package-versions.txt line 'msys2-runtime 3.6.10-4'; source package base 'msys2-runtime'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "nano",
+   "version": "9.2-1",
+   "license": "spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/nano-9.2-1.src.tar.zst",
+   "bytes": 1763170,
+   "evidence": "PortableGit etc/package-versions.txt line 'nano 9.2-1'; source package base 'nano'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "ncurses",
+   "version": "6.6-2",
+   "license": "spdx:MIT",
+   "url": "https://repo.msys2.org/msys/sources/ncurses-6.6-2.src.tar.zst",
+   "bytes": 3785750,
+   "evidence": "PortableGit etc/package-versions.txt line 'ncurses 6.6-2'; source package base 'ncurses'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "nettle",
+   "version": "4.0-1",
+   "license": "spdx:GPL-2.0-or-later OR LGPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/nettle-4.0-1.src.tar.zst",
+   "bytes": 2630813,
+   "evidence": "PortableGit etc/package-versions.txt line 'nettle 4.0-1'; source package base 'nettle'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "openssh",
+   "version": "10.5p1-1",
+   "license": "spdx:LicenseRef-OpenSSH",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-08-11T10-10-28.789088100Z/openssh-10.5p1-1.src.tar.gz",
+   "bytes": 2335410,
+   "evidence": "PortableGit etc/package-versions.txt line 'openssh 10.5p1-1'; source package base 'openssh'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "openssl",
+   "version": "3.5.9-1",
+   "license": "spdx:Apache-2.0",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-09-30T08-56-50.408104900Z/openssl-3.5.9-1.src.tar.gz",
+   "bytes": 53252605,
+   "evidence": "PortableGit etc/package-versions.txt line 'openssl 3.5.9-1'; source package base 'openssl'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "p11-kit",
+   "version": "0.26.5-1",
+   "license": "spdx:BSD-3-Clause",
+   "url": "https://repo.msys2.org/msys/sources/p11-kit-0.26.5-1.src.tar.zst",
+   "bytes": 1085188,
+   "evidence": "PortableGit etc/package-versions.txt line 'p11-kit 0.26.5-1'; source package base 'p11-kit'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "patch",
+   "version": "2.8-2",
+   "license": "spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/patch-2.8-2.src.tar.zst",
+   "bytes": 910153,
+   "evidence": "PortableGit etc/package-versions.txt line 'patch 2.8-2'; source package base 'patch'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl",
+   "version": "5.42.3-2",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-5.42.3-2.src.tar.zst",
+   "bytes": 14513269,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl 5.42.3-2'; source package base 'perl'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-authen-sasl",
+   "version": "2.2100-2",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-authen-sasl-2.2100-2.src.tar.zst",
+   "bytes": 43252,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-authen-sasl 2.2100-2'; source package base 'perl-authen-sasl'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-clone",
+   "version": "0.51-1",
+   "license": "spdx:GPL-1.0-or-later AND spdx:Artistic-1.0-Perl",
+   "url": "https://repo.msys2.org/msys/sources/perl-clone-0.51-1.src.tar.zst",
+   "bytes": 195815,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-clone 0.51-1'; source package base 'perl-clone'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-convert-binhex",
+   "version": "1.125-3",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-convert-binhex-1.125-3.src.tar.zst",
+   "bytes": 73954,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-convert-binhex 1.125-3'; source package base 'perl-convert-binhex'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-encode-locale",
+   "version": "1.05-3",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-encode-locale-1.05-3.src.tar.zst",
+   "bytes": 9525,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-encode-locale 1.05-3'; source package base 'perl-encode-locale'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-error",
+   "version": "0.17030-3",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-error-0.17030-3.src.tar.zst",
+   "bytes": 34600,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-error 0.17030-3'; source package base 'perl-error'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-file-listing",
+   "version": "6.16-2",
+   "license": "spdx:Artistic-1.0-Perl AND spdx:GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-file-listing-6.16-2.src.tar.zst",
+   "bytes": 61009,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-file-listing 6.16-2'; source package base 'perl-file-listing'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-html-parser",
+   "version": "3.86-2",
+   "license": "spdx:Artistic-1.0-Perl AND spdx:GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-html-parser-3.86-2.src.tar.zst",
+   "bytes": 153775,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-html-parser 3.86-2'; source package base 'perl-html-parser'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-html-tagset",
+   "version": "3.24-2",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-html-tagset-3.24-2.src.tar.zst",
+   "bytes": 9193,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-html-tagset 3.24-2'; source package base 'perl-html-tagset'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-http-cookiejar",
+   "version": "0.014-2",
+   "license": "spdx:Apache-2.0",
+   "url": "https://repo.msys2.org/msys/sources/perl-http-cookiejar-0.014-2.src.tar.zst",
+   "bytes": 30163,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-http-cookiejar 0.014-2'; source package base 'perl-http-cookiejar'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-http-cookies",
+   "version": "6.12-2",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-http-cookies-6.12-2.src.tar.zst",
+   "bytes": 50607,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-http-cookies 6.12-2'; source package base 'perl-http-cookies'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-http-daemon",
+   "version": "6.17-2",
+   "license": "spdx:Artistic-1.0-Perl AND spdx:GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-http-daemon-6.17-2.src.tar.zst",
+   "bytes": 49774,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-http-daemon 6.17-2'; source package base 'perl-http-daemon'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-http-date",
+   "version": "6.08-2",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-http-date-6.08-2.src.tar.zst",
+   "bytes": 36647,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-http-date 6.08-2'; source package base 'perl-http-date'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-http-message",
+   "version": "7.04-2",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-http-message-7.04-2.src.tar.zst",
+   "bytes": 98243,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-http-message 7.04-2'; source package base 'perl-http-message'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-http-negotiate",
+   "version": "6.01-4",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-http-negotiate-6.01-4.src.tar.zst",
+   "bytes": 9798,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-http-negotiate 6.01-4'; source package base 'perl-http-negotiate'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-io-html",
+   "version": "1.004-3",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-io-html-1.004-3.src.tar.zst",
+   "bytes": 22015,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-io-html 1.004-3'; source package base 'perl-io-html'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-io-socket-ssl",
+   "version": "2.099-2",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-io-socket-ssl-2.099-2.src.tar.zst",
+   "bytes": 283305,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-io-socket-ssl 2.099-2'; source package base 'perl-io-socket-ssl'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-io-stringy",
+   "version": "2.113-4",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-io-stringy-2.113-4.src.tar.zst",
+   "bytes": 48931,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-io-stringy 2.113-4'; source package base 'perl-io-stringy'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-json",
+   "version": "4.11-2",
+   "license": "spdx:GPL-1.0-or-later AND spdx:Artistic-1.0-Perl",
+   "url": "https://repo.msys2.org/msys/sources/perl-json-4.11-2.src.tar.zst",
+   "bytes": 93514,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-json 4.11-2'; source package base 'perl-json'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-libwww",
+   "version": "6.83-3",
+   "license": "spdx:Artistic-1.0-Perl AND spdx:GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-libwww-6.83-3.src.tar.zst",
+   "bytes": 192137,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-libwww 6.83-3'; source package base 'perl-libwww'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-lwp-mediatypes",
+   "version": "6.05-2",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-lwp-mediatypes-6.05-2.src.tar.zst",
+   "bytes": 41291,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-lwp-mediatypes 6.05-2'; source package base 'perl-lwp-mediatypes'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-mailtools",
+   "version": "2.22-2",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-mailtools-2.22-2.src.tar.zst",
+   "bytes": 59700,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-mailtools 2.22-2'; source package base 'perl-mailtools'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-mime-tools",
+   "version": "5.518-2",
+   "license": "spdx:Artistic-1.0-Perl AND spdx:GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-mime-tools-5.518-2.src.tar.zst",
+   "bytes": 428161,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-mime-tools 5.518-2'; source package base 'perl-mime-tools'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-net-http",
+   "version": "6.24-2",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-net-http-6.24-2.src.tar.zst",
+   "bytes": 44944,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-net-http 6.24-2'; source package base 'perl-net-http'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-net-smtp-ssl",
+   "version": "1.04-3",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-net-smtp-ssl-1.04-3.src.tar.zst",
+   "bytes": 3550,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-net-smtp-ssl 1.04-3'; source package base 'perl-net-smtp-ssl'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-net-ssleay",
+   "version": "1.96-2",
+   "license": "spdx:Artistic-2.0",
+   "url": "https://repo.msys2.org/msys/sources/perl-net-ssleay-1.96-2.src.tar.zst",
+   "bytes": 669588,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-net-ssleay 1.96-2'; source package base 'perl-net-ssleay'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-termreadkey",
+   "version": "2.38-9",
+   "license": "spdx:LicenseRef-TermReadKey",
+   "url": "https://repo.msys2.org/msys/sources/perl-termreadkey-2.38-9.src.tar.zst",
+   "bytes": 86299,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-termreadkey 2.38-9'; source package base 'perl-termreadkey'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-timedate",
+   "version": "2.35-2",
+   "license": "spdx:Artistic-1.0-Perl",
+   "url": "https://repo.msys2.org/msys/sources/perl-timedate-2.35-2.src.tar.zst",
+   "bytes": 69821,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-timedate 2.35-2'; source package base 'perl-timedate'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-try-tiny",
+   "version": "0.32-2",
+   "license": "spdx:MIT",
+   "url": "https://repo.msys2.org/msys/sources/perl-try-tiny-0.32-2.src.tar.zst",
+   "bytes": 37324,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-try-tiny 0.32-2'; source package base 'perl-try-tiny'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-uri",
+   "version": "5.37-2",
+   "license": "spdx:Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-uri-5.37-2.src.tar.zst",
+   "bytes": 138899,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-uri 5.37-2'; source package base 'perl-uri'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "perl-www-robotrules",
+   "version": "6.03-2",
+   "license": "spdx:Artistic-1.0-Perl AND spdx:GPL-1.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/perl-www-robotrules-6.03-2.src.tar.zst",
+   "bytes": 30743,
+   "evidence": "PortableGit etc/package-versions.txt line 'perl-www-robotrules 6.03-2'; source package base 'perl-www-robotrules'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "pinentry",
+   "version": "1.3.3-1",
+   "license": "spdx:GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/pinentry-1.3.3-1.src.tar.zst",
+   "bytes": 623187,
+   "evidence": "PortableGit etc/package-versions.txt line 'pinentry 1.3.3-1'; source package base 'pinentry'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "sed",
+   "version": "4.9-1",
+   "license": "GPL3",
+   "url": "https://repo.msys2.org/msys/sources/sed-4.9-1.src.tar.zst",
+   "bytes": 1399712,
+   "evidence": "PortableGit etc/package-versions.txt line 'sed 4.9-1'; source package base 'sed'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "ssh-pageant",
+   "version": "1.4.r15.gc804ba4-1",
+   "license": "spdx:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/ssh-pageant-1.4.r15.gc804ba4-1.src.tar.zst",
+   "bytes": 306916,
+   "evidence": "PortableGit etc/package-versions.txt line 'ssh-pageant 1.4.r15.gc804ba4-1'; source package base 'ssh-pageant'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "subversion",
+   "version": "1.14.5-3",
+   "license": "spdx:Apache-2.0",
+   "url": "https://repo.msys2.org/msys/sources/subversion-1.14.5-3.src.tar.zst",
+   "bytes": 8693109,
+   "evidence": "PortableGit etc/package-versions.txt line 'subversion 1.14.5-3'; source package base 'subversion'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "tar",
+   "version": "1.35-3",
+   "license": "GPL3",
+   "url": "https://repo.msys2.org/msys/sources/tar-1.35-3.src.tar.zst",
+   "bytes": 2322225,
+   "evidence": "PortableGit etc/package-versions.txt line 'tar 1.35-3'; source package base 'tar'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "tig",
+   "version": "2.6.1-1",
+   "license": "spdx:GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/tig-2.6.1-1.src.tar.zst",
+   "bytes": 1186075,
+   "evidence": "PortableGit etc/package-versions.txt line 'tig 2.6.1-1'; source package base 'tig'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "unzip",
+   "version": "6.0-3",
+   "license": "spdx:LicenseRef-Info-ZIP",
+   "url": "https://repo.msys2.org/msys/sources/unzip-6.0-3.src.tar.zst",
+   "bytes": 1383852,
+   "evidence": "PortableGit etc/package-versions.txt line 'unzip 6.0-3'; source package base 'unzip'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "vim",
+   "version": "9.2.1054-1",
+   "license": "spdx:Vim",
+   "url": "https://repo.msys2.org/msys/sources/vim-9.2.1054-1.src.tar.zst",
+   "bytes": 20126258,
+   "evidence": "PortableGit etc/package-versions.txt line 'vim 9.2.1054-1'; source package base 'vim'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "which",
+   "version": "2.25-1",
+   "license": "GPL3",
+   "url": "https://repo.msys2.org/msys/sources/which-2.25-1.src.tar.zst",
+   "bytes": 204710,
+   "evidence": "PortableGit etc/package-versions.txt line 'which 2.25-1'; source package base 'which'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "winpty",
+   "version": "0.4.3-3",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/msys/sources/winpty-0.4.3-3.src.tar.zst",
+   "bytes": 184161,
+   "evidence": "PortableGit etc/package-versions.txt line 'winpty 0.4.3-3'; source package base 'winpty'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "zlib",
+   "version": "1.3.2-1",
+   "license": "spdx:Zlib",
+   "url": "https://repo.msys2.org/msys/sources/zlib-1.3.2-1.src.tar.zst",
+   "bytes": 1322579,
+   "evidence": "PortableGit etc/package-versions.txt line 'zlib 1.3.2-1'; source package base 'zlib'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "filesystem",
+   "version": "2026.03.06-1",
+   "license": "spdx:BSD-3-Clause",
+   "url": "https://repo.msys2.org/msys/sources/filesystem-2026.03.06-1.src.tar.zst",
+   "bytes": 93093,
+   "evidence": "PortableGit etc/package-versions.txt line 'filesystem 2026.03.06-1'; source package base 'filesystem'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "dash",
+   "version": "0.5.13.4-1",
+   "license": "spdx:BSD-3-Clause AND GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/dash-0.5.13.4-1.src.tar.zst",
+   "bytes": 262413,
+   "evidence": "PortableGit etc/package-versions.txt line 'dash 0.5.13.4-1'; source package base 'dash'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "rebase",
+   "version": "4.5.0-5",
+   "license": "custom",
+   "url": "https://repo.msys2.org/msys/sources/rebase-4.5.0-5.src.tar.zst",
+   "bytes": 341196,
+   "evidence": "PortableGit etc/package-versions.txt line 'rebase 4.5.0-5'; source package base 'rebase'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "util-linux",
+   "version": "2.40.2-2",
+   "license": "spdx:GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/msys/sources/util-linux-2.40.2-2.src.tar.zst",
+   "bytes": 8864602,
+   "evidence": "PortableGit etc/package-versions.txt line 'util-linux 2.40.2-2'; source package base 'util-linux'; MSYS2 build; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-xpdf-tools",
+   "version": "4.06-1",
+   "license": "spdx:GPL-2.0-only OR GPL-3.0-only",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases/download/2026-06-16T12-00-03.264112500Z/mingw-w64-xpdf-tools-4.06-1.src.tar.gz",
+   "bytes": 998875,
+   "evidence": "PortableGit etc/package-versions.txt line 'mingw-w64-ucrt-x86_64-xpdf-tools 4.06-1'; source package base 'mingw-w64-xpdf-tools'; Git for Windows build (pacman-repo GitHub release); HEAD 200"
+  },
+  {
+   "name": "git (upstream source, Git for Windows fork)",
+   "version": "v2.56.0.windows.2 (tag object 1dbfd14d27d5b8459eb981483b696a455cb66b0e -> commit cc4dbf752a05efdc0e04e71fd3e8110d11bdd35c)",
+   "license": "GPL-2.0-only (plus LGPL-2.1 for some libs, see COPYING)",
+   "url": "https://github.com/git-for-windows/git/archive/refs/tags/v2.56.0.windows.2.tar.gz",
+   "bytes": 12870087,
+   "evidence": "mingw-w64-git 2.56.0.2-1 is built from this tag; tag resolved via git ls-remote; size measured by full download (12.3 MB)"
+  }
+ ],
+ "buildRecipe": [
+  {
+   "name": "Git for Windows build-extra at commit c10b764be12b07eaddf61cfdefa8ad2487c4af21 (\"versions: add v2.56.0.2\", 2026-10-05; contains portable/ SFX packaging scripts and versions/package-versions-2.56.0.2.txt)",
+   "url": "https://github.com/git-for-windows/build-extra/archive/c10b764be12b07eaddf61cfdefa8ad2487c4af21.tar.gz",
+   "bytes": 0
+  },
+  {
+   "name": "Per-package PKGBUILDs + patches: contained inside each listed .src.tar.* source package (makepkg --allsource format)",
+   "url": "https://repo.msys2.org/msys/sources/",
+   "bytes": 0
+  },
+  {
+   "name": "Git for Windows pacman repository (release index of all GfW-built package and source archives)",
+   "url": "https://github.com/git-for-windows/pacman-repo/releases",
+   "bytes": 0
+  }
+ ],
+ "residualGaps": "None for availability: all 171 package lines (147 unique source archives, 926716442 bytes total excl. duplicates) resolve to an exact pkgver-pkgrel source package with HTTP 200. Notes: (1) PortableGit's package list equals Git for Windows' published versions/package-versions-2.56.0.2.txt except mingw-w64-ucrt-x86_64-wintoast (installer-only, not present in the portable tree). (2) build-extra recipe archive is a GitHub codeload stream > 20 MB; size not measured (bytes=0). (3) Several split packages share one source package (e.g. gcc-libs/libgcc/libstdc++ -> mingw-w64-gcc 107 MB; mingw-w64-git-* -> mingw-w64-git src). (4) msys2-runtime source (147.9 MB) is Git for Windows' fork (Cygwin-derived, LGPL-3.0+ / GPL with linking exception)."
+}
