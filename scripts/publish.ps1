@@ -81,7 +81,40 @@ if (Test-Path $invFile) {
     $gaps = @($inv.residualGaps | Where-Object { $_ })
 }
 $seen = @{}
-$srcs = @($srcs | Where-Object { $_.url -match '^https?://' -and -not $seen.ContainsKey($_.url) -and ($seen[$_.url] = $true) })
+# https / http: tệp tải thẳng; "git+https://…@<commit>": kho git không có bản nén qua HTTP (vd libiconv trên savannah) → clone đúng commit rồi đóng gói;
+# SVN ".../!svn/bc/<rev>/<đường dẫn>/": CÂY thư mục (không phải tệp) → tải đủ cây đúng revision rồi đóng gói (16/11: trước đây tải nhầm trang danh sách)
+$srcs = @($srcs | Where-Object { $_.url -match '^(https?|git\+https?)://' -and -not $seen.ContainsKey($_.url) -and ($seen[$_.url] = $true) })
+
+function Pack($dir, $out) {
+    & tar.exe -czf $out -C (Split-Path $dir) (Split-Path $dir -Leaf)
+    return $LASTEXITCODE -eq 0 -and (Test-Path $out)
+}
+function SvnTree($url, $dest) {
+    # danh sách WebDAV của SVN (HTML): <a href="tên">, thư mục kết thúc '/'
+    New-Item -ItemType Directory -Force $dest | Out-Null
+    $html = & curl.exe -sL --fail --retry 4 $url
+    if ($LASTEXITCODE) { return $false }
+    foreach ($h in [regex]::Matches(($html -join "`n"), 'href="([^"?#]+)"') | ForEach-Object { $_.Groups[1].Value } | Select-Object -Unique) {
+        if ($h -match '^(\.\./|/|https?:)' -or $h -eq './') { continue }
+        $name = [uri]::UnescapeDataString($h.TrimEnd('/'))
+        if ($h.EndsWith('/')) { if (-not (SvnTree ($url + $h) (Join-Path $dest $name))) { return $false } }
+        elseif (-not (Fetch ($url + $h) (Join-Path $dest $name))) { return $false }
+    }
+    return $true
+}
+function SpecialSource($s, $f) {
+    if ($s.url -match '^git\+(https?://[^@]+)@([0-9a-f]{7,40})$') {
+        $d = Join-Path $work ("git-" + [IO.Path]::GetFileNameWithoutExtension($f))
+        & git clone -q $Matches[1] $d 2>$null; if ($LASTEXITCODE) { return $false }
+        & git -C $d archive --format=tar.gz --prefix "$([IO.Path]::GetFileNameWithoutExtension([IO.Path]::GetFileNameWithoutExtension($f)))/" -o $f $Matches[2]
+        $ok = $LASTEXITCODE -eq 0 -and (Test-Path $f); Remove-Item $d -Recurse -Force -ErrorAction SilentlyContinue; return $ok
+    }
+    if ($s.url -match '/!svn/bc/(\d+)/') {
+        $d = Join-Path $work ([IO.Path]::GetFileNameWithoutExtension([IO.Path]::GetFileNameWithoutExtension($f)))
+        $ok = (SvnTree $s.url $d) -and (Pack $d $f); Remove-Item $d -Recurse -Force -ErrorAction SilentlyContinue; return $ok
+    }
+    return $null   # không phải nguồn đặc biệt
+}
 $lic = @($p.licenseFiles | Where-Object { $_ })
 
 # ---- 3. tạo / bổ sung bản phát hành
@@ -115,15 +148,25 @@ $i = 0
 foreach ($s in @($srcs) + @($lic | ForEach-Object { [pscustomobject]@{ url = $_; what = "giay phep" } })) {
     $i++
     $isLic = $s.what -eq "giay phep"
-    $leaf = [uri]::UnescapeDataString(([uri]$s.url).Segments[-1]).Trim('/')
+    $special = $s.url -match '^git\+' -or $s.url -match '/!svn/bc/\d+/'
+    $httpUrl = $s.url -replace '^git\+', '' -replace '@[0-9a-f]{7,40}$', ''
+    $leaf = [uri]::UnescapeDataString(([uri]$httpUrl).Segments[-1]).Trim('/') -replace '\.git$', ''
     if (-not $leaf) { $leaf = "tep-$i" }
     if ($s.url -match 'github\.com/([^/]+)/([^/]+)/archive/') { $leaf = "$($Matches[2])-$leaf" }
+    if ($special) {
+        # tệp sai của lượt trước (16/11: tải nhầm trang danh sách SVN thành "nguon--lame") → gỡ
+        $bad = "nguon--" + ($leaf -replace '[^A-Za-z0-9._+-]', '_')
+        if ($existing -contains $bad) { & gh release delete-asset $tag $bad -y 2>$null | Out-Null }
+        $rev = if ($s.url -match '/!svn/bc/(\d+)/') { "r$($Matches[1])" } elseif ($s.url -match '@([0-9a-f]{7,40})$') { $Matches[1].Substring(0, 12) } else { "" }
+        $leaf = "$leaf-$rev.tar.gz"
+    }
     $name = ($isLic ? "giay-phep--" : "nguon--") + $leaf
     $safe = ($name -replace '[^A-Za-z0-9._+-]', '_')
     if ($existing -contains $safe) { $sums.Add("-  $safe (da co)"); continue }
     $asset = AssetName $name
     $f = Join-Path $work $asset
-    if (-not (Fetch $s.url $f)) { $failed.Add("$($s.what): $($s.url)"); continue }
+    $got = if ($special) { SpecialSource $s $f } else { Fetch $s.url $f }
+    if (-not $got) { $failed.Add("$($s.what): $($s.url)"); continue }
     $sums.Add("$(Sha $f)  $asset")
     & gh release upload $tag $f --clobber
     if ($LASTEXITCODE) { $failed.Add("tai len that bai $asset ($($s.url))") }
