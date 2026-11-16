@@ -1,0 +1,912 @@
+{
+ "id": "krita",
+ "version": "6.0.4.1",
+ "method": "evidence",
+ "confidence": "exact",
+ "components": [
+  {
+   "name": "Krita",
+   "version": "6.0.4.1",
+   "license": "GPL-3.0-or-later (incl. vendored raqm MIT, plugins)",
+   "url": "https://download.kde.org/stable/krita/6.0.4.1/krita-6.0.4.1.tar.xz",
+   "bytes": 206798592,
+   "evidence": "official release tarball for tag v6.0.4.1 (commit bd6e8d061d2f); 3rdparty_vendor/raqm + patches are inside it [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Qt superrepo (Krita fork dkazakov/qt5)",
+   "version": "6.8.0 @02c1802943f5a2186ccdb24dd4bda354d77f37a5",
+   "license": "LGPL-3.0-only / GPL-2.0+ (Qt)",
+   "url": "https://invent.kde.org/dkazakov/qt5/-/archive/02c1802943f5a2186ccdb24dd4bda354d77f37a5/qt5-02c1802943f5a2186ccdb24dd4bda354d77f37a5.tar.gz",
+   "bytes": 459451,
+   "evidence": "QT_GIT_TAG in krita-deps-management/ext_qt/CMakeLists.txt; Qt6*.dll FileVersion 6.8.0.0; GIT_SUBMODULES qtbase qtdeclarative qtimageformats qttools qtsvg qttranslations qt5compat qtshadertools; no extra patches applied on Windows (fork commits carry Krita changes) [url check: range; magic bytes checked]"
+  },
+  {
+   "name": "qtbase (Krita fork)",
+   "version": "6.8.0 @fe3936871d3944a74df3bef81955bc0dfbc4f227",
+   "license": "LGPL-3.0-only",
+   "url": "https://invent.kde.org/dkazakov/qtbase/-/archive/fe3936871d3944a74df3bef81955bc0dfbc4f227/qtbase-fe3936871d3944a74df3bef81955bc0dfbc4f227.tar.gz",
+   "bytes": 64999494,
+   "evidence": "gitlink in dkazakov/qt5@02c1802943f5 (.gitmodules url ../qtbase.git); Qt6Core/Gui/Widgets/Network/Sql/Xml/OpenGL/PrintSupport/Concurrent, qwindows, qsqlite, tls, imageformats qgif/qico/qjpeg [url check: range; magic bytes checked]"
+  },
+  {
+   "name": "qtdeclarative (Krita fork)",
+   "version": "6.8.0 @3c797fa613418cf201fee47ec9d70b8577d632e6",
+   "license": "LGPL-3.0-only",
+   "url": "https://invent.kde.org/dkazakov/qtdeclarative/-/archive/3c797fa613418cf201fee47ec9d70b8577d632e6/qtdeclarative-3c797fa613418cf201fee47ec9d70b8577d632e6.tar.gz",
+   "bytes": 41061133,
+   "evidence": "gitlink in dkazakov/qt5; Qt6Qml*/Quick*/QuickControls2* + bin/qml plugins [url check: range; magic bytes checked]"
+  },
+  {
+   "name": "qttools (Krita fork)",
+   "version": "6.8.0 @5af29328f183c686fec96a6beba6b2728136cdc2",
+   "license": "LGPL-3.0-only / GPL-3.0 (tools)",
+   "url": "https://invent.kde.org/dkazakov/qttools/-/archive/5af29328f183c686fec96a6beba6b2728136cdc2/qttools-5af29328f183c686fec96a6beba6b2728136cdc2.tar.gz",
+   "bytes": 10479367,
+   "evidence": "gitlink in dkazakov/qt5; build-time (lrelease/windeployqt), part of Qt build [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "qt5compat (Krita fork)",
+   "version": "6.8.0 @84c59db8288a4cff0585e8c1faa7f14ac9d68cc9",
+   "license": "LGPL-3.0-only",
+   "url": "https://invent.kde.org/dkazakov/qt5compat/-/archive/84c59db8288a4cff0585e8c1faa7f14ac9d68cc9/qt5compat-84c59db8288a4cff0585e8c1faa7f14ac9d68cc9.tar.gz",
+   "bytes": 17522746,
+   "evidence": "gitlink in dkazakov/qt5; Qt6Core5Compat.dll [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "qtsvg",
+   "version": "6.8.0 @a96fa8e059b4e969bc79c57a7328e297df138434",
+   "license": "LGPL-3.0-only",
+   "url": "https://invent.kde.org/qt/qt/qtsvg/-/archive/a96fa8e059b4e969bc79c57a7328e297df138434/qtsvg-a96fa8e059b4e969bc79c57a7328e297df138434.tar.gz",
+   "bytes": 2243331,
+   "evidence": "gitlink in dkazakov/qt5 (url ../../qt/qt/qtsvg.git); Qt6Svg/SvgWidgets, qsvg, qsvgicon [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "qtimageformats",
+   "version": "6.8.0 @882622945a55ee4ca8ac87e6fdcab2b9f1ade1a4",
+   "license": "LGPL-3.0-only",
+   "url": "https://invent.kde.org/qt/qt/qtimageformats/-/archive/882622945a55ee4ca8ac87e6fdcab2b9f1ade1a4/qtimageformats-882622945a55ee4ca8ac87e6fdcab2b9f1ade1a4.tar.gz",
+   "bytes": 2611549,
+   "evidence": "gitlink in dkazakov/qt5; qicns/qtga/qtiff/qwbmp/qwebp plugins [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "qttranslations",
+   "version": "6.8.0 @fe446af4b8ac6b4a1b4126ff811e9871c4aaed4e",
+   "license": "LGPL-3.0-only",
+   "url": "https://invent.kde.org/qt/qt/qttranslations/-/archive/fe446af4b8ac6b4a1b4126ff811e9871c4aaed4e/qttranslations-fe446af4b8ac6b4a1b4126ff811e9871c4aaed4e.tar.gz",
+   "bytes": 2871979,
+   "evidence": "gitlink in dkazakov/qt5; bin/translations/qt_*.qm [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "qtshadertools",
+   "version": "6.8.0 @79c340e5632f3487c9fa08b9efedca4762c651ec",
+   "license": "LGPL-3.0-only / GPL-3.0 (tools)",
+   "url": "https://invent.kde.org/qt/qt/qtshadertools/-/archive/79c340e5632f3487c9fa08b9efedca4762c651ec/qtshadertools-79c340e5632f3487c9fa08b9efedca4762c651ec.tar.gz",
+   "bytes": 1701391,
+   "evidence": "gitlink in dkazakov/qt5; build dependency of qtdeclarative [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "ANGLE (libEGL/libGLESv2)",
+   "version": "f2280c0c5f935dccbaf528343d474c8fcdebe63a (2022-05-03)",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/google/angle/archive/f2280c0c5f935dccbaf528343d474c8fcdebe63a.tar.gz",
+   "bytes": 9521355,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_googleangle/CMakeLists.txt; DLL FileVersion \"2.1.0 git hash: f2280c0c5f93+krita_qt5\"; Krita patches 01-patches_qt5.12.12, 02-patches_krita, *.patch/*.diff in recipe archive [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "ANGLE third_party zlib (Chromium zlib, Krita mirror)",
+   "version": "a6d209ab932df0f1c9d5b7dc67cfa74e8a3272c0",
+   "license": "Zlib",
+   "url": "https://github.com/dimula73/google-zlib/archive/a6d209ab932df0f1c9d5b7dc67cfa74e8a3272c0.tar.gz",
+   "bytes": 343338,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_googleangle/CMakeLists.txt; GOOGLE_ANGLE_THIRDPARTY_ZLIB_COMMIT; statically inside libGLESv2 [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "KArchive",
+   "version": "6.7.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/frameworks/6.7/karchive-6.7.0.tar.xz",
+   "bytes": 1033980,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_karchive/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "KCodecs",
+   "version": "6.7.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/frameworks/6.7/kcodecs-6.7.0.tar.xz",
+   "bytes": 2491520,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_kcodecs/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "KColorScheme",
+   "version": "6.7.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/frameworks/6.7/kcolorscheme-6.7.0.tar.xz",
+   "bytes": 45928,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_kcolorscheme/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "KCompletion",
+   "version": "6.7.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/frameworks/6.7/kcompletion-6.7.0.tar.xz",
+   "bytes": 2324460,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_kcompletion/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "KConfig",
+   "version": "6.7.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/frameworks/6.7/kconfig-6.7.0.tar.xz",
+   "bytes": 345564,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_kconfig/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "KCoreAddons",
+   "version": "6.7.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/frameworks/6.7/kcoreaddons-6.7.0.tar.xz",
+   "bytes": 2567108,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_kcoreaddons/CMakeLists.txt; also share/mime/packages/kde6.xml [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "KGuiAddons",
+   "version": "6.7.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/frameworks/6.7/kguiaddons-6.7.0.tar.xz",
+   "bytes": 84996,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_kguiaddons/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "KI18n",
+   "version": "6.7.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/frameworks/6.7/ki18n-6.7.0.tar.xz",
+   "bytes": 3110224,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_ki18n/CMakeLists.txt; +3 Krita patches; libKF6I18n, ktranscript [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "KImageFormats",
+   "version": "6.7.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/frameworks/6.7/kimageformats-6.7.0.tar.xz",
+   "bytes": 18385220,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_kimageformats/CMakeLists.txt; bin/imageformats/kimg_* (except kimg_kra/kimg_ora from Krita source) [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "KItemModels",
+   "version": "6.7.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/frameworks/6.7/kitemmodels-6.7.0.tar.xz",
+   "bytes": 396644,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_kitemmodels/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "KItemViews",
+   "version": "6.7.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/frameworks/6.7/kitemviews-6.7.0.tar.xz",
+   "bytes": 2253440,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_kitemviews/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "KWidgetsAddons",
+   "version": "6.7.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/frameworks/6.7/kwidgetsaddons-6.7.0.tar.xz",
+   "bytes": 4266496,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_kwidgetsaddons/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "KWindowSystem",
+   "version": "6.7.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/frameworks/6.7/kwindowsystem-6.7.0.tar.xz",
+   "bytes": 2385728,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_kwindowsystem/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "extra-cmake-modules (build-time)",
+   "version": "6.7.0",
+   "license": "BSD-3-Clause",
+   "url": "https://download.kde.org/stable/frameworks/6.7/extra-cmake-modules-6.7.0.tar.xz",
+   "bytes": 341336,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_extra_cmake_modules/CMakeLists.txt; build-time only; listed because KF build scripts depend on it [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libkdcraw",
+   "version": "24.12.2",
+   "license": "GPL-2.0-or-later",
+   "url": "https://download.kde.org/stable/release-service/24.12.2/src/libkdcraw-24.12.2.tar.xz",
+   "bytes": 37320,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_kdcraw/CMakeLists.txt; libKDcrawQt6.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "KSeExpr",
+   "version": "v6.0.0.0",
+   "license": "GPL-3.0-or-later (parts Apache-2.0)",
+   "url": "https://invent.kde.org/graphics/kseexpr/-/archive/v6.0.0.0/kseexpr-v6.0.0.0.tar.gz",
+   "bytes": 998896,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_seexpr/CMakeLists.txt; GIT_TAG v6.0.0.0; linked into kritaseexprgenerator, seexpr2_qt.qm translations [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "G'MIC / G'MIC-Qt (Krita plugin)",
+   "version": "3.7.2.2",
+   "license": "CeCILL-2.1 / GPL-3.0-or-later",
+   "url": "https://github.com/vanyossi/gmic/releases/download/v3.7.2.2/gmic-3.7.2.2.tar.gz",
+   "bytes": 21995921,
+   "evidence": "pinned URL+SHA256 in krita v6.0.4.1 3rdparty_plugins/ext_gmic/CMakeLists.txt; krita_gmic_qt.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Boost",
+   "version": "1.81.0",
+   "license": "BSL-1.0",
+   "url": "https://archives.boost.io/release/1.81.0/source/boost_1_81_0.tar.bz2",
+   "bytes": 118797750,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_boost/CMakeLists.txt; libboost_system-mgw21-mt-x64-1_81.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Brotli",
+   "version": "1.1.0",
+   "license": "MIT",
+   "url": "https://github.com/google/brotli/archive/v1.1.0.tar.gz",
+   "bytes": 511969,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_brotli/CMakeLists.txt [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "dlfcn-win32",
+   "version": "1.3.1",
+   "license": "MIT",
+   "url": "https://github.com/dlfcn-win32/dlfcn-win32/archive/refs/tags/v1.3.1.zip",
+   "bytes": 34428,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_dlfcn_win32/CMakeLists.txt; libdl.dll [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "Dr. Mingw (exchndl, mgwhelp)",
+   "version": "0.9.7.1 (amyspark patched)",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/amyspark/drmingw/releases/download/0.9.7.1/drmingw-0.9.7.1-patched.tar.gz",
+   "bytes": 3512638,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_drmingw/CMakeLists.txt; MINGW branch builds from this source; DLL FileVersion 0.9.7 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Eigen (headers)",
+   "version": "3.4.0",
+   "license": "MPL-2.0",
+   "url": "https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz",
+   "bytes": 2705005,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_eigen3/CMakeLists.txt [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "Exiv2",
+   "version": "0.27.5",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/Exiv2/exiv2/releases/download/v0.27.5/exiv2-0.27.5-Source.tar.gz",
+   "bytes": 32720608,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_exiv2/CMakeLists.txt; string \"0.27.5\" in libexiv2.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Expat",
+   "version": "2.4.8",
+   "license": "MIT",
+   "url": "https://github.com/libexpat/libexpat/releases/download/R_2_4_8/expat-2.4.8.tar.xz",
+   "bytes": 454428,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_expat/CMakeLists.txt; string expat_2.4.8 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "FFmpeg (GStreamer meson port)",
+   "version": "7.1.1 @7601055639e789cdeeff793c48eaaf3186a70aad",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://gitlab.freedesktop.org/gstreamer/meson-ports/ffmpeg/-/archive/7601055639e789cdeeff793c48eaaf3186a70aad/ffmpeg-7601055639e789cdeeff793c48eaaf3186a70aad.tar.gz",
+   "bytes": 16028205,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_ffmpeg/CMakeLists.txt; FFMPEG_GIT_SHA1 + 13 patches; libavcodec 61.19.101 etc.; ffmpeg.exe/ffprobe.exe [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "FFTW",
+   "version": "3.3.10",
+   "license": "GPL-2.0-or-later",
+   "url": "https://fftw.org/fftw-3.3.10.tar.gz",
+   "bytes": 4144100,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_fftw3/CMakeLists.txt; binary string says fftw-3.3.9 - consistent with fftw 3.3.10 CMake build version quirk; + patch_mingw.patch [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "FLAC",
+   "version": "1.4.2",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/xiph/flac/archive/refs/tags/1.4.2.tar.gz",
+   "bytes": 870969,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_flac/CMakeLists.txt; GIT_TAG 1.4.2; string 1.4.2 [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "Fontconfig",
+   "version": "2.14.0",
+   "license": "MIT-like (HPND)",
+   "url": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.0.tar.gz",
+   "bytes": 2133974,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_fontconfig/CMakeLists.txt; +4 patches; etc/fonts [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "FreeType",
+   "version": "2.12.1",
+   "license": "FTL or GPL-2.0",
+   "url": "https://downloads.sourceforge.net/project/freetype/freetype2/2.12.1/freetype-2.12.1.tar.xz",
+   "bytes": 2471916,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_freetype/CMakeLists.txt; DLL FileVersion 2.12.1 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "HarfBuzz",
+   "version": "5.3.1",
+   "license": "MIT",
+   "url": "https://github.com/harfbuzz/harfbuzz/releases/download/5.3.1/harfbuzz-5.3.1.tar.xz",
+   "bytes": 17874260,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_freetype/CMakeLists.txt; built in ext_freetype; string 5.3.1 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "FriBidi",
+   "version": "1.0.11",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/fribidi/fribidi/releases/download/v1.0.11/fribidi-1.0.11.tar.xz",
+   "bytes": 1077004,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_fribidi/CMakeLists.txt; string 1.0.11 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "gettext (libintl)",
+   "version": "0.21",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://files.kde.org/krita/build/dependencies/gettext-0.21.tar.xz",
+   "bytes": 9714352,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_gettext/CMakeLists.txt; WIN32 ext_gettext_lib + 5 patches (0004 vcpkg CMake sets 0.19 version resource seen in intl.dll) [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "GIFLIB",
+   "version": "5.2.1",
+   "license": "MIT",
+   "url": "https://downloads.sourceforge.net/project/giflib/giflib-5.x/giflib-5.2.1.tar.gz",
+   "bytes": 444187,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_giflib/CMakeLists.txt; URL_MD5 6f03aee4ebe54ac2cc1ab3e4b0a049e5 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "GSL (ampl/gsl CMake fork)",
+   "version": "8eac3b0b5cffb90004a729f0675011e718f41379",
+   "license": "GPL-3.0-or-later",
+   "url": "https://github.com/ampl/gsl/archive/8eac3b0b5cffb90004a729f0675011e718f41379.zip",
+   "bytes": 9589436,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_gsl/CMakeLists.txt; static [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "Highway",
+   "version": "1.1.0",
+   "license": "Apache-2.0 / BSD-3-Clause",
+   "url": "https://github.com/google/highway/archive/refs/tags/1.1.0.tar.gz",
+   "bytes": 2162124,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_highway/CMakeLists.txt; static in libjxl [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "win-iconv",
+   "version": "0.0.8",
+   "license": "Public domain",
+   "url": "https://github.com/win-iconv/win-iconv/archive/v0.0.8.tar.gz",
+   "bytes": 21396,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_iconv/CMakeLists.txt; WIN32 branch; iconv.dll [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "ICU",
+   "version": "72.1",
+   "license": "Unicode-3.0 (ICU)",
+   "url": "https://github.com/unicode-org/icu/releases/download/release-72-1/icu4c-72_1-src.tgz",
+   "bytes": 26303933,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_icu/CMakeLists.txt; DLL FileVersion 72,1; + meson wrap icu_72.1-2 and 9 patches [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "ICU meson wrap patch",
+   "version": "icu_72.1-2",
+   "license": "MIT",
+   "url": "https://wrapdb.mesonbuild.com/v2/icu_72.1-2/get_patch",
+   "bytes": 14566,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_icu/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "immer (headers)",
+   "version": "42e6beafed53f2ecd971360270f421f9c2e36642",
+   "license": "BSL-1.0",
+   "url": "https://github.com/arximboldi/immer/archive/42e6beafed53f2ecd971360270f421f9c2e36642.tar.gz",
+   "bytes": 798730,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_immer/CMakeLists.txt; GIT_TAG commit [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "zug (headers)",
+   "version": "deb266f4c7c35d325de7eb3d033f06e0809495f2",
+   "license": "BSL-1.0",
+   "url": "https://github.com/arximboldi/zug/archive/deb266f4c7c35d325de7eb3d033f06e0809495f2.tar.gz",
+   "bytes": 219528,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_zug/CMakeLists.txt; GIT_TAG commit [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "lager (headers, Krita fork)",
+   "version": "0b6ab3e0e880bc36be5da4984d768fde03b7cf19",
+   "license": "MIT",
+   "url": "https://github.com/dimula73/lager/archive/0b6ab3e0e880bc36be5da4984d768fde03b7cf19.tar.gz",
+   "bytes": 796604,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_lager/CMakeLists.txt; GIT_TAG commit + 2 patches [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "libjpeg-turbo",
+   "version": "2.1.4",
+   "license": "IJG AND BSD-3-Clause AND Zlib",
+   "url": "https://downloads.sourceforge.net/project/libjpeg-turbo/2.1.4/libjpeg-turbo-2.1.4.tar.gz",
+   "bytes": 2261822,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_jpeg/CMakeLists.txt; string 2.1.4; libjpeg-62.dll, libturbojpeg.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libjxl",
+   "version": "0.11.1",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/libjxl/libjxl/archive/refs/tags/v0.11.1.tar.gz",
+   "bytes": 1876134,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_jpegxl/CMakeLists.txt [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "json-c",
+   "version": "0.18-20240915",
+   "license": "MIT",
+   "url": "https://github.com/json-c/json-c/archive/refs/tags/json-c-0.18-20240915.zip",
+   "bytes": 544534,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_json_c/CMakeLists.txt; string 0.18 [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "LAME",
+   "version": "3.100",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://sourceforge.net/projects/lame/files/lame/3.100/lame-3.100.tar.gz",
+   "bytes": 1524133,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_lame/CMakeLists.txt; DLL FileVersion 3.100; + meson wrap lame_3.100-9 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "LAME meson wrap patch",
+   "version": "lame_3.100-9",
+   "license": "MIT",
+   "url": "https://wrapdb.mesonbuild.com/v2/lame_3.100-9/get_patch",
+   "bytes": 8890,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_lame/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Little CMS (incl. fast_float plugin)",
+   "version": "2.14",
+   "license": "MIT (lcms2) / GPL-3.0 (lcms2_fast_float plugin)",
+   "url": "https://github.com/mm2/Little-CMS/releases/download/lcms2.14/lcms2-2.14.tar.gz",
+   "bytes": 7406694,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_lcms2/CMakeLists.txt; +2 patches; liblcms2.dll, liblcms2_fast_float.dll [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libaom",
+   "version": "3.13.1",
+   "license": "BSD-2-Clause + AOM patent license",
+   "url": "https://storage.googleapis.com/aom-releases/libaom-3.13.1.tar.gz",
+   "bytes": 6253958,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_libaom/CMakeLists.txt; static in libheif/libavcodec; string v3.13.1 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libde265",
+   "version": "1.0.16",
+   "license": "LGPL-3.0-or-later",
+   "url": "https://github.com/strukturag/libde265/releases/download/v1.0.16/libde265-1.0.16.tar.gz",
+   "bytes": 835657,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_libde265/CMakeLists.txt; string 1.0.16 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libheif",
+   "version": "1.21.2",
+   "license": "LGPL-3.0-or-later",
+   "url": "https://github.com/strukturag/libheif/releases/download/v1.21.2/libheif-1.21.2.tar.gz",
+   "bytes": 1859435,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_libheif/CMakeLists.txt; string 1.21.2 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libogg",
+   "version": "1.3.5",
+   "license": "BSD-3-Clause",
+   "url": "http://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.gz",
+   "bytes": 593071,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_libogg/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "LibRaw",
+   "version": "0.20.2",
+   "license": "LGPL-2.1 or CDDL-1.0",
+   "url": "https://www.libraw.org/data/LibRaw-0.20.2.tar.gz",
+   "bytes": 1432141,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_libraw/CMakeLists.txt; string 0.20.2-Release; +2 patches [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libtheora",
+   "version": "1.2.0 @7180717276af1ebc7da15c83162d6c5d6203aabf",
+   "license": "BSD-3-Clause",
+   "url": "https://gitlab.xiph.org/xiph/theora/-/archive/7180717276af1ebc7da15c83162d6c5d6203aabf/theora-7180717276af1ebc7da15c83162d6c5d6203aabf.tar.gz",
+   "bytes": 1205655,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_libtheora/CMakeLists.txt; GIT_TAG commit; DLL FileVersion 1,2,0; + meson wrap theora_1.1.1-4 and 3 patches [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "libtheora meson wrap patch",
+   "version": "theora_1.1.1-4",
+   "license": "MIT",
+   "url": "https://wrapdb.mesonbuild.com/v2/theora_1.1.1-4/get_patch",
+   "bytes": 11858,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_libtheora/CMakeLists.txt [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libvorbis",
+   "version": "1.3.7",
+   "license": "BSD-3-Clause",
+   "url": "http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.xz",
+   "bytes": 1203792,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_libvorbis/CMakeLists.txt; string \"Xiph.Org libVorbis 1.3.7\" [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "x265 (HandBrake snapshot, 8/10/12-bit)",
+   "version": "snapshot-20260216-13309 (4.1+190-c8ceb6b)",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/HandBrake/HandBrake-contribs/releases/download/contribs2/x265-snapshot-20260216-13309.tar.gz",
+   "bytes": 1806557,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_libx265/CMakeLists.txt; DLL FileVersion 4.1+190-c8ceb6b; + patches/ dir [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "XZ Utils (liblzma)",
+   "version": "5.2.6",
+   "license": "0BSD / Public domain",
+   "url": "https://tukaani.org/xz/xz-5.2.6.tar.gz",
+   "bytes": 2069602,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_lzma/CMakeLists.txt; DLL FileVersion 5.2.6; WIN32 recipe consumes prebuilt xz-5.2.6-windows.zip (binary) - this is its source [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "MLT",
+   "version": "7.28.0",
+   "license": "LGPL-2.1-or-later (libmltplusgpl GPL-2.0-or-later)",
+   "url": "https://github.com/mltframework/mlt/releases/download/v7.28.0/mlt-7.28.0.tar.gz",
+   "bytes": 1713069,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_mlt/CMakeLists.txt; string 7.28.0; + 7 patches [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libmypaint",
+   "version": "1.6.1",
+   "license": "ISC",
+   "url": "https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz",
+   "bytes": 519464,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_mypaint/CMakeLists.txt; +5 patches [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "OpenColorIO",
+   "version": "2.5.1",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/AcademySoftwareFoundation/OpenColorIO/releases/download/v2.5.1/OpenColorIO-2.5.1.tar.gz",
+   "bytes": 14131392,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_ocio/CMakeLists.txt; string 2.5.1; +2 patches [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "OpenEXR / IlmBase",
+   "version": "2.5.9",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v2.5.9.tar.gz",
+   "bytes": 27539369,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_openexr/CMakeLists.txt; libIlmImf-2_5, libHalf-2_5 ... [url check: GET-hdr; magic bytes checked]"
+  },
+  {
+   "name": "OpenH264",
+   "version": "2.3.1",
+   "license": "BSD-2-Clause",
+   "url": "https://github.com/cisco/openh264/archive/v2.3.1.tar.gz",
+   "bytes": 60290897,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_openh264/CMakeLists.txt; +1 patch [url check: GET-hdr; magic bytes checked]"
+  },
+  {
+   "name": "OpenJPEG",
+   "version": "2.5.4",
+   "license": "BSD-2-Clause",
+   "url": "https://github.com/uclouvain/openjpeg/archive/v2.5.4.tar.gz",
+   "bytes": 2157028,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_openjpeg/CMakeLists.txt; string 2.5.4 [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "OpenSSL (Krita bin)",
+   "version": "1.1.1l",
+   "license": "OpenSSL",
+   "url": "https://www.openssl.org/source/old/1.1.1/openssl-1.1.1l.tar.gz",
+   "bytes": 9834044,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_openssl/CMakeLists.txt; MINGW branch uses prebuilt files.kde.org openssl-1.1.1l_4-win64-mingw.zip; DLL FileVersion 1.1.1l [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Opus",
+   "version": "1.5.2",
+   "license": "BSD-3-Clause",
+   "url": "https://gitlab.xiph.org/xiph/opus/-/archive/v1.5.2/opus-v1.5.2.tar.gz",
+   "bytes": 4183402,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_opus/CMakeLists.txt; GIT_TAG v1.5.2; string \"libopus 1.5.2\" [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "pkgconf (libpkgconf)",
+   "version": "1.9.3",
+   "license": "ISC",
+   "url": "https://github.com/pkgconf/pkgconf/archive/refs/tags/pkgconf-1.9.3.tar.gz",
+   "bytes": 115442,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_pkgconfig/CMakeLists.txt; GIT_TAG pkgconf-1.9.3; libpkgconf-4.dll [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "libpng",
+   "version": "1.6.51",
+   "license": "libpng-2.0",
+   "url": "https://downloads.sourceforge.net/project/libpng/libpng16/1.6.51/libpng-1.6.51.tar.xz",
+   "bytes": 1060772,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_png/CMakeLists.txt; string 1.6.51 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "Poppler",
+   "version": "26.02.0",
+   "license": "GPL-2.0-or-later / GPL-3.0",
+   "url": "https://poppler.freedesktop.org/poppler-26.02.0.tar.xz",
+   "bytes": 2025588,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_poppler/CMakeLists.txt; string 26.02.0 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "PyQt6",
+   "version": "6.8.1",
+   "license": "GPL-3.0-only",
+   "url": "https://files.pythonhosted.org/packages/ce/bf/ff284a136b39cb1873c18e4fca4a40a8847c84a1910c5fb38c6a77868968/pyqt6-6.8.1.tar.gz",
+   "bytes": 1064723,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_pyqt6/CMakeLists.txt; PyQt6-6.8.1.dist-info [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "PyQt6-sip",
+   "version": "13.10.0",
+   "license": "BSD-2-Clause",
+   "url": "https://files.pythonhosted.org/packages/90/18/0405c54acba0c8e276dd6f0601890e6e735198218d031a6646104870fe22/pyqt6_sip-13.10.0.tar.gz",
+   "bytes": 92464,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_pyqt6-sip/CMakeLists.txt; pyqt6_sip-13.10.0.dist-info [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "PyQt-builder (shipped pyqtbuild)",
+   "version": "1.18.1",
+   "license": "BSD-2-Clause",
+   "url": "https://files.pythonhosted.org/packages/0b/0a/e7684c054c3b85999354bb3be7ccbd6e6d9b751940cec8ecff5e7a8ea9f7/pyqt_builder-1.18.1.tar.gz",
+   "bytes": 3671990,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_pyqt-builder/CMakeLists.txt; lib/site-packages/pyqtbuild [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "SIP (build-time binding generator)",
+   "version": "6.10.0",
+   "license": "BSD-2-Clause",
+   "url": "https://files.pythonhosted.org/packages/62/9a/78122735697dbfc6c1db363627309eb0da7e44d8c05ba017b08666530586/sip-6.10.0.tar.gz",
+   "bytes": 2344536,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_sip/CMakeLists.txt; generated code is in PyQt6 .pyd [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "OpenSSL (bundled inside PyQt-builder bundle/dlls)",
+   "version": "1.1.1b",
+   "license": "OpenSSL",
+   "url": "https://www.openssl.org/source/old/1.1.1/openssl-1.1.1b.tar.gz",
+   "bytes": 8213737,
+   "evidence": "DLL FileVersion 1.1.1b in lib/site-packages/pyqtbuild/bundle/dlls/openssl-*; binaries come from PyQt-builder 1.18.1 sdist (Riverbank) unmodified [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "CPython",
+   "version": "3.13.5",
+   "license": "PSF-2.0",
+   "url": "https://www.python.org/ftp/python/3.13.5/Python-3.13.5.tar.xz",
+   "bytes": 22856016,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_python/CMakeLists.txt; WIN32 uses official python-3.13.5-embed-amd64.zip (binary); DLL FileVersion 3.13.5 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "OpenSSL (CPython embed)",
+   "version": "3.0.16",
+   "license": "Apache-2.0",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/openssl-3.0.16.tar.gz",
+   "bytes": 15487961,
+   "evidence": "CPython v3.13.5 PCbuild/get_externals.bat openssl-3.0.16 (bin openssl-bin-3.0.16.2); python/libcrypto-3.dll FileVersion 3.0.16 [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "libffi (CPython embed)",
+   "version": "3.4.4",
+   "license": "MIT",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/libffi-3.4.4.tar.gz",
+   "bytes": 1375889,
+   "evidence": "CPython v3.13.5 get_externals.bat; python/libffi-8.dll [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "SQLite (CPython embed)",
+   "version": "3.49.1.0",
+   "license": "Public domain",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/sqlite-3.49.1.0.tar.gz",
+   "bytes": 2825549,
+   "evidence": "CPython v3.13.5 get_externals.bat; python/sqlite3.dll FileVersion 3.49.1.0 [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "XZ (CPython _lzma)",
+   "version": "5.2.5",
+   "license": "0BSD / Public domain",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/xz-5.2.5.tar.gz",
+   "bytes": 1744796,
+   "evidence": "CPython v3.13.5 get_externals.bat; static in _lzma.pyd [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "bzip2 (CPython _bz2)",
+   "version": "1.0.8",
+   "license": "bzip2-1.0.6",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/bzip2-1.0.8.tar.gz",
+   "bytes": 818771,
+   "evidence": "CPython v3.13.5 get_externals.bat; static in _bz2.pyd [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "mpdecimal (CPython _decimal)",
+   "version": "4.0.0",
+   "license": "BSD-2-Clause",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/mpdecimal-4.0.0.tar.gz",
+   "bytes": 319629,
+   "evidence": "CPython v3.13.5 get_externals.bat; static in _decimal.pyd [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "zlib (CPython)",
+   "version": "1.3.1",
+   "license": "Zlib",
+   "url": "https://github.com/python/cpython-source-deps/archive/refs/tags/zlib-1.3.1.tar.gz",
+   "bytes": 1570732,
+   "evidence": "CPython v3.13.5 get_externals.bat; static in python313.dll [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "QuaZip",
+   "version": "1.4",
+   "license": "LGPL-2.1-only (with static-link exception)",
+   "url": "https://github.com/stachenov/quazip/archive/refs/tags/v1.4.tar.gz",
+   "bytes": 157819,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_quazip/CMakeLists.txt [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "SDL2",
+   "version": "2.26.0",
+   "license": "Zlib",
+   "url": "https://github.com/libsdl-org/SDL/releases/download/release-2.26.0/SDL2-2.26.0.tar.gz",
+   "bytes": 8085459,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_sdl2/CMakeLists.txt; DLL FileVersion 2,26,0,0 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "LibTIFF",
+   "version": "4.4.0",
+   "license": "libtiff",
+   "url": "https://download.osgeo.org/libtiff/tiff-4.4.0.tar.gz",
+   "bytes": 2841082,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_tiff/CMakeLists.txt; string \"Version 4.4.0\" [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libunibreak",
+   "version": "5.0",
+   "license": "Zlib",
+   "url": "https://github.com/adah1972/libunibreak/releases/download/libunibreak_5_0/libunibreak-5.0.tar.gz",
+   "bytes": 664105,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_unibreak/CMakeLists.txt; static; +1 patch [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "libvpl",
+   "version": "2.14.0",
+   "license": "MIT",
+   "url": "https://github.com/intel/libvpl/archive/refs/tags/v2.14.0.tar.gz",
+   "bytes": 12958172,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_vpl/CMakeLists.txt; GIT_TAG v2.14.0; DLL FileVersion 2.14.0.0 [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "libvpx (Krita meson fork)",
+   "version": "v1.13.1 @8cad1044d14fe78649a276918bd4dd524a352676",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/dimula73/libvpx/archive/8cad1044d14fe78649a276918bd4dd524a352676.tar.gz",
+   "bytes": 5591118,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_vpx/CMakeLists.txt; GIT_TAG meson-2 (branch) resolved to tip 8cad1044 dated 2024-11-08, unchanged since; string v1.13.1; +1 patch [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "libwebp (incl. sharpyuv)",
+   "version": "1.3.2",
+   "license": "BSD-3-Clause",
+   "url": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.2.tar.gz",
+   "bytes": 4162949,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_webp/CMakeLists.txt; +3 patches [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "xsimd (headers)",
+   "version": "13.1.0",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/xtensor-stack/xsimd/archive/refs/tags/13.1.0.tar.gz",
+   "bytes": 265436,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_xsimd/CMakeLists.txt [url check: GET-count(gzip/zip verified)]"
+  },
+  {
+   "name": "zlib",
+   "version": "1.3.1",
+   "license": "Zlib",
+   "url": "https://github.com/madler/zlib/releases/download/v1.3.1/zlib-1.3.1.tar.gz",
+   "bytes": 1512791,
+   "evidence": "pinned URL+hash in krita-deps-management/ext_zlib/CMakeLists.txt; DLL FileVersion 1.3.1 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "LLVM libc++ (llvm-mingw runtime)",
+   "version": "21.1.6",
+   "license": "Apache-2.0 WITH LLVM-exception",
+   "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.6/libcxx-21.1.6.src.tar.xz",
+   "bytes": 4561804,
+   "evidence": "CI image sysadmin/ci-images krita-windows-clang21-twinpy@9df4f867 build-stage3.ps1 installs llvm-mingw-20251118-ucrt-x86_64; llvm-mingw tag 20251118 build-llvm.sh LLVM_VERSION=llvmorg-21.1.6 [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "LLVM libc++abi (linked into libc++.dll)",
+   "version": "21.1.6",
+   "license": "Apache-2.0 WITH LLVM-exception",
+   "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.6/libcxxabi-21.1.6.src.tar.xz",
+   "bytes": 584740,
+   "evidence": "same toolchain evidence [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "LLVM libunwind",
+   "version": "21.1.6",
+   "license": "Apache-2.0 WITH LLVM-exception",
+   "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.6/libunwind-21.1.6.src.tar.xz",
+   "bytes": 121864,
+   "evidence": "same toolchain evidence [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "LLVM OpenMP runtime (libomp.dll)",
+   "version": "21.1.6",
+   "license": "Apache-2.0 WITH LLVM-exception",
+   "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-21.1.6/openmp-21.1.6.src.tar.xz",
+   "bytes": 1101452,
+   "evidence": "same toolchain evidence (Krita ext_gmic builds openmp only on APPLE, so Windows libomp.dll comes from llvm-mingw) [url check: HEAD; magic bytes checked]"
+  },
+  {
+   "name": "mingw-w64 winpthreads (libwinpthread-1.dll) + CRT startup",
+   "version": "f6a7b25bc70e9c3f5d0a8535ad112b08de564b33",
+   "license": "MIT / ZPL-2.1 / public domain",
+   "url": "https://github.com/mingw-w64/mingw-w64/archive/f6a7b25bc70e9c3f5d0a8535ad112b08de564b33.tar.gz",
+   "bytes": 15590259,
+   "evidence": "llvm-mingw 20251118 build-mingw-w64.sh MINGW_W64_VERSION [url check: GET-count(gzip/zip verified)]"
+  }
+ ],
+ "buildRecipe": [
+  {
+   "name": "krita-deps-management superbuild (all ext_* CMakeLists + patches) @b3f405c1",
+   "url": "https://invent.kde.org/packaging/krita-deps-management/-/archive/b3f405c1d3be43cf5efce823e6bb554a1a02e2fe/krita-deps-management-b3f405c1d3be43cf5efce823e6bb554a1a02e2fe.tar.gz",
+   "bytes": 267762
+  },
+  {
+   "name": "Krita v6.0.4.1 .gitlab-ci.yml",
+   "url": "https://invent.kde.org/graphics/krita/-/raw/v6.0.4.1/.gitlab-ci.yml",
+   "bytes": 5551
+  },
+  {
+   "name": "Krita v6.0.4.1 build-tools/ci-scripts/windows.yml",
+   "url": "https://invent.kde.org/graphics/krita/-/raw/v6.0.4.1/build-tools/ci-scripts/windows.yml",
+   "bytes": 5557
+  },
+  {
+   "name": "Krita v6.0.4.1 build-tools/ci-scripts/build-windows-package.py",
+   "url": "https://invent.kde.org/graphics/krita/-/raw/v6.0.4.1/build-tools/ci-scripts/build-windows-package.py",
+   "bytes": 6611
+  },
+  {
+   "name": "Krita v6.0.4.1 3rdparty_plugins/ext_gmic/CMakeLists.txt",
+   "url": "https://invent.kde.org/graphics/krita/-/raw/v6.0.4.1/3rdparty_plugins/ext_gmic/CMakeLists.txt",
+   "bytes": 2047
+  },
+  {
+   "name": "Qt fork .gitmodules @02c18029",
+   "url": "https://invent.kde.org/dkazakov/qt5/-/raw/02c1802943f5a2186ccdb24dd4bda354d77f37a5/.gitmodules",
+   "bytes": 7910
+  },
+  {
+   "name": "Windows CI image script (llvm-mingw pin) @9df4f867",
+   "url": "https://invent.kde.org/sysadmin/ci-images/-/raw/9df4f867566fa77117f8d5c36461bd3d953adcc5/krita-windows-clang21-twinpy/build-stage3.ps1",
+   "bytes": 2649
+  },
+  {
+   "name": "llvm-mingw build scripts tag 20251118",
+   "url": "https://github.com/mstorsjo/llvm-mingw/archive/refs/tags/20251118.tar.gz",
+   "bytes": 68744
+  },
+  {
+   "name": "CPython v3.13.5 PCbuild/get_externals.bat",
+   "url": "https://raw.githubusercontent.com/python/cpython/v3.13.5/PCbuild/get_externals.bat",
+   "bytes": 4395
+  }
+ ],
+ "residualGaps": "(1) Microsoft redistributables shipped without source obligation and NOT listed as components: d3dcompiler_47.dll, dxcompiler.dll (1.5.0.2748, DirectX Shader Compiler OOB build - upstream is NCSA-licensed open source but exact commit not identifiable), dbghelp/dbgcore/symsrv.dll (from drmingw-0.9.7-win64.7z, MS binaries), vcruntime140*.dll (Python embed) and pyqtbuild/bundle/dlls/msvc-* runtime DLLs. (2) Recipe evidence is the krita-deps-management branch transition.now/qt6.8.0 at its tip b3f405c1 (2026-09-29, one day before tag v6.0.4.1, unchanged since); CI consumes prebuilt dep packages from KDE's artifact cache built from that branch, so a cache build from an older commit cannot be fully excluded - but every version-bearing DLL checked (Qt 6.8.0, ANGLE f2280c0c5f93, ICU 72.1, FreeType 2.12.1, zlib 1.3.1, xz 5.2.6, FFmpeg libavcodec 61.19.101/7.1.1, x265 4.1+190, libvpl 2.14, SDL 2.26, LAME 3.100, theora 1.2.0, OpenSSL 1.1.1l, Python 3.13.5, PyQt6 6.8.1, poppler 26.02.0, png 1.6.51, tiff 4.4.0, exiv2 0.27.5, heif 1.21.2, openjpeg 2.5.4, LibRaw 0.20.2, expat 2.4.8, harfbuzz 5.3.1, fribidi 1.0.11, mlt 7.28.0, de265 1.0.16, vpx 1.13.1, opus 1.5.2, FLAC 1.4.2, vorbis 1.3.7, OCIO 2.5.1, jpeg-turbo 2.1.4, json-c 0.18, aom 3.13.1) matches the recipe. FFTW reports 3.3.9 while recipe pins 3.3.10 (believed to be the known fftw-3.3.10 CMake version string quirk) - treat FFTW as probable. (3) Toolchain runtime (libc++, libunwind, libomp, libwinpthread) version comes from the CI VM image script (llvm-mingw 20251118 -> LLVM 21.1.6, mingw-w64 f6a7b25b), not from a binary version resource -> probable. (4) OpenSSL 1.1.1l DLLs are a prebuilt files.kde.org openssl-1.1.1l_4-win64-mingw.zip (looks like an MSYS2 package build, release _4); the MSYS2 PKGBUILD/patches for that build are no longer on repo.msys2.org, so only the pristine upstream 1.1.1l tarball is listed. Python embed zip and PyQt-builder bundled OpenSSL 1.1.1b/MSVC DLLs are third-party binaries redistributed unchanged; their sources are listed from the upstream projects (cpython-source-deps tags per get_externals.bat). (5) Header-only/static libs (Eigen, immer, zug, lager, xsimd, Highway, GSL, unibreak, libaom, ANGLE zlib) are listed because they are compiled into shipped binaries. KCrash and other ext_* in the repo are not shipped on Windows and are omitted; build-only tools (nasm, perl, patch, gperf, meson wraps other than listed) are omitted. (6) Sizes of dynamic Git archives (github codeload / GitLab -/archive/) are what the server reported or streamed at check time (HEAD, range Content-Range, or full stream count <=20 MB with gzip/zip integrity test); such archives are regenerated on demand and their byte size/hash is not guaranteed stable - mirror them once and record sha256. The dkazakov/qt5 superrepo archive (top-level files + .gitmodules only; submodules are separate entries) reports 459451 bytes via Content-Range, but invent.kde.org truncated full GETs on 3 attempts, so mirror it with git (clone + checkout 02c18029) if the endpoint stays flaky. (7) krita-ci-utilities and build-windows-package.py packaging logic are fetched at branch heads by CI (not pinned); packaging only copies files."
+}

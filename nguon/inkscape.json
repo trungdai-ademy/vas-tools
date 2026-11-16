@@ -1,0 +1,1121 @@
+{
+ "id": "inkscape",
+ "version": "1.4.4",
+ "method": "evidence",
+ "confidence": "exact",
+ "components": [
+  {
+   "name": "Inkscape",
+   "version": "1.4.4 (tag INKSCAPE_1_4_4 = commit dcaf3e7d9e6724cd18d6bd2b4f3d4f12ab691871; release tarball incl. lib2geom, extensions, themes submodules)",
+   "license": "GPL-3.0-or-later (parts GPL-2.0-or-later, LGPL)",
+   "url": "https://media.inkscape.org/dl/resources/file/inkscape-1.4.4.tar.xz",
+   "bytes": 53861940,
+   "evidence": "inkscape.exe FileVersion 1.4.4; archive name inkscape-1.4.4_2026-05-05_dcaf3e7; GitLab tag INKSCAPE_1_4_4 -> dcaf3e7; HEAD 200"
+  },
+  {
+   "name": "GraphicsMagick (built from upstream tarball by msys2installdeps.sh, not an MSYS2 package)",
+   "version": "1.3.46",
+   "license": "MIT (with some BSD-style/other notices; see Copyright.txt)",
+   "url": "https://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.46/GraphicsMagick-1.3.46.tar.xz",
+   "bytes": 5968736,
+   "evidence": "bin/libGraphicsMagick-3.dll, libGraphicsMagick++-12.dll (mtime 2025-12-13 11:54 UTC); r168 CI log line 7565-7699 downloads 5968736 bytes and runs ./configure --enable-shared; HEAD 200 via SourceForge mirror"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-adwaita-icon-theme",
+   "version": "49.0-1",
+   "license": "LGPL-3.0-or-later OR CC-BY-SA-3.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-adwaita-icon-theme-49.0-1.src.tar.zst",
+   "bytes": 4517127,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 798 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-adwaita-icon-theme; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-aom",
+   "version": "3.13.1-1",
+   "license": "BSD-2-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-aom-3.13.1-1.src.tar.zst",
+   "bytes": 6244181,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-aom; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-aspell",
+   "version": "0.60.8.1-6",
+   "license": "LGPL",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-aspell-0.60.8.1-6.src.tar.zst",
+   "bytes": 3542021,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 70 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-aspell; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-aspell-en",
+   "version": "2020.12.07-1",
+   "license": "custom",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-aspell-en-2020.12.07-1.src.tar.gz",
+   "bytes": 191164,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 89 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-aspell-en; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-atk",
+   "version": "2.58.2-1",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-at-spi2-core-2.58.2-1.src.tar.zst",
+   "bytes": 586375,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 2 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-at-spi2-core; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-atkmm",
+   "version": "2.28.4-2",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-atkmm-2.28.4-2.src.tar.zst",
+   "bytes": 741113,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-atkmm; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-boost-libs",
+   "version": "1.90.0-1",
+   "license": "BSL-1.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-boost-1.90.0-1.src.tar.zst",
+   "bytes": 101513014,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-boost; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-brotli",
+   "version": "1.2.0-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-brotli-1.2.0-1.src.tar.zst",
+   "bytes": 644113,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 3 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-brotli; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-bzip2",
+   "version": "1.0.8-3",
+   "license": "custom",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-bzip2-1.0.8-3.src.tar.zst",
+   "bytes": 818786,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-bzip2; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-cairo",
+   "version": "1.18.4-4",
+   "license": "LGPL-2.1-or-later OR MPL-1.1",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-cairo-1.18.4-4.src.tar.zst",
+   "bytes": 32574040,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 2 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-cairo; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-cairomm",
+   "version": "1.14.5-2",
+   "license": "GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-cairomm-1.14.5-2.src.tar.zst",
+   "bytes": 139254,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-cairomm; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-crypto++",
+   "version": "8.9.0-1",
+   "license": "BSL-1.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-crypto%2B%2B-8.9.0-1.src.tar.zst",
+   "bytes": 9216360,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-crypto++; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-curl",
+   "version": "8.17.0-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-curl-8.17.0-1.src.tar.zst",
+   "bytes": 2806763,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-curl; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-dav1d",
+   "version": "1.5.2-1",
+   "license": "BSD-2-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-dav1d-1.5.2-1.src.tar.zst",
+   "bytes": 1023063,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-dav1d; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-double-conversion",
+   "version": "3.3.1-3",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-double-conversion-3.3.1-3.src.tar.zst",
+   "bytes": 7037656,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-double-conversion; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-enchant",
+   "version": "2.8.14-1",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-enchant-2.8.14-1.src.tar.zst",
+   "bytes": 1273281,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 2 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-enchant; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-expat",
+   "version": "2.7.3-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-expat-2.7.3-1.src.tar.zst",
+   "bytes": 507131,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-expat; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-fontconfig",
+   "version": "2.17.1-1",
+   "license": "custom",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-fontconfig-2.17.1-1.src.tar.zst",
+   "bytes": 614150,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 26 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-fontconfig; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-freetype",
+   "version": "2.14.1-2",
+   "license": "GPL-2.0-or-later OR FTL",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-freetype-2.14.1-2.src.tar.zst",
+   "bytes": 2668415,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-freetype; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-fribidi",
+   "version": "1.0.16-1",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-fribidi-1.0.16-1.src.tar.zst",
+   "bytes": 1099723,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-fribidi; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gc",
+   "version": "8.2.10-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gc-8.2.10-1.src.tar.zst",
+   "bytes": 1230696,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-gc; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gcc-libgfortran",
+   "version": "15.2.0-8",
+   "license": "see PKGBUILD in source package",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gcc-15.2.0-8.src.tar.zst",
+   "bytes": 101090946,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-gcc; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gcc-libs",
+   "version": "15.2.0-8",
+   "license": "GPL-3.0-or-later WITH GCC-exception-3.1 AND GFDL-1.3-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gcc-15.2.0-8.src.tar.zst",
+   "bytes": 101090946,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 4 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-gcc; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gdb",
+   "version": "16.3-1",
+   "license": "GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gdb-16.3-1.src.tar.zst",
+   "bytes": 24441099,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 72 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-gdb; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gdk-pixbuf2",
+   "version": "2.44.4-1",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gdk-pixbuf2-2.44.4-1.src.tar.zst",
+   "bytes": 6545312,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 15 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-gdk-pixbuf2; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gettext-runtime",
+   "version": "0.26-2",
+   "license": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gettext-0.26-2.src.tar.zst",
+   "bytes": 9541833,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-gettext; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-glib2",
+   "version": "2.86.3-1",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-glib2-2.86.3-1.src.tar.zst",
+   "bytes": 5679765,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 83 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-glib2; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-glibmm",
+   "version": "2.66.8-2",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-glibmm-2.66.8-2.src.tar.zst",
+   "bytes": 8599406,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 2 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-glibmm; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gmp",
+   "version": "6.3.0-2",
+   "license": "LGPL3 AND GPL",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gmp-6.3.0-2.src.tar.zst",
+   "bytes": 2097066,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-gmp; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gobject-introspection-runtime",
+   "version": "1.86.0-2",
+   "license": "LGPL-2.0-only",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gobject-introspection-1.86.0-2.src.tar.zst",
+   "bytes": 1088780,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 4 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-gobject-introspection; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-graphite2",
+   "version": "1.3.14-3",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-graphite2-1.3.14-3.src.tar.zst",
+   "bytes": 6248488,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-graphite2; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gsl",
+   "version": "2.8-1",
+   "license": "spdx-GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gsl-2.8-1.src.tar.zst",
+   "bytes": 8931056,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 2 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-gsl; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gspell",
+   "version": "1.14.1-2",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gspell-1.14.1-2.src.tar.zst",
+   "bytes": 118999,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 51 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-gspell; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gtk3",
+   "version": "3.24.51-2",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gtk3-3.24.51-2.src.tar.zst",
+   "bytes": 13489026,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 84 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-gtk3; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gtkmm3",
+   "version": "3.24.10-3",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gtkmm3-3.24.10-3.src.tar.zst",
+   "bytes": 13646348,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 2 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-gtkmm3; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-gtksourceview4",
+   "version": "4.8.4-3",
+   "license": "LGPL",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-gtksourceview4-4.8.4-3.src.tar.zst",
+   "bytes": 1161225,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 182 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-gtksourceview4; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-harfbuzz",
+   "version": "12.2.0-2",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-harfbuzz-12.2.0-2.src.tar.zst",
+   "bytes": 18225731,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 3 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-harfbuzz; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-hicolor-icon-theme",
+   "version": "0.18-1",
+   "license": "GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-hicolor-icon-theme-0.18-1.src.tar.zst",
+   "bytes": 30809,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-hicolor-icon-theme; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-highway",
+   "version": "1.3.0-1",
+   "license": "Apache-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-highway-1.3.0-1.src.tar.zst",
+   "bytes": 3636860,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-highway; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-icu",
+   "version": "78.1-1",
+   "license": "ICU",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-icu-78.1-1.src.tar.zst",
+   "bytes": 26085564,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 3 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-icu; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-jbigkit",
+   "version": "2.1-5",
+   "license": "GPL-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-jbigkit-2.1-5.src.tar.zst",
+   "bytes": 443510,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-jbigkit; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-kvazaar",
+   "version": "2.3.2-1",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-kvazaar-2.3.2-1.src.tar.zst",
+   "bytes": 598920,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-kvazaar; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-lcms2",
+   "version": "2.17-1",
+   "license": "MIT AND GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-lcms2-2.17-1.src.tar.zst",
+   "bytes": 5221926,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-lcms2; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-lerc",
+   "version": "4.0.0-1",
+   "license": "Apache-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-lerc-4.0.0-1.src.tar.zst",
+   "bytes": 4708118,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-lerc; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libavif",
+   "version": "1.3.0-6",
+   "license": "BSD-2-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libavif-1.3.0-6.src.tar.zst",
+   "bytes": 13931128,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libavif; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libcdr",
+   "version": "0.1.8-4",
+   "license": "MPL-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libcdr-0.1.8-4.src.tar.zst",
+   "bytes": 627327,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libcdr; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libdatrie",
+   "version": "0.2.14-1",
+   "license": "LGPL",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libdatrie-0.2.14-1.src.tar.zst",
+   "bytes": 327473,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libdatrie; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libde265",
+   "version": "1.0.16-1",
+   "license": "LGPL-3.0-or-later AND MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libde265-1.0.16-1.src.tar.zst",
+   "bytes": 834424,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libde265; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libdeflate",
+   "version": "1.25-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libdeflate-1.25-1.src.tar.zst",
+   "bytes": 199257,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libdeflate; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libepoxy",
+   "version": "1.5.10-7",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libepoxy-1.5.10-7.src.tar.zst",
+   "bytes": 334205,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libepoxy; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libffi",
+   "version": "3.5.2-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libffi-3.5.2-1.src.tar.zst",
+   "bytes": 1423649,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libffi; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libheif",
+   "version": "1.20.2-6",
+   "license": "LGPL-3.0 AND MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libheif-1.20.2-6.src.tar.zst",
+   "bytes": 1787916,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 2 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libheif; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libiconv",
+   "version": "1.18-1",
+   "license": "LGPL-2.1-or-later AND documentation:GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libiconv-1.18-1.src.tar.zst",
+   "bytes": 5032448,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libiconv; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libidn2",
+   "version": "2.3.8-4",
+   "license": "GPL-2.0-or-later AND LGPL-3.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libidn2-2.3.8-4.src.tar.zst",
+   "bytes": 2147337,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libidn2; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libimagequant",
+   "version": "4.4.0-1",
+   "license": "GPL-3.0-or-later AND OR AND custom",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libimagequant-4.4.0-1.src.tar.zst",
+   "bytes": 90472,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libimagequant; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libjpeg-turbo",
+   "version": "3.1.3-1",
+   "license": "custom:BSD-like",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libjpeg-turbo-3.1.3-1.src.tar.zst",
+   "bytes": 2514965,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libjpeg-turbo; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libjxl",
+   "version": "0.11.1-4",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libjxl-0.11.1-4.src.tar.zst",
+   "bytes": 1878151,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 4 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libjxl; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libltdl",
+   "version": "2.5.4-3",
+   "license": "LGPL-2.0-or-later WITH Libtool-exception",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libtool-2.5.4-3.src.tar.zst",
+   "bytes": 1065474,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libtool; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libpng",
+   "version": "1.6.53-1",
+   "license": "custom",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libpng-1.6.53-1.src.tar.zst",
+   "bytes": 1074717,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libpng; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libpsl",
+   "version": "0.21.5-3",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libpsl-0.21.5-3.src.tar.zst",
+   "bytes": 6829368,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libpsl; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libraqm",
+   "version": "0.10.3-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libraqm-0.10.3-1.src.tar.zst",
+   "bytes": 298469,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libraqm; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-librevenge",
+   "version": "0.0.5-1",
+   "license": "MPL-2.0 OR LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-librevenge-0.0.5-1.src.tar.zst",
+   "bytes": 439057,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 2 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-librevenge; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-librsvg",
+   "version": "2.61.3-1",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-librsvg-2.61.3-1.src.tar.zst",
+   "bytes": 6763395,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 2 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-librsvg; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libsigc++",
+   "version": "2.12.1-1",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libsigc%2B%2B-2.12.1-1.src.tar.zst",
+   "bytes": 5043425,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libsigc++; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libssh2",
+   "version": "1.11.1-1",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libssh2-1.11.1-1.src.tar.zst",
+   "bytes": 1094502,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libssh2; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libthai",
+   "version": "0.1.29-3",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libthai-0.1.29-3.src.tar.zst",
+   "bytes": 420518,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libthai; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libtiff",
+   "version": "4.7.1-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libtiff-4.7.1-1.src.tar.zst",
+   "bytes": 3994514,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libtiff; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libunistring",
+   "version": "1.3-1",
+   "license": "LGPL-3.0-or-later OR GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libunistring-1.3-1.src.tar.zst",
+   "bytes": 4719176,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libunistring; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libvisio",
+   "version": "0.1.10-3",
+   "license": "MPL-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libvisio-0.1.10-3.src.tar.zst",
+   "bytes": 2043392,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libvisio; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libwebp",
+   "version": "1.6.0-1",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libwebp-1.6.0-1.src.tar.zst",
+   "bytes": 2589761,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 4 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libwebp; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libwinpthread",
+   "version": "13.0.0.r354.g40ab95d18-1",
+   "license": "MIT AND BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-winpthreads-13.0.0.r354.g40ab95d18-1.src.tar.zst",
+   "bytes": 52146387,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-winpthreads; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libwpd",
+   "version": "0.10.3-2",
+   "license": "LGPL-2.1-or-later OR MPL-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libwpd-0.10.3-2.src.tar.zst",
+   "bytes": 537456,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libwpd; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libwpg",
+   "version": "0.3.4-1",
+   "license": "LGPL-2.1-or-later OR MPL-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libwpg-0.3.4-1.src.tar.zst",
+   "bytes": 341901,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libwpg; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libxml2",
+   "version": "2.15.1-2",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libxml2-2.15.1-2.src.tar.zst",
+   "bytes": 2632516,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libxml2; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libxslt",
+   "version": "1.1.45-1",
+   "license": "custom",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libxslt-1.1.45-1.src.tar.zst",
+   "bytes": 2675383,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 2 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libxslt; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-libyuv",
+   "version": "1909.r2832.4db2af62d-1",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-libyuv-1909.r2832.4db2af62d-1.src.tar.zst",
+   "bytes": 50735717,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-libyuv; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-mpdecimal",
+   "version": "4.0.1-1",
+   "license": "BSD-2-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-mpdecimal-4.0.1-1.src.tar.zst",
+   "bytes": 315062,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-mpdecimal; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-mpfr",
+   "version": "4.2.2-1",
+   "license": "LGPL-3.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-mpfr-4.2.2-1.src.tar.zst",
+   "bytes": 1507427,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-mpfr; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-ncurses",
+   "version": "6.5.20250927-2",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-ncurses-6.5.20250927-2.src.tar.zst",
+   "bytes": 3781466,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 2 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-ncurses; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-nghttp2",
+   "version": "1.68.0-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-nghttp2-1.68.0-1.src.tar.zst",
+   "bytes": 1693738,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-nghttp2; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-nghttp3",
+   "version": "1.13.1-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-nghttp3-1.13.1-1.src.tar.zst",
+   "bytes": 409992,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-nghttp3; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-ngtcp2",
+   "version": "1.18.0-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-ngtcp2-1.18.0-1.src.tar.zst",
+   "bytes": 691766,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 4 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-ngtcp2; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-nspr",
+   "version": "4.35-2",
+   "license": "MPL-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-nspr-4.35-2.src.tar.zst",
+   "bytes": 1102228,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 3 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-nspr; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-nss",
+   "version": "3.119.1-1",
+   "license": "MPL-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-nss-3.119.1-1.src.tar.zst",
+   "bytes": 77103607,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 3 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-nss; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-openblas",
+   "version": "0.3.30-2",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-openblas-0.3.30-2.src.tar.zst",
+   "bytes": 22531175,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-openblas; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-openh264",
+   "version": "2.6.0-1",
+   "license": "BSD-2-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-openh264-2.6.0-1.src.tar.zst",
+   "bytes": 60290594,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-openh264; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-openjpeg2",
+   "version": "2.5.4-2",
+   "license": "BSD-2-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-openjpeg2-2.5.4-2.src.tar.zst",
+   "bytes": 2156125,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-openjpeg2; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-openjph",
+   "version": "0.25.3-1",
+   "license": "BSD-2-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-openjph-0.25.3-1.src.tar.zst",
+   "bytes": 476259,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-openjph; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-openssl",
+   "version": "3.6.0-1",
+   "license": "Apache-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-openssl-3.6.0-1.src.tar.zst",
+   "bytes": 54868347,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 2 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-openssl; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-pango",
+   "version": "1.56.4-3",
+   "license": "LGPL-2.1",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-pango-1.56.4-3.src.tar.zst",
+   "bytes": 1888900,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 8 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-pango; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-pangomm",
+   "version": "2.46.4-2",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-pangomm-2.46.4-2.src.tar.zst",
+   "bytes": 696785,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-pangomm; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-pcre2",
+   "version": "10.47-1",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-pcre2-10.47-1.src.tar.zst",
+   "bytes": 2144801,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-pcre2; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-pixman",
+   "version": "0.46.4-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-pixman-0.46.4-1.src.tar.zst",
+   "bytes": 662116,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-pixman; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-poppler",
+   "version": "25.12.0-1",
+   "license": "GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-poppler-25.12.0-1.src.tar.zst",
+   "bytes": 7317042,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 2 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-poppler; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-poppler-data",
+   "version": "0.4.12-1",
+   "license": "custom AND GPL2",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-poppler-data-0.4.12-1.src.tar.zst",
+   "bytes": 4420366,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 263 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-poppler-data; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-potrace",
+   "version": "1.16-2",
+   "license": "GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-potrace-1.16-2.src.tar.gz",
+   "bytes": 658606,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-potrace; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python",
+   "version": "3.12.12-1",
+   "license": "PSF-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-3.12.12-1.src.tar.zst",
+   "bytes": 20866213,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1666 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-appdirs",
+   "version": "1.4.4-6",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-appdirs-1.4.4-6.src.tar.zst",
+   "bytes": 14601,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 6 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-appdirs; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-beautifulsoup4",
+   "version": "4.14.3-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-beautifulsoup4-4.14.3-1.src.tar.zst",
+   "bytes": 600295,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 41 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-beautifulsoup4; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-cachecontrol",
+   "version": "0.14.4-1",
+   "license": "Apache-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-cachecontrol-0.14.4-1.src.tar.zst",
+   "bytes": 17412,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 30 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-cachecontrol; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-cairo",
+   "version": "1.29.0-1",
+   "license": "LGPL-2.1-only OR MPL-1.1",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-pycairo-1.29.0-1.src.tar.zst",
+   "bytes": 667889,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 7 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-pycairo; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-certifi",
+   "version": "2025.11.12-1",
+   "license": "MPL-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-certifi-2025.11.12-1.src.tar.zst",
+   "bytes": 161850,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 12 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-certifi; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-chardet",
+   "version": "5.2.0-3",
+   "license": "0BSD",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-chardet-5.2.0-3.src.tar.zst",
+   "bytes": 2059400,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 104 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-chardet; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-coverage",
+   "version": "7.11.3-1",
+   "license": "Apache-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-coverage-7.11.3-1.src.tar.zst",
+   "bytes": 814926,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 104 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-coverage; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-cssselect",
+   "version": "1.3.0-1",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-cssselect-1.3.0-1.src.tar.zst",
+   "bytes": 44199,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 13 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-cssselect; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-filelock",
+   "version": "3.20.0-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-filelock-3.20.0-1.src.tar.zst",
+   "bytes": 20252,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 22 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-filelock; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-gobject",
+   "version": "3.54.5-1",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-pygobject-3.54.5-1.src.tar.zst",
+   "bytes": 1275864,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 63 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-pygobject; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-idna",
+   "version": "3.11-1",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-idna-3.11-1.src.tar.zst",
+   "bytes": 187248,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 21 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-idna; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-lxml",
+   "version": "6.0.2-2",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-lxml-6.0.2-2.src.tar.zst",
+   "bytes": 4070128,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 121 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-lxml; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-msgpack",
+   "version": "1.1.2-1",
+   "license": "Apache-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-msgpack-1.1.2-1.src.tar.zst",
+   "bytes": 174775,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 14 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-msgpack; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-numpy",
+   "version": "2.3.5-1",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-numpy-2.3.5-1.src.tar.zst",
+   "bytes": 20538795,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1306 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-numpy; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-packaging",
+   "version": "25.0-1",
+   "license": "Apache-2.0 AND BSD-2-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-packaging-25.0-1.src.tar.zst",
+   "bytes": 158031,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 38 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-packaging; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-pillow",
+   "version": "12.0.0-2",
+   "license": "MIT-CMU",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-pillow-12.0.0-2.src.tar.zst",
+   "bytes": 45691305,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 215 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-pillow; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-pyserial",
+   "version": "3.5-5",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-pyserial-3.5-5.src.tar.zst",
+   "bytes": 160302,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 62 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-pyserial; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-requests",
+   "version": "2.32.5-1",
+   "license": "Apache-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-requests-2.32.5-1.src.tar.zst",
+   "bytes": 135830,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 40 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-requests; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-six",
+   "version": "1.17.0-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-six-1.17.0-1.src.tar.zst",
+   "bytes": 35156,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 6 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-six; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-tinycss2",
+   "version": "1.5.1-1",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-tinycss2-1.5.1-1.src.tar.zst",
+   "bytes": 87594,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 24 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-tinycss2; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-urllib3",
+   "version": "2.6.1-1",
+   "license": "MIT",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-urllib3-2.6.1-1.src.tar.zst",
+   "bytes": 434277,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 77 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-urllib3; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-webencodings",
+   "version": "0.5.1-6",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-webencodings-0.5.1-6.src.tar.zst",
+   "bytes": 10626,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 14 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-webencodings; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-python-zstandard",
+   "version": "0.25.0-1",
+   "license": "BSD-3-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-python-zstandard-0.25.0-1.src.tar.zst",
+   "bytes": 711300,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 12 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-python-zstandard; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-rav1e",
+   "version": "0.8.1-1",
+   "license": "BSD-2-Clause",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-rav1e-0.8.1-1.src.tar.zst",
+   "bytes": 3033670,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-rav1e; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-readline",
+   "version": "8.3.003-1",
+   "license": "GPL-3.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-readline-8.3.003-1.src.tar.zst",
+   "bytes": 3355361,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-readline; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-scour",
+   "version": "0.38.2-6",
+   "license": "Apache-2.0",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-scour-0.38.2-6.src.tar.zst",
+   "bytes": 53967,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 16 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-scour; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-sqlite3",
+   "version": "3.51.1-1",
+   "license": "see PKGBUILD in source package",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-sqlite3-3.51.1-1.src.tar.zst",
+   "bytes": 24653245,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-sqlite3; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-svt-av1",
+   "version": "3.1.2-1",
+   "license": "BSD-3-Clause-Clear",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-svt-av1-3.1.2-1.src.tar.zst",
+   "bytes": 10895471,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-svt-av1; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-tcl",
+   "version": "8.6.17-1",
+   "license": "custom",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-tcl-8.6.17-1.src.tar.zst",
+   "bytes": 11655911,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 830 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-tcl; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-termcap",
+   "version": "1.3.1-7",
+   "license": "GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-termcap-1.3.1-7.src.tar.zst",
+   "bytes": 441185,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-termcap; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-tk",
+   "version": "8.6.17-2",
+   "license": "custom",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-tk-8.6.17-2.src.tar.zst",
+   "bytes": 4559462,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 174 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-tk; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-x265",
+   "version": "4.1-2",
+   "license": "GPL",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-x265-4.1-2.src.tar.zst",
+   "bytes": 1707615,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-x265; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-xxhash",
+   "version": "0.8.3-1",
+   "license": "BSD-2-Clause AND GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-xxhash-0.8.3-1.src.tar.zst",
+   "bytes": 1056183,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-xxhash; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-xz",
+   "version": "5.8.1-2",
+   "license": "0BSD AND LGPL-2.1-or-later AND GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-xz-5.8.1-2.src.tar.zst",
+   "bytes": 1464151,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-xz; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-zlib",
+   "version": "1.3.1-1",
+   "license": "Zlib",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-zlib-1.3.1-1.src.tar.zst",
+   "bytes": 1311495,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-zlib; HEAD 200"
+  },
+  {
+   "name": "mingw-w64-ucrt-x86_64-zstd",
+   "version": "1.5.7-1",
+   "license": "BSD-3-Clause OR GPL-2.0-or-later",
+   "url": "https://repo.msys2.org/mingw/sources/mingw-w64-zstd-1.5.7-1.src.tar.zst",
+   "bytes": 2401857,
+   "evidence": "MSYS2 UCRT64 package installed in Inkscape CI deps image ink168 (inkscape-ci-windows tag r168, job 12427003563 log 'Packages (N)' lines; IDW_VERSION=168 in .gitlab-ci.yml at dcaf3e7); 1 bundled file(s) attributed via MSYS2 file lists/dist-info RECORD; source base mingw-w64-zstd; HEAD 200"
+  }
+ ],
+ "buildRecipe": [
+  {
+   "name": "Inkscape .gitlab-ci.yml at dcaf3e7 (Windows job: IDW_VERSION 168, ninja dist-win-7z)",
+   "url": "https://gitlab.com/inkscape/inkscape/-/raw/dcaf3e7d9e6724cd18d6bd2b4f3d4f12ab691871/.gitlab-ci.yml",
+   "bytes": 14769
+  },
+  {
+   "name": "inkscape-ci-windows .gitlab-ci.yml at r168 commit 3791db21 (builds the MSYS2 deps image ink168)",
+   "url": "https://gitlab.com/inkscape/infra/inkscape-ci-windows/-/raw/3791db213e81d71f567e586e351b029f54a4087a/.gitlab-ci.yml",
+   "bytes": 3310
+  },
+  {
+   "name": "msys2installdeps.sh at 2ea69ea8 (MSYS2INSTALLDEPS_REF used by r168: package set + GraphicsMagick build)",
+   "url": "https://gitlab.com/inkscape/inkscape/-/raw/2ea69ea85a294f8728c8d9b2c636edd4320cf820/buildtools/msys2installdeps.sh",
+   "bytes": 3799
+  },
+  {
+   "name": "CI log of r168 msys2:ucrt64 job (exact pacman package versions) - evidence",
+   "url": "https://gitlab.com/inkscape/infra/inkscape-ci-windows/-/jobs/12427003563/raw",
+   "bytes": 903247
+  },
+  {
+   "name": "Inkscape source at dcaf3e7 (GitLab archive, without submodules; the release tarball above is the complete source)",
+   "url": "https://gitlab.com/inkscape/inkscape/-/archive/dcaf3e7d9e6724cd18d6bd2b4f3d4f12ab691871/inkscape-dcaf3e7d9e6724cd18d6bd2b4f3d4f12ab691871.tar.gz",
+   "bytes": 0
+  },
+  {
+   "name": "MSYS2 PKGBUILDs + patches: contained in each listed mingw-w64-*.src.tar.zst",
+   "url": "https://repo.msys2.org/mingw/sources/",
+   "bytes": 0
+  }
+ ],
+ "residualGaps": "Versions are exact: taken from the pacman transaction log of the deps image ink168 that the 1.4.4 build used (IDW_VERSION: 168); spot checks of DLL version resources/mtimes agree (gtk 3.24.51, pango 1.56.4, glib 2.86.3, python 3.12.12, poppler 25.12.0 = libpoppler-155, nss 3.119.1, openssl 3.6.0). 133 MSYS2 source packages; non-200: none. Notes: (1) ink168.7z itself (573 MB, contains var/lib/pacman/local) was not downloaded (size rule); the log is the evidence. (2) 4 generated files (fontconfig conf link, gdk-pixbuf loaders.cache, gschemas.compiled, Adwaita icon-theme.cache) are build outputs of the listed packages' tools. (3) 96 bundled files belong to Inkscape's own build (share/locale etc.) and lib2geom/extensions/themes are covered by the Inkscape 1.4.4 tarball. (4) Python packages in lib/python3.12/site-packages are all MSYS2 python-* packages from the same log (dist-info INSTALLER/RECORD checked); no pip-only wheels found. (5) Split packages share a source package (gcc-libs/gcc-libgfortran -> mingw-w64-gcc 15.2.0-8)."
+}

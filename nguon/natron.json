@@ -1,0 +1,1073 @@
+{
+ "id": "natron",
+ "version": "2.5.0",
+ "method": "evidence",
+ "confidence": "probable",
+ "components": [
+  {
+   "name": "Natron",
+   "version": "2.5.0 (tag v2.5.0 = commit 53ee17e34438005425230468916ff223cfd8a403)",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/NatronGitHub/Natron/archive/53ee17e34438005425230468916ff223cfd8a403.tar.gz",
+   "bytes": 0,
+   "evidence": "Natron.exe/NatronRenderer.exe version resource 2.5; git ls-remote refs/tags/v2.5.0; release v2.5.0 asset Natron-2.5.0-Windows-x86_64.zip (sha256 matches manifest) [url check: HTTP 200 verified; size not measured (exceeds 20 MB cap, no Content-Length)]"
+  },
+  {
+   "name": "openfx (Natron submodule libs/OpenFX)",
+   "version": "d5db5d0483faab6a85c104b436f7460897a90aa8",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/NatronGitHub/openfx/archive/d5db5d0483faab6a85c104b436f7460897a90aa8.tar.gz",
+   "bytes": 10706895,
+   "evidence": "gitlink libs/OpenFX in Natron@v2.5.0 tree [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "SequenceParsing",
+   "version": "3c93fcc488632b0bdfeee3181586809932357598",
+   "license": "BSD-3-Clause (see repo)",
+   "url": "https://github.com/NatronGitHub/SequenceParsing/archive/3c93fcc488632b0bdfeee3181586809932357598.tar.gz",
+   "bytes": 16064,
+   "evidence": "gitlink libs/SequenceParsing (Natron) and IOSupport/SequenceParsing (openfx-io) [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "google-breakpad (Natron fork)",
+   "version": "9474c3f7f9939391f281d46c42bfe20cc0f0abd9",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/NatronGitHub/google-breakpad/archive/9474c3f7f9939391f281d46c42bfe20cc0f0abd9.tar.gz",
+   "bytes": 4891139,
+   "evidence": "gitlink libs/google-breakpad in Natron@v2.5.0 (crash reporter; inclusion in the Windows binary not verified, listed for completeness) [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "openfx-io",
+   "version": "Natron-2.5.0 (commit d4c96127a19dae08ddc651db8189b7cbdd77f923)",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/NatronGitHub/openfx-io/archive/d4c96127a19dae08ddc651db8189b7cbdd77f923.tar.gz",
+   "bytes": 480523,
+   "evidence": "git ls-remote refs/tags/Natron-2.5.0; ships Plugins/OFX/Natron/IO.ofx.bundle [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "openfx-misc",
+   "version": "Natron-2.5.0 (commit eb11780cf694b225af74f8bd7320cf9caaee9b3f)",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/NatronGitHub/openfx-misc/archive/eb11780cf694b225af74f8bd7320cf9caaee9b3f.tar.gz",
+   "bytes": 1897079,
+   "evidence": "git ls-remote refs/tags/Natron-2.5.0; ships Misc.ofx, CImg.ofx, Shadertoy.ofx bundles [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "openfx-arena",
+   "version": "Natron-2.5.0 (commit efbb41a8a0a9c2efde466a63aece14a5c1e20955)",
+   "license": "GPL-2.0-or-later",
+   "url": "https://github.com/NatronGitHub/openfx-arena/archive/efbb41a8a0a9c2efde466a63aece14a5c1e20955.tar.gz",
+   "bytes": 618020,
+   "evidence": "git ls-remote refs/tags/Natron-2.5.0; ships Arena.ofx bundle [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "openfx-gmic",
+   "version": "Natron-2.5.0 (commit 30505349c77a70e603478a7534a96d228a6a6323)",
+   "license": "CECILL-2.0 / CECILL-C (see repo)",
+   "url": "https://github.com/NatronGitHub/openfx-gmic/archive/30505349c77a70e603478a7534a96d228a6a6323.tar.gz",
+   "bytes": 238450,
+   "evidence": "git ls-remote refs/tags/Natron-2.5.0; ships GMIC.ofx bundle [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "openfx (plugins submodule)",
+   "version": "a5d9ca88512692b0a872044cfde90e3181ff5ad6",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/NatronGitHub/openfx/archive/a5d9ca88512692b0a872044cfde90e3181ff5ad6.tar.gz",
+   "bytes": 10706735,
+   "evidence": "gitlink openfx/OpenFX in openfx-io, openfx-misc, openfx-arena, openfx-gmic at Natron-2.5.0 [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "openfx-supportext",
+   "version": "8aff0b0ae59f50fd9a06abb560367ef7534730cf",
+   "license": "BSD-3-Clause / GPL-2.0 (per file, see repo)",
+   "url": "https://github.com/NatronGitHub/openfx-supportext/archive/8aff0b0ae59f50fd9a06abb560367ef7534730cf.tar.gz",
+   "bytes": 296793,
+   "evidence": "gitlink SupportExt in openfx-io/misc/arena at Natron-2.5.0 [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "lodepng",
+   "version": "997936fd2b45842031e4180d73d7880e381cf33f",
+   "license": "Zlib",
+   "url": "https://github.com/lvandeve/lodepng/archive/997936fd2b45842031e4180d73d7880e381cf33f.tar.gz",
+   "bytes": 246351,
+   "evidence": "gitlink lodepng in openfx-arena@Natron-2.5.0 (statically compiled into Arena.ofx) [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "CImg (CImg.h + plugins/inpaint.h)",
+   "version": "b33dcc8f9f1acf1f276ded92c04f8231f6c23fcd",
+   "license": "CECILL-C",
+   "url": "https://github.com/dtschump/CImg/archive/b33dcc8f9f1acf1f276ded92c04f8231f6c23fcd.tar.gz",
+   "bytes": 11272408,
+   "evidence": "openfx-misc@Natron-2.5.0 CImg/Makefile CIMGVERSION=b33dcc8f... (downloaded at build, compiled into CImg.ofx) [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "G'MIC",
+   "version": "2.8.4",
+   "license": "CECILL-2.0 / CECILL-C",
+   "url": "https://web.archive.org/web/2022id_/https://gmic.eu/files/source/gmic_2.8.4.tar.gz",
+   "bytes": 6182300,
+   "evidence": "openfx-gmic@Natron-2.5.0 Makefile GMICVER=2.8.4 (gmic.eu/files/source/gmic_2.8.4.tar.gz; that origin returns HTTP 403 to non-browser clients, so the Internet Archive copy of the same URL is given) [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "OpenColorIO-Configs (Natron)",
+   "version": "Natron-v2.5 (commit 3fd16e03481ee9c7a3822b0a7f3ea2e3cb7eb1e3)",
+   "license": "BSD-3-Clause / per-config (see repo)",
+   "url": "https://github.com/NatronGitHub/OpenColorIO-Configs/archive/3fd16e03481ee9c7a3822b0a7f3ea2e3cb7eb1e3.tar.gz",
+   "bytes": 12334368,
+   "evidence": "tools/jenkins/build-natron.sh: OCIO_CONFIGS_URL .../archive/Natron-v${2.5}; bundle Resources/OpenColorIO-Configs/{blender,natron,nuke-default} [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "FFmpeg (Natron ffmpeg-gpl2)",
+   "version": "4.4.3",
+   "license": "GPL-2.0-or-later (configured --enable-gpl, no version3)",
+   "url": "https://ffmpeg.org/releases/ffmpeg-4.4.3.tar.xz",
+   "bytes": 9566020,
+   "evidence": "avcodec-58.dll etc. ProductVersion 4.4.3; configure string in avcodec-58.dll starts --enable-gpl --enable-libdav1d ...; PKGBUILD tools/MINGW-packages/mingw-w64-ffmpeg-gpl2 at the tag says 4.4.2 (SDK was built from a later revision) [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "x264 (Natron x264-git)",
+   "version": "0.164.r3094 commit bfc87b7a330f75f5c9a21e56081e4b20344f139e",
+   "license": "GPL-2.0-or-later",
+   "url": "https://code.videolan.org/videolan/x264/-/archive/bfc87b7a330f75f5c9a21e56081e4b20344f139e/x264-bfc87b7a330f75f5c9a21e56081e4b20344f139e.tar.gz",
+   "bytes": 942872,
+   "evidence": "libx264-164.dll version resource 0.164.3094M bfc87b7; PKGBUILD mingw-w64-x264-git _commit [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "Qt (Natron qt4)",
+   "version": "4.8.7",
+   "license": "LGPL-2.1 WITH Digia-Qt-LGPL-exception-1.1 OR GPL-3.0 (bundled 3rdparty per tarball)",
+   "url": "https://download.qt.io/archive/qt/4.8/4.8.7/qt-everywhere-opensource-src-4.8.7.tar.gz",
+   "bytes": 241075567,
+   "evidence": "Qt*4.dll FileVersion 4.8.7.0; PKGBUILD mingw-w64-qt4 pkgver=4.8.7 (+ patches in Natron tools/MINGW-packages/mingw-w64-qt4); includes phonon4.dll, CLucene, Qt plugins [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "PySide + Shiboken (Natron pyside/shiboken)",
+   "version": "1.2.4",
+   "license": "LGPL-2.1 (PySide, libshiboken) / GPL-2.0 (generator)",
+   "url": "https://download.qt.io/official_releases/pyside/PySide-1.2.4.tar.gz",
+   "bytes": 9266613,
+   "evidence": "libpyside.dll, libshiboken.dll, Plugins/PySide/*.pyd, site-packages/shiboken.pyd; PKGBUILDs mingw-w64-pyside / mingw-w64-shiboken pkgver=1.2.4 (both from PySide-1.2.4 tarball) [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "OpenImageIO (Natron openimageio)",
+   "version": "2.4.6.0 (tag v2.4.6.0 = b06d2aae8a682e40aadd16a9e413c25eb327f325)",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/b06d2aae8a682e40aadd16a9e413c25eb327f325.tar.gz",
+   "bytes": 0,
+   "evidence": "string \"OpenImageIO 2.4.6.0\" in libOpenImageIO.dll (PKGBUILD at tag says 2.3.17.0; binary wins); also iconvert/idiff/igrep/iinfo.exe [url check: HTTP 200 verified; size not measured (exceeds 20 MB cap, no Content-Length)]"
+  },
+  {
+   "name": "OpenColorIO (Natron opencolorio2-git)",
+   "version": "2.1.1 (tag v2.1.1 = 32b01f64d6e483aec9fb8839b5caa0af0e0e1ebe)",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/AcademySoftwareFoundation/OpenColorIO/archive/32b01f64d6e483aec9fb8839b5caa0af0e0e1ebe.tar.gz",
+   "bytes": 11017225,
+   "evidence": "libOpenColorIO_2_1.dll contains \"2.1.1\"; PKGBUILD mingw-w64-opencolorio2-git gitcommit=32b01f6 # 2.1.1 [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "OpenEXR / IlmBase (Natron openexr25)",
+   "version": "2.5.8 (tag v2.5.8 = 918b8f543e81b5a1e1aca494ab7352ca280afc9e)",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/918b8f543e81b5a1e1aca494ab7352ca280afc9e.tar.gz",
+   "bytes": 0,
+   "evidence": "DLL names libIlmImf-2_5 / libHalf-2_5 / libIex-2_5 / libImath-2_5 / libIlmThread-2_5, exrheader.exe; PKGBUILD mingw-w64-openexr25 pkgver=2.5.8 (patch level not confirmed from binary) [url check: HTTP 200 verified; size not measured (exceeds 20 MB cap, no Content-Length)]"
+  },
+  {
+   "name": "SeExpr (Natron seexpr-git)",
+   "version": "v1-2.11 (commit a5f02bb03199630759b0b94a64f37ce56c08675a)",
+   "license": "Apache-2.0 (modified, see LICENSE)",
+   "url": "https://github.com/wdas/SeExpr/archive/a5f02bb03199630759b0b94a64f37ce56c08675a.tar.gz",
+   "bytes": 709577,
+   "evidence": "libSeExpr.dll; PKGBUILD mingw-w64-seexpr-git gitcommit=a5f02bb (#v1-2.11) [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "LibRaw (Natron libraw-gpl2)",
+   "version": "0.18.13",
+   "license": "LGPL-2.1 OR CDDL-1.0",
+   "url": "https://www.libraw.org/data/LibRaw-0.18.13.tar.gz",
+   "bytes": 1287631,
+   "evidence": "libraw-16.dll string \"0.18.13-Release\"; PKGBUILD mingw-w64-libraw-gpl2 pkgver=0.18.13 (--enable-demosaic-pack-gpl2) [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "LibRaw demosaic pack GPL2",
+   "version": "0.18.8",
+   "license": "GPL-2.0-or-later",
+   "url": "https://www.libraw.org/data/LibRaw-demosaic-pack-GPL2-0.18.8.tar.gz",
+   "bytes": 30868,
+   "evidence": "PKGBUILD mingw-w64-libraw-gpl2 source + --enable-demosaic-pack-gpl2 (GPL3 pack is downloaded but disabled) [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "ImageMagick 6 (Natron imagemagick, static in Arena.ofx)",
+   "version": "6.9.11-16 (tag = 5b92ca0ee6bb1df3bceeafe7e18d3c9fa9af9a12)",
+   "license": "ImageMagick",
+   "url": "https://github.com/ImageMagick/ImageMagick6/archive/5b92ca0ee6bb1df3bceeafe7e18d3c9fa9af9a12.tar.gz",
+   "bytes": 13565391,
+   "evidence": "string \"ImageMagick 6.9.11-16 Q32 x86_64 2022-07-22\" inside Arena.ofx; PKGBUILD mingw-w64-imagemagick pkgver=6.9.11.16 [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "Poppler (Natron poppler)",
+   "version": "22.01.0",
+   "license": "GPL-2.0-or-later",
+   "url": "https://poppler.freedesktop.org/poppler-22.01.0.tar.xz",
+   "bytes": 1801984,
+   "evidence": "Arena bundle libpoppler-117.dll / libpoppler-glib-8.dll (soname 117 = 22.01); PKGBUILD mingw-w64-poppler pkgver=22.01.0 [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "SoX (Natron sox)",
+   "version": "14.4.2",
+   "license": "GPL-2.0-or-later / LGPL-2.1-or-later (libsox)",
+   "url": "https://downloads.sourceforge.net/sourceforge/sox/sox-14.4.2.tar.bz2",
+   "bytes": 935449,
+   "evidence": "Arena bundle libsox-3.dll; PKGBUILD mingw-w64-sox pkgver=14.4.2 [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "Mesa (osmesa.dll, Natron osmesa)",
+   "version": "17.1.10 (git-471db69508 = osmesa-install commit)",
+   "license": "MIT",
+   "url": "https://archive.mesa3d.org/older-versions/17.x/mesa-17.1.10.tar.xz",
+   "bytes": 9872168,
+   "evidence": "string \"Mesa 17.1.10 (git-471db69508)\" in bin/osmesa.dll; PKGBUILD mingw-w64-osmesa _osmesa=17.1.10 [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "LLVM (static in osmesa.dll)",
+   "version": "3.9.1",
+   "license": "NCSA",
+   "url": "https://releases.llvm.org/3.9.1/llvm-3.9.1.src.tar.xz",
+   "bytes": 18130436,
+   "evidence": "PKGBUILD mingw-w64-osmesa _llvm=3.9.1, LLVM_BUILD=1 (llvmpipe); osmesa.dll contains LLVM strings [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "GLU (osmesa-install)",
+   "version": "9.0.0",
+   "license": "SGI-B-2.0",
+   "url": "https://archive.mesa3d.org/glu/glu-9.0.0.tar.gz",
+   "bytes": 626786,
+   "evidence": "build-Windows-sdk.sh OSMESA_GLU_VERSION=9.0.0 / osmesa PKGBUILD downloads glu; whether linked into osmesa.dll not verified [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "Mesa (bin/mesa/opengl32.dll, optional software GL)",
+   "version": "11.2.2 (git-a154ae9)",
+   "license": "MIT",
+   "url": "https://archive.mesa3d.org/older-versions/11.x/11.2.2/mesa-11.2.2.tar.xz",
+   "bytes": 7860932,
+   "evidence": "string \"Mesa 11.2.2 (git-a154ae9)\" in bin/mesa/opengl32.dll; build-Windows-installer.sh copies it from prebuilt natron-windows-mesa.tar.xz (Third_Party_Binaries) [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "aom",
+   "version": "3.4.0",
+   "license": "BSD-2-Clause + AOM patent",
+   "url": "https://storage.googleapis.com/aom-releases/libaom-3.4.0.tar.gz",
+   "bytes": 5175838,
+   "evidence": "bundle: libaom.dll; MSYS2 mingw-w64-aom 3.4.0-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "boost",
+   "version": "1.79.0",
+   "license": "BSL-1.0",
+   "url": "https://archives.boost.io/release/1.79.0/source/boost_1_79_0.tar.bz2",
+   "bytes": 113456811,
+   "evidence": "bundle: libboost_{filesystem,regex,serialization,system,thread}-mt.dll; MSYS2 mingw-w64-boost 1.79.0-4 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "brotli",
+   "version": "1.0.9",
+   "license": "MIT",
+   "url": "https://github.com/google/brotli/archive/v1.0.9.tar.gz",
+   "bytes": 486984,
+   "evidence": "bundle: libbrotlicommon.dll, libbrotlidec.dll; MSYS2 mingw-w64-brotli 1.0.9-5 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "bzip2",
+   "version": "1.0.8",
+   "license": "bzip2-1.0.6",
+   "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+   "bytes": 810029,
+   "evidence": "bundle: libbz2-1.dll; MSYS2 mingw-w64-bzip2 1.0.8-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "cairo",
+   "version": "1.17.6 (commit b43e7c6f3cf7855e16170a06d3a9c7234c60ca94)",
+   "license": "LGPL-2.1-only OR MPL-1.1",
+   "url": "https://gitlab.freedesktop.org/cairo/cairo/-/archive/b43e7c6f3cf7855e16170a06d3a9c7234c60ca94/cairo-b43e7c6f3cf7855e16170a06d3a9c7234c60ca94.tar.gz",
+   "bytes": 0,
+   "evidence": "bundle: libcairo-2.dll, libcairo-gobject-2.dll; MSYS2 mingw-w64-cairo 1.17.6-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified; size not measured (exceeds 20 MB cap, no Content-Length)]"
+  },
+  {
+   "name": "celt",
+   "version": "0.11.3",
+   "license": "BSD-2-Clause",
+   "url": "https://downloads.xiph.org/releases/celt/celt-0.11.3.tar.gz",
+   "bytes": 465020,
+   "evidence": "bundle: libcelt0-2.dll; MSYS2 mingw-w64-celt 0.11.3-5 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "curl",
+   "version": "7.84.0",
+   "license": "curl",
+   "url": "https://github.com/curl/curl/releases/download/curl-7_84_0/curl-7.84.0.tar.xz",
+   "bytes": 2477944,
+   "evidence": "bundle: GMIC bundle libcurl-4.dll (string libcurl/7.84.0); MSYS2 mingw-w64-curl 7.84.0-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "dav1d",
+   "version": "1.0.0",
+   "license": "BSD-2-Clause",
+   "url": "https://downloads.videolan.org/pub/videolan/dav1d/1.0.0/dav1d-1.0.0.tar.xz",
+   "bytes": 810116,
+   "evidence": "bundle: libdav1d.dll (version resource dav1d 1.0.0); MSYS2 mingw-w64-dav1d 1.0.0-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "expat",
+   "version": "2.4.8",
+   "license": "MIT",
+   "url": "https://github.com/libexpat/libexpat/releases/download/R_2_4_8/expat-2.4.8.tar.xz",
+   "bytes": 454428,
+   "evidence": "bundle: libexpat-1.dll (string expat_2.4.8); MSYS2 mingw-w64-expat 2.4.8-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "fftw",
+   "version": "3.3.10",
+   "license": "GPL-2.0-or-later",
+   "url": "https://www.fftw.org/fftw-3.3.10.tar.gz",
+   "bytes": 4144100,
+   "evidence": "bundle: GMIC bundle libfftw3-3.dll; MSYS2 mingw-w64-fftw 3.3.10-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "firebird",
+   "version": "2.5.9.27152 (commit 74a4ec5c50f6906c01a3a8cfbfc56361469cd9fa)",
+   "license": "IDPL-1.0 / IPL-1.0 (Firebird client)",
+   "url": "https://github.com/FirebirdSQL/firebird/archive/74a4ec5c50f6906c01a3a8cfbfc56361469cd9fa.tar.gz",
+   "bytes": 16513222,
+   "evidence": "bundle: fbclient.dll (version resource WI-V2.5.9.27152), dependency of Qt sqldrivers/qsqlibase4.dll; MSYS2 mingw-w64-firebird2-git 2.5.9.27152-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "fontconfig",
+   "version": "2.14.0",
+   "license": "HPND / MIT-style",
+   "url": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.0.tar.xz",
+   "bytes": 1431056,
+   "evidence": "bundle: libfontconfig-1.dll, Resources/etc/fonts; MSYS2 mingw-w64-fontconfig 2.14.0-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "freetype",
+   "version": "2.12.1",
+   "license": "FTL OR GPL-2.0-or-later",
+   "url": "https://download.savannah.gnu.org/releases/freetype/freetype-2.12.1.tar.xz",
+   "bytes": 2471916,
+   "evidence": "bundle: libfreetype-6.dll (version resource 2.12.1); MSYS2 mingw-w64-freetype 2.12.1-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "fribidi",
+   "version": "1.0.12",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://github.com/fribidi/fribidi/archive/v1.0.12.tar.gz",
+   "bytes": 2110289,
+   "evidence": "bundle: libfribidi-0.dll; MSYS2 mingw-w64-fribidi 1.0.12-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "gcc runtime (libgcc_s_seh, libstdc++, libgomp, libssp)",
+   "version": "12.1.0",
+   "license": "GPL-3.0-or-later WITH GCC-exception-3.1",
+   "url": "https://ftp.gnu.org/gnu/gcc/gcc-12.1.0/gcc-12.1.0.tar.xz",
+   "bytes": 82701928,
+   "evidence": "bundle: libgcc_s_seh-1.dll, libstdc++-6.dll, libgomp-1.dll, libssp-0.dll; Natron.exe/IO.ofx contain \"GCC: (Rev3, Built by MSYS2 project) 12.1.0\"; MSYS2 mingw-w64-gcc 12.1.0-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "gdk-pixbuf",
+   "version": "2.42.8",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://download.gnome.org/sources/gdk-pixbuf/2.42/gdk-pixbuf-2.42.8.tar.xz",
+   "bytes": 8503020,
+   "evidence": "bundle: libgdk_pixbuf-2.0-0.dll (version resource 2.42.8); MSYS2 mingw-w64-gdk-pixbuf2 2.42.8-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "gettext (libintl)",
+   "version": "0.21",
+   "license": "LGPL-2.1-or-later (libintl)",
+   "url": "https://ftp.gnu.org/pub/gnu/gettext/gettext-0.21.tar.gz",
+   "bytes": 24181849,
+   "evidence": "bundle: libintl-8.dll (version resource 0.21); MSYS2 mingw-w64-gettext 0.21-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "giflib",
+   "version": "5.2.1",
+   "license": "MIT",
+   "url": "https://downloads.sourceforge.net/sourceforge/giflib/giflib-5.2.1.tar.gz",
+   "bytes": 444187,
+   "evidence": "bundle: libgif-7.dll; MSYS2 mingw-w64-giflib 5.2.1-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "glib",
+   "version": "2.72.2",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://download.gnome.org/sources/glib/2.72/glib-2.72.2.tar.xz",
+   "bytes": 4891264,
+   "evidence": "bundle: libglib/gio/gobject/gmodule-2.0-0.dll (version resource 2.72.2); MSYS2 mingw-w64-glib2 2.72.2-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "gmp",
+   "version": "6.2.1",
+   "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+   "url": "https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz",
+   "bytes": 2027316,
+   "evidence": "bundle: libgmp-10.dll; MSYS2 mingw-w64-gmp 6.2.1-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "gnutls",
+   "version": "3.7.6",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://www.gnupg.org/ftp/gcrypt/gnutls/v3.7/gnutls-3.7.6.tar.xz",
+   "bytes": 6338276,
+   "evidence": "bundle: libgnutls-30.dll; MSYS2 mingw-w64-gnutls 3.7.6-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "graphite2",
+   "version": "1.3.14",
+   "license": "LGPL-2.1-or-later OR MPL-2.0 OR GPL-2.0-or-later",
+   "url": "https://github.com/silnrsi/graphite/releases/download/1.3.14/graphite2-1.3.14.tgz",
+   "bytes": 6630061,
+   "evidence": "bundle: libgraphite2.dll; MSYS2 mingw-w64-graphite2 1.3.14-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "gsm",
+   "version": "1.0.19",
+   "license": "TU-Berlin-2.0",
+   "url": "http://www.quut.com/gsm/gsm-1.0.19.tar.gz",
+   "bytes": 64665,
+   "evidence": "bundle: libgsm.dll; MSYS2 mingw-w64-gsm 1.0.19-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "harfbuzz",
+   "version": "4.4.1",
+   "license": "MIT (Old MIT)",
+   "url": "https://github.com/harfbuzz/harfbuzz/releases/download/4.4.1/harfbuzz-4.4.1.tar.xz",
+   "bytes": 15113152,
+   "evidence": "bundle: libharfbuzz-0.dll (string 4.4.1); MSYS2 mingw-w64-harfbuzz 4.4.1-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "icu",
+   "version": "69.1",
+   "license": "ICU",
+   "url": "https://github.com/unicode-org/icu/releases/download/release-69-1/icu4c-69_1-src.tgz",
+   "bytes": 24814903,
+   "evidence": "bundle: libicudt69.dll, libicuuc69.dll, Arena bundle libicuin69.dll (soname 69); MSYS2 mingw-w64-icu 69.1-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "jasper",
+   "version": "3.0.6",
+   "license": "JasPer-2.0",
+   "url": "https://github.com/jasper-software/jasper/archive/version-3.0.6.tar.gz",
+   "bytes": 1966126,
+   "evidence": "bundle: libjasper.dll; MSYS2 mingw-w64-jasper 3.0.6-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "jbigkit",
+   "version": "2.1",
+   "license": "GPL-2.0-or-later",
+   "url": "https://www.cl.cam.ac.uk/~mgk25/download/jbigkit-2.1.tar.gz",
+   "bytes": 438710,
+   "evidence": "bundle: libjbig-0.dll; MSYS2 mingw-w64-jbigkit 2.1-4 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "lame",
+   "version": "3.100",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://downloads.sourceforge.net/lame/lame-3.100.tar.gz",
+   "bytes": 1524133,
+   "evidence": "bundle: libmp3lame-0.dll; MSYS2 mingw-w64-lame 3.100-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "lcms2",
+   "version": "2.13.1",
+   "license": "MIT",
+   "url": "https://downloads.sourceforge.net/sourceforge/lcms/lcms2-2.13.1.tar.gz",
+   "bytes": 7276499,
+   "evidence": "bundle: liblcms2-2.dll; MSYS2 mingw-w64-lcms2 2.13.1-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "lerc",
+   "version": "3.0",
+   "license": "Apache-2.0",
+   "url": "https://github.com/Esri/lerc/archive/v3.0.tar.gz",
+   "bytes": 4357957,
+   "evidence": "bundle: liblerc.dll; MSYS2 mingw-w64-lerc 3.0-4 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libass",
+   "version": "0.16.0",
+   "license": "ISC",
+   "url": "https://github.com/libass/libass/releases/download/0.16.0/libass-0.16.0.tar.xz",
+   "bytes": 396304,
+   "evidence": "bundle: libass-9.dll; MSYS2 mingw-w64-libass 0.16.0-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libbluray",
+   "version": "1.3.1",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://download.videolan.org/pub/videolan/libbluray/1.3.1/libbluray-1.3.1.tar.bz2",
+   "bytes": 754867,
+   "evidence": "bundle: libbluray-2.dll; MSYS2 mingw-w64-libbluray 1.3.1-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libcaca",
+   "version": "0.99.beta20",
+   "license": "WTFPL",
+   "url": "https://github.com/cacalabs/libcaca/releases/download/v0.99.beta20/libcaca-0.99.beta20.tar.gz",
+   "bytes": 1099916,
+   "evidence": "bundle: libcaca-0.dll; MSYS2 mingw-w64-libcaca 0.99.beta20-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libcdr",
+   "version": "0.1.7",
+   "license": "MPL-2.0",
+   "url": "https://dev-www.libreoffice.org/src/libcdr/libcdr-0.1.7.tar.xz",
+   "bytes": 618528,
+   "evidence": "bundle: Arena bundle libcdr-0.1.dll (version resource 0.1.7); MSYS2 mingw-w64-libcdr 0.1.7-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libdatrie",
+   "version": "0.2.13",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://linux.thai.net/pub/thailinux/software/libthai/libdatrie-0.2.13.tar.xz",
+   "bytes": 314072,
+   "evidence": "bundle: libdatrie-1.dll; MSYS2 mingw-w64-libdatrie 0.2.13-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libde265",
+   "version": "1.0.8",
+   "license": "LGPL-3.0-or-later",
+   "url": "https://github.com/strukturag/libde265/releases/download/v1.0.8/libde265-1.0.8.tar.gz",
+   "bytes": 837878,
+   "evidence": "bundle: libde265-0.dll; MSYS2 mingw-w64-libde265 1.0.8-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libdeflate",
+   "version": "1.12",
+   "license": "MIT",
+   "url": "https://github.com/ebiggers/libdeflate/archive/v1.12.tar.gz",
+   "bytes": 173456,
+   "evidence": "bundle: libdeflate.dll; MSYS2 mingw-w64-libdeflate 1.12-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libffi",
+   "version": "3.3",
+   "license": "MIT",
+   "url": "https://sourceware.org/pub/libffi/libffi-3.3.tar.gz",
+   "bytes": 1305466,
+   "evidence": "bundle: libffi-7.dll (soname 7 = libffi 3.3); MSYS2 mingw-w64-libffi 3.3-4 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libheif",
+   "version": "1.12.0",
+   "license": "LGPL-3.0-or-later",
+   "url": "https://github.com/strukturag/libheif/releases/download/v1.12.0/libheif-1.12.0.tar.gz",
+   "bytes": 1684355,
+   "evidence": "bundle: libheif.dll; MSYS2 mingw-w64-libheif 1.12.0-10 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libiconv",
+   "version": "1.17",
+   "license": "LGPL-2.1-or-later (library)",
+   "url": "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.17.tar.gz",
+   "bytes": 5413283,
+   "evidence": "bundle: libiconv-2.dll (version resource 1.17); MSYS2 mingw-w64-libiconv 1.17-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libidn2",
+   "version": "2.3.3",
+   "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+   "url": "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.3.tar.gz",
+   "bytes": 2116946,
+   "evidence": "bundle: libidn2-0.dll; MSYS2 mingw-w64-libidn2 2.3.3-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libjpeg-turbo",
+   "version": "2.1.3",
+   "license": "IJG AND BSD-3-Clause AND Zlib",
+   "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/archive/2.1.3.tar.gz",
+   "bytes": 2260756,
+   "evidence": "bundle: libjpeg-8.dll (string \"libjpeg-turbo version 2.1.3\"); MSYS2 mingw-w64-libjpeg-turbo 2.1.3-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libmad",
+   "version": "0.15.1b",
+   "license": "GPL-2.0-or-later",
+   "url": "https://downloads.sourceforge.net/sourceforge/mad/libmad-0.15.1b.tar.gz",
+   "bytes": 502379,
+   "evidence": "bundle: Arena bundle libmad-0.dll; MSYS2 mingw-w64-libmad 0.15.1b-4 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libmfx (mfx_dispatch)",
+   "version": "1.35.1",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/lu-zero/mfx_dispatch/archive/1.35.1.tar.gz",
+   "bytes": 151132,
+   "evidence": "bundle: libmfx-1.dll; MSYS2 mingw-w64-libmfx 1.35.1-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libmng",
+   "version": "2.0.3",
+   "license": "Zlib",
+   "url": "https://downloads.sourceforge.net/libmng/libmng-2.0.3.tar.xz",
+   "bytes": 951808,
+   "evidence": "bundle: libmng-2.dll; MSYS2 mingw-w64-libmng 2.0.3-5 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libmodplug",
+   "version": "0.8.9.0",
+   "license": "Public-Domain",
+   "url": "https://downloads.sourceforge.net/modplug-xmms/libmodplug-0.8.9.0.tar.gz",
+   "bytes": 576566,
+   "evidence": "bundle: libmodplug-1.dll; MSYS2 mingw-w64-libmodplug 0.8.9.0-4 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libogg",
+   "version": "1.3.5",
+   "license": "BSD-3-Clause",
+   "url": "https://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.gz",
+   "bytes": 593071,
+   "evidence": "bundle: libogg-0.dll; MSYS2 mingw-w64-libogg 1.3.5-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libpng",
+   "version": "1.6.37",
+   "license": "libpng-2.0",
+   "url": "https://downloads.sourceforge.net/sourceforge/libpng/libpng-1.6.37.tar.xz",
+   "bytes": 1012272,
+   "evidence": "bundle: libpng16-16.dll (string \"libpng version 1.6.37\"); MSYS2 mingw-w64-libpng 1.6.37-6 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libpsl",
+   "version": "0.21.1",
+   "license": "MIT",
+   "url": "https://github.com/rockdaboot/libpsl/releases/download/0.21.1/libpsl-0.21.1.tar.gz",
+   "bytes": 9199351,
+   "evidence": "bundle: libpsl-5.dll; MSYS2 mingw-w64-libpsl 0.21.1-4 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "librevenge",
+   "version": "0.0.4",
+   "license": "MPL-2.0 OR LGPL-2.1-or-later",
+   "url": "https://downloads.sourceforge.net/project/libwpd/librevenge/librevenge-0.0.4/librevenge-0.0.4.tar.xz",
+   "bytes": 421604,
+   "evidence": "bundle: Arena bundle librevenge-0.0.dll / librevenge-stream-0.0.dll (version resource 0.0.4); MSYS2 mingw-w64-librevenge 0.0.4-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "librsvg",
+   "version": "2.54.4",
+   "license": "LGPL-2.1-or-later (release tarball includes vendored Rust crates)",
+   "url": "https://download.gnome.org/sources/librsvg/2.54/librsvg-2.54.4.tar.xz",
+   "bytes": 28214908,
+   "evidence": "bundle: librsvg-2-2.dll; MSYS2 mingw-w64-librsvg 2.54.4-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libssh2",
+   "version": "1.10.0",
+   "license": "BSD-3-Clause",
+   "url": "https://libssh2.org/download/libssh2-1.10.0.tar.gz",
+   "bytes": 965044,
+   "evidence": "bundle: libssh2-1.dll; MSYS2 mingw-w64-libssh2 1.10.0-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libtasn1",
+   "version": "4.18.0",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.18.0.tar.gz",
+   "bytes": 1724441,
+   "evidence": "bundle: libtasn1-6.dll; MSYS2 mingw-w64-libtasn1 4.18.0-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libthai",
+   "version": "0.1.29",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://linux.thai.net/pub/thailinux/software/libthai/libthai-0.1.29.tar.xz",
+   "bytes": 417728,
+   "evidence": "bundle: libthai-0.dll; MSYS2 mingw-w64-libthai 0.1.29-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libtheora",
+   "version": "1.1.1",
+   "license": "BSD-3-Clause",
+   "url": "https://downloads.xiph.org/releases/theora/libtheora-1.1.1.tar.bz2",
+   "bytes": 1903175,
+   "evidence": "bundle: libtheoradec-1.dll, libtheoraenc-1.dll; MSYS2 mingw-w64-libtheora 1.1.1-7 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libtiff",
+   "version": "4.4.0",
+   "license": "libtiff",
+   "url": "https://download.osgeo.org/libtiff/tiff-4.4.0.tar.gz",
+   "bytes": 2841082,
+   "evidence": "bundle: libtiff-5.dll (string \"LIBTIFF, Version 4.4.0\"), tiffinfo.exe; MSYS2 mingw-w64-libtiff 4.4.0-4 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libunistring",
+   "version": "1.0",
+   "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+   "url": "https://ftp.gnu.org/gnu/libunistring/libunistring-1.0.tar.gz",
+   "bytes": 4214306,
+   "evidence": "bundle: libunistring-2.dll (version resource 1.0); MSYS2 mingw-w64-libunistring 1.0-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libvorbis",
+   "version": "1.3.7",
+   "license": "BSD-3-Clause",
+   "url": "https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.gz",
+   "bytes": 1658963,
+   "evidence": "bundle: libvorbis-0.dll, libvorbisenc-2.dll; MSYS2 mingw-w64-libvorbis 1.3.7-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libvpx",
+   "version": "1.12.0",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/webmproject/libvpx/archive/v1.12.0.tar.gz",
+   "bytes": 5465627,
+   "evidence": "bundle: libvpx-1.dll; MSYS2 mingw-w64-libvpx 1.12.0-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libwebp",
+   "version": "1.2.3",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/webmproject/libwebp/archive/v1.2.3.tar.gz",
+   "bytes": 3671230,
+   "evidence": "bundle: libwebp-7.dll, libwebpdemux-2.dll, libwebpmux-3.dll; MSYS2 mingw-w64-libwebp 1.2.3-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libxml2",
+   "version": "2.9.14",
+   "license": "MIT",
+   "url": "https://download.gnome.org/sources/libxml2/2.9/libxml2-2.9.14.tar.xz",
+   "bytes": 3129968,
+   "evidence": "bundle: libxml2-2.dll, site-packages libxml2mod.pyd/libxml2.py/drv_libxml2.py; MSYS2 mingw-w64-libxml2 2.9.14-4 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "libzip",
+   "version": "1.9.2",
+   "license": "BSD-3-Clause",
+   "url": "https://libzip.org/download/libzip-1.9.2.tar.xz",
+   "bytes": 763980,
+   "evidence": "bundle: Arena bundle libzip.dll; MSYS2 mingw-w64-libzip 1.9.2-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "nettle",
+   "version": "3.8",
+   "license": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+   "url": "https://ftp.gnu.org/gnu/nettle/nettle-3.8.tar.gz",
+   "bytes": 2404258,
+   "evidence": "bundle: libnettle-8.dll, libhogweed-6.dll; MSYS2 mingw-w64-nettle 3.8-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "nghttp2",
+   "version": "1.48.0",
+   "license": "MIT",
+   "url": "https://github.com/nghttp2/nghttp2/releases/download/v1.48.0/nghttp2-1.48.0.tar.xz",
+   "bytes": 4112072,
+   "evidence": "bundle: libnghttp2-14.dll (bin and GMIC bundle); MSYS2 mingw-w64-nghttp2 1.48.0-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "openal-soft",
+   "version": "1.22.0",
+   "license": "LGPL-2.0-or-later",
+   "url": "https://github.com/kcat/openal-soft/archive/1.22.0.tar.gz",
+   "bytes": 753755,
+   "evidence": "bundle: libopenal-1.dll (version resource 1.22.0); MSYS2 mingw-w64-openal 1.22.0-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "openh264",
+   "version": "2.2.0",
+   "license": "BSD-2-Clause",
+   "url": "https://github.com/cisco/openh264/archive/v2.2.0.tar.gz",
+   "bytes": 0,
+   "evidence": "bundle: libopenh264.dll; MSYS2 mingw-w64-openh264 2.2.0-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified; size not measured (exceeds 20 MB cap, no Content-Length)]"
+  },
+  {
+   "name": "openjpeg",
+   "version": "2.5.0",
+   "license": "BSD-2-Clause",
+   "url": "https://github.com/uclouvain/openjpeg/archive/v2.5.0.tar.gz",
+   "bytes": 1867111,
+   "evidence": "bundle: libopenjp2-7.dll (string 2.5.0); MSYS2 mingw-w64-openjpeg2 2.5.0-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "openssl",
+   "version": "1.1.1q",
+   "license": "OpenSSL AND SSLeay",
+   "url": "https://www.openssl.org/source/old/1.1.1/openssl-1.1.1q.tar.gz",
+   "bytes": 9864061,
+   "evidence": "bundle: libcrypto-1_1-x64.dll / libssl-1_1-x64.dll (version resource 1.1.1q); MSYS2 mingw-w64-openssl 1.1.1q-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "opus",
+   "version": "1.3.1",
+   "license": "BSD-3-Clause",
+   "url": "https://archive.mozilla.org/pub/opus/opus-1.3.1.tar.gz",
+   "bytes": 1040054,
+   "evidence": "bundle: libopus-0.dll; MSYS2 mingw-w64-opus 1.3.1-4 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "p11-kit",
+   "version": "0.24.1",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/p11-glue/p11-kit/releases/download/0.24.1/p11-kit-0.24.1.tar.xz",
+   "bytes": 838304,
+   "evidence": "bundle: libp11-kit-0.dll; MSYS2 mingw-w64-p11-kit 0.24.1-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "pango",
+   "version": "1.50.7",
+   "license": "LGPL-2.1-or-later",
+   "url": "https://download.gnome.org/sources/pango/1.50/pango-1.50.7.tar.xz",
+   "bytes": 4294752,
+   "evidence": "bundle: libpango*-1.0-0.dll (version resource 1.50.7); MSYS2 mingw-w64-pango 1.50.7-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "pcre",
+   "version": "8.45",
+   "license": "BSD-3-Clause",
+   "url": "https://downloads.sourceforge.net/project/pcre/pcre/8.45/pcre-8.45.tar.bz2",
+   "bytes": 1578809,
+   "evidence": "bundle: libpcre-1.dll; MSYS2 mingw-w64-pcre 8.45-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "pixman",
+   "version": "0.40.0",
+   "license": "MIT",
+   "url": "https://xorg.freedesktop.org/releases/individual/lib/pixman-0.40.0.tar.xz",
+   "bytes": 634752,
+   "evidence": "bundle: libpixman-1-0.dll; MSYS2 mingw-w64-pixman 0.40.0-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "poppler-data",
+   "version": "0.4.11",
+   "license": "BSD-3-Clause / GPL-2.0-only / MIT (per file, Adobe cMaps)",
+   "url": "https://poppler.freedesktop.org/poppler-data-0.4.11.tar.gz",
+   "bytes": 4497282,
+   "evidence": "bundle: Resources/poppler (cMap, cidToUnicode, nameToUnicode, unicodeMap); MSYS2 mingw-w64-poppler-data 0.4.11-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "Python",
+   "version": "3.10.5",
+   "license": "PSF-2.0",
+   "url": "https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz",
+   "bytes": 19361320,
+   "evidence": "bundle: libpython3.10.dll (version resource 3.10.5), natron-python.exe, lib/python3.10 stdlib + lib-dynload (*.cp310-mingw_x86_64.pyd); MSYS2 mingw-w64-python 3.10.5-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "rav1e",
+   "version": "0.5.1",
+   "license": "BSD-2-Clause + AOM patent",
+   "url": "https://github.com/xiph/rav1e/archive/v0.5.1.tar.gz",
+   "bytes": 2697850,
+   "evidence": "bundle: rav1e.dll (Rust crates per rav1e v0.5.1 Cargo.lock are also statically linked); MSYS2 mingw-w64-rav1e 0.5.1-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "rtmpdump (librtmp)",
+   "version": "r514 commit c5f04a58fc2aeea6296ca7c44ee4734c18401aa3",
+   "license": "LGPL-2.1-or-later (librtmp)",
+   "url": "https://github.com/mirror/rtmpdump/archive/c5f04a58fc2aeea6296ca7c44ee4734c18401aa3.tar.gz",
+   "bytes": 143153,
+   "evidence": "bundle: librtmp-1.dll; upstream git.ffmpeg.org/rtmpdump has no working snapshot endpoint, GitHub mirror/rtmpdump holds the same SHA; MSYS2 mingw-w64-rtmpdump-git r514-4 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "snappy",
+   "version": "1.1.9",
+   "license": "BSD-3-Clause",
+   "url": "https://github.com/google/snappy/archive/1.1.9.tar.gz",
+   "bytes": 1102382,
+   "evidence": "bundle: libsnappy.dll; MSYS2 mingw-w64-snappy 1.1.9-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "speex",
+   "version": "1.2.1",
+   "license": "BSD-3-Clause",
+   "url": "https://gitlab.xiph.org/xiph/speex/-/archive/Speex-1.2.1/speex-Speex-1.2.1.tar.gz",
+   "bytes": 1044975,
+   "evidence": "bundle: libspeex-1.dll; MSYS2 mingw-w64-speex 1.2.1-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "sqlite",
+   "version": "3.39.1",
+   "license": "blessing (public domain)",
+   "url": "https://www.sqlite.org/2022/sqlite-src-3390100.zip",
+   "bytes": 13401695,
+   "evidence": "bundle: libsqlite3-0.dll (string 3.39.1); MSYS2 mingw-w64-sqlite3 3.39.1-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "srt",
+   "version": "1.5.0",
+   "license": "MPL-2.0",
+   "url": "https://github.com/Haivision/srt/archive/v1.5.0.tar.gz",
+   "bytes": 1688571,
+   "evidence": "bundle: libsrt.dll; MSYS2 mingw-w64-srt 1.5.0-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "tinyxml",
+   "version": "2.6.2",
+   "license": "Zlib",
+   "url": "https://downloads.sourceforge.net/tinyxml/tinyxml_2_6_2.tar.gz",
+   "bytes": 210124,
+   "evidence": "bundle: libtinyxml-0.dll; MSYS2 mingw-w64-tinyxml 2.6.2-5 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "winpthreads (mingw-w64)",
+   "version": "10.0.0.r54 commit b4116e310dbd1c28868972fd909568f1d9459230",
+   "license": "MIT AND BSD-3-Clause",
+   "url": "https://github.com/mingw-w64/mingw-w64/archive/b4116e310dbd1c28868972fd909568f1d9459230.tar.gz",
+   "bytes": 13436037,
+   "evidence": "bundle: libwinpthread-1.dll; MSYS2 mingw-w64-winpthreads-git 10.0.0.r54-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "x265",
+   "version": "3.5 (reports 3.4+31-6722fce1f)",
+   "license": "GPL-2.0-or-later",
+   "url": "https://bitbucket.org/multicoreware/x265_git/get/3.5.tar.gz",
+   "bytes": 1538253,
+   "evidence": "bundle: libx265.dll version resource \"3.4+31-6722fce1f\"; MSYS2 builds the 3.5 bitbucket tarball whose x265Version.txt yields this string (6722fce1f = 3.5 tag changeset); MSYS2 mingw-w64-x265 3.5-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "xvidcore",
+   "version": "1.3.7",
+   "license": "GPL-2.0-or-later",
+   "url": "https://downloads.xvid.com/downloads/xvidcore-1.3.7.tar.bz2",
+   "bytes": 698615,
+   "evidence": "bundle: xvidcore.dll; MSYS2 mingw-w64-xvidcore 1.3.7-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "xz (liblzma)",
+   "version": "5.2.5",
+   "license": "0BSD/public domain (liblzma)",
+   "url": "https://tukaani.org/xz/xz-5.2.5.tar.gz",
+   "bytes": 1791345,
+   "evidence": "bundle: liblzma-5.dll (version resource 5.2.5); MSYS2 mingw-w64-xz 5.2.5-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "yaml-cpp",
+   "version": "0.6.3",
+   "license": "MIT",
+   "url": "https://github.com/jbeder/yaml-cpp/archive/yaml-cpp-0.6.3.tar.gz",
+   "bytes": 1398768,
+   "evidence": "bundle: yaml-cpp.dll; MSYS2 mingw-w64-yaml-cpp 0.6.3-5 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "zlib",
+   "version": "1.2.12",
+   "license": "Zlib",
+   "url": "https://zlib.net/fossils/zlib-1.2.12.tar.gz",
+   "bytes": 1490071,
+   "evidence": "bundle: zlib1.dll (string \"inflate 1.2.12\"); MSYS2 mingw-w64-zlib 1.2.12-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "zstd",
+   "version": "1.5.2",
+   "license": "BSD-3-Clause OR GPL-2.0-only",
+   "url": "https://github.com/facebook/zstd/releases/download/v1.5.2/zstd-1.5.2.tar.gz",
+   "bytes": 1936664,
+   "evidence": "bundle: libzstd.dll; MSYS2 mingw-w64-zstd 1.5.2-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "zipp",
+   "version": "3.8.1",
+   "license": "MIT",
+   "url": "https://files.pythonhosted.org/packages/source/z/zipp/zipp-3.8.1.tar.gz",
+   "bytes": 14189,
+   "evidence": "bundle: site-packages/zipp.py; MSYS2 mingw-w64-python-zipp 3.8.1-1 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "six",
+   "version": "1.16.0",
+   "license": "MIT",
+   "url": "https://files.pythonhosted.org/packages/source/s/six/six-1.16.0.tar.gz",
+   "bytes": 34041,
+   "evidence": "bundle: site-packages six-1.16.0-py3.10.egg-info; MSYS2 mingw-w64-python-six 1.16.0-3 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "pytz",
+   "version": "2022.1",
+   "license": "MIT",
+   "url": "https://files.pythonhosted.org/packages/source/p/pytz/pytz-2022.1.tar.gz",
+   "bytes": 320473,
+   "evidence": "bundle: site-packages pytz-2022.1-py3.10.egg-info; MSYS2 mingw-w64-python-pytz 2022.1-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "distlib",
+   "version": "0.3.4",
+   "license": "PSF-2.0",
+   "url": "https://files.pythonhosted.org/packages/source/d/distlib/distlib-0.3.4.zip",
+   "bytes": 631981,
+   "evidence": "bundle: site-packages distlib-0.3.4-py3.10.egg-info; MSYS2 mingw-w64-python-distlib 0.3.4-2 PKGBUILD at msys2/MINGW-packages@0e31c8b44a (last commit before 2022-07-23; SDK snapshot date calibrated from bundle DLL version resources: glib 2.72.2, pango 1.50.7, python 3.10.5, openssl 1.1.1q, freetype 2.12.1, dav1d 1.0.0, openal 1.22.0, libiconv 1.17, gdk-pixbuf 2.42.8, liblzma 5.2.5, and ImageMagick6 build date 2022-07-22 inside Arena.ofx); MSYS2 patches/PKGBUILD in buildRecipe archive [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "QtPy (Python package)",
+   "version": "1.11.2",
+   "license": "MIT",
+   "url": "https://files.pythonhosted.org/packages/source/Q/QtPy/QtPy-1.11.2.tar.gz",
+   "bytes": 37098,
+   "evidence": "lib/python3.10/site-packages/QtPy-1.11.2.dist-info (pip-installed; build-Windows-installer.sh pip install qtpy==1.11.2 six psutil); includes pip/futurize/pasteurize/wheel launcher .exe files [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "pip (Python package)",
+   "version": "22.3.1",
+   "license": "MIT",
+   "url": "https://files.pythonhosted.org/packages/source/p/pip/pip-22.3.1.tar.gz",
+   "bytes": 2078129,
+   "evidence": "lib/python3.10/site-packages/pip-22.3.1.dist-info (pip-installed; build-Windows-installer.sh pip install qtpy==1.11.2 six psutil); includes pip/futurize/pasteurize/wheel launcher .exe files [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "setuptools (Python package)",
+   "version": "65.6.3",
+   "license": "MIT",
+   "url": "https://files.pythonhosted.org/packages/source/s/setuptools/setuptools-65.6.3.tar.gz",
+   "bytes": 2617699,
+   "evidence": "lib/python3.10/site-packages/setuptools-65.6.3.dist-info (pip-installed; build-Windows-installer.sh pip install qtpy==1.11.2 six psutil); includes pip/futurize/pasteurize/wheel launcher .exe files [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "wheel (Python package)",
+   "version": "0.38.4",
+   "license": "MIT",
+   "url": "https://files.pythonhosted.org/packages/source/w/wheel/wheel-0.38.4.tar.gz",
+   "bytes": 67193,
+   "evidence": "lib/python3.10/site-packages/wheel-0.38.4.dist-info (pip-installed; build-Windows-installer.sh pip install qtpy==1.11.2 six psutil); includes pip/futurize/pasteurize/wheel launcher .exe files [url check: HTTP 200 verified, size from Content-Length]"
+  },
+  {
+   "name": "future (Python package)",
+   "version": "0.18.2",
+   "license": "MIT",
+   "url": "https://files.pythonhosted.org/packages/source/f/future/future-0.18.2.tar.gz",
+   "bytes": 829220,
+   "evidence": "lib/python3.10/site-packages/future-0.18.2.dist-info (pip-installed; build-Windows-installer.sh pip install qtpy==1.11.2 six psutil); includes pip/futurize/pasteurize/wheel launcher .exe files [url check: HTTP 200 verified, size from Content-Length]"
+  }
+ ],
+ "buildRecipe": [
+  {
+   "name": "Natron v2.5.0 build scripts (tools/jenkins, tools/MINGW-packages PKGBUILDs + patches) - contained in the Natron source archive above",
+   "url": "https://github.com/NatronGitHub/Natron/archive/53ee17e34438005425230468916ff223cfd8a403.tar.gz",
+   "bytes": 0,
+   "note": "HTTP 200 verified; size not measured (exceeds 20 MB cap, no Content-Length)"
+  },
+  {
+   "name": "tools/MINGW-packages/msys2.txt (MSYS2 package list of the Windows SDK)",
+   "url": "https://raw.githubusercontent.com/NatronGitHub/Natron/53ee17e34438005425230468916ff223cfd8a403/tools/MINGW-packages/msys2.txt",
+   "bytes": 6880,
+   "note": "HTTP 200 verified, size from Content-Length"
+  },
+  {
+   "name": "tools/jenkins/build-Windows-installer.sh",
+   "url": "https://raw.githubusercontent.com/NatronGitHub/Natron/53ee17e34438005425230468916ff223cfd8a403/tools/jenkins/build-Windows-installer.sh",
+   "bytes": 22732,
+   "note": "HTTP 200 verified, size from Content-Length"
+  },
+  {
+   "name": "msys2/MINGW-packages at snapshot commit 0e31c8b4 (2022-07-22): PKGBUILDs + patches for every MSYS2 stock package listed",
+   "url": "https://github.com/msys2/MINGW-packages/archive/0e31c8b44ad71429f3f31f092bb75255b37ccb9f.tar.gz",
+   "bytes": 0,
+   "note": "HTTP 200 verified; size not measured (exceeds 20 MB cap, no Content-Length)"
+  },
+  {
+   "name": "osmesa-install @471db695 (script that builds osmesa.dll with Mesa 17.1.10 + LLVM)",
+   "url": "https://github.com/devernay/osmesa-install/archive/471db69508f6dbb3f9296878f1a06ccfb8fa1dfa.tar.gz",
+   "bytes": 129812,
+   "note": "HTTP 200 verified, size from Content-Length"
+  }
+ ],
+ "residualGaps": "(1) Natron, its four plugin repos, their submodules, the OCIO configs, CImg and the G'MIC version are exact: they come from tags, gitlinks and Makefile pins. (2) The Windows SDK was an MSYS2 install that tracked a moving package repo. No build log or package list with versions exists (tools/MINGW-packages/msys2.txt has names only). The stock package versions were therefore taken from msys2/MINGW-packages at 0e31c8b4 (2022-07-22). That snapshot was calibrated against about 20 bundle DLL version resources and embedded strings, all of which match, including sqlite 3.39.1, libpng 1.6.37, zlib 1.2.12, tiff 4.4.0, jpeg-turbo 2.1.3, harfbuzz 4.4.1, curl 7.84.0, expat 2.4.8 and openjpeg 2.5.0. Packages without a version string in the binary rely on this snapshot alone (probable). (3) MSYS2 no longer hosts the matching .src.tar.zst source packages. Sources are given as the upstream release tarballs at those versions, plus the MINGW-packages archive at the snapshot commit, which holds the MSYS2 PKGBUILDs and patches (HEAD only, large). (4) Natron's custom SDK packages (tools/MINGW-packages) were built from a later revision than tag v2.5.0. The binaries show FFmpeg 4.4.3 where the tag's PKGBUILD says 4.4.2, and OIIO 2.4.6.0 where it says 2.3.17.0. Versions are taken from the binaries, but the exact Natron PKGBUILD and patch revision used is unknown. OpenEXR 2.5.8 patch level and SeExpr/LibRaw/SoX/poppler/Qt4/PySide versions rest on PKGBUILD plus soname evidence. (5) bin/mesa/opengl32.dll (Mesa 11.2.2, git-a154ae9) is a prebuilt Third_Party_Binaries tarball. Its LLVM version and build recipe are unknown, and only the Mesa source is listed. Whether GLU 9.0.0 is linked into osmesa.dll is unverified. LLVM 3.9.1 is per the PKGBUILD. (6) Setup.exe (mingw-w64-natron-setup, Inno Setup based) is not traced to an Inno Setup version or source. (7) Statically embedded sub-dependencies are not enumerated: OCIO 2.1.1 ext packages such as pystring; the rav1e 0.5.1 Rust crates per its Cargo.lock (librsvg 2.54.4's release tarball already vendors its crates); the sphinx/jQuery assets in Resources/docs/html; and gmic_libc.* (GITSOURCES in openfx-gmic). google-breakpad is listed but its inclusion in the binary is unverified. (8) gmic.eu returns HTTP 403 to non-browser clients, so the G'MIC 2.8.4 tarball URL points to the Internet Archive copy of the original URL. (9) GitHub archive sizes were measured by streaming. Archives over 20 MB have bytes=0, so total bytes understates the real size."
+}
