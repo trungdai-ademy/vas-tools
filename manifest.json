@@ -48,27 +48,6 @@
                                     }
                      },
                      {
-                         "id":  "natron",
-                         "boCai":  "thanh-phan",
-                         "title":  "Natron",
-                         "version":  "2.5.0",
-                         "file":  "Natron-2.5.0-Windows-x86_64.zip",
-                         "url":  "https://github.com/NatronGitHub/Natron/releases/download/v2.5.0/Natron-2.5.0-Windows-x86_64.zip",
-                         "sha256":  "CAED0B649FF2515B963F0B4FC009EB451A41D8BA3D6E5D4260253DD9E104C517",
-                         "license":  "GPL-2.0",
-                         "home":  "https://natrongithub.github.io",
-                         "sourceCode":  "https://github.com/NatronGitHub/Natron/releases/tag/v2.5.0",
-                         "sources":  [
-                                         "https://github.com/NatronGitHub/Natron/archive/refs/tags/v2.5.0.tar.gz"
-                                     ],
-                         "sourceGaps":  "Gói kèm plugin OpenFX (openfx-io, openfx-misc, openfx-arena) và thư viện: mã nguồn theo thẻ v2.5.0 của từng kho.",
-                         "update":  {
-                                        "kind":  "github",
-                                        "repo":  "NatronGitHub/Natron",
-                                        "asset":  "^Natron-([0-9.]+)-Windows-x86_64\\.zip$"
-                                    }
-                     },
-                     {
                          "id":  "gltfpack",
                          "boCai":  "setup",
                          "title":  "gltfpack (meshoptimizer)",
@@ -177,52 +156,6 @@
                                               "https://raw.githubusercontent.com/python/cpython/v3.11.9/LICENSE"
                                           ],
                          "note":  "Gói NuGet chính thức (tác giả Python Software Foundation); mã băm SHA-512 của NuGet (catalog 2024.04.02) đã đối chiếu: 41On79FZ75irnOEBGFSjDV13j1nZb8m7EbB87SmQs1XwMEhrBwf3mMc8RCAXOrERh2qW6tWYFxi2BMTN1xxVjQ==. python311.dll của Glaxnimate là 3.11.11 — cùng ABI / mã .pyc với 3.11.9 (bản Windows cuối của dòng 3.11).",
-                         "update":  {
-                                        "kind":  "fixed"
-                                    }
-                     },
-                     {
-                         "id":  "inkscape",
-                         "boCai":  "thanh-phan",
-                         "title":  "Inkscape (đồ hoạ vector: chữ, sơ đồ, đồ hoạ chuyển động; xuất PNG / PDF bằng lệnh)",
-                         "version":  "1.4.4",
-                         "file":  "inkscape-1.4.4_2026-05-05_dcaf3e7-x64.7z",
-                         "url":  "https://media.inkscape.org/dl/resources/file/inkscape-1.4.4_2026-05-05_dcaf3e7-x64_mHK170m.7z",
-                         "sha256":  "C4DBD64A92628ABE7D7316C43F9325396E4D48417866027EE3D993D4F5B54C6A",
-                         "license":  "GPL-3.0-or-later (thư viện đi kèm: LGPL / GPL / MIT…)",
-                         "home":  "https://inkscape.org",
-                         "sourceCode":  "https://inkscape.org/release/inkscape-1.4.4/source/",
-                         "sources":  [
-                                         "https://media.inkscape.org/dl/resources/file/inkscape-1.4.4.tar.xz"
-                                     ],
-                         "licenseFiles":  [
-                                              "https://gitlab.com/inkscape/inkscape/-/raw/INKSCAPE_1_4_4/COPYING"
-                                          ],
-                         "sourceGaps":  "Bản Windows kèm GTK, glib, cairo, poppler, Python… (MSYS2): mã nguồn theo các gói MSYS2 / MINGW-packages tương ứng.",
-                         "note":  "Mã băm: tệp .sha256 chính thức trên media.inkscape.org.",
-                         "update":  {
-                                        "kind":  "fixed"
-                                    }
-                     },
-                     {
-                         "id":  "krita",
-                         "boCai":  "thanh-phan",
-                         "title":  "Krita (người dùng sửa ảnh, vẽ, tô màu ngay trên Desk)",
-                         "version":  "6.0.4.1",
-                         "file":  "krita-x64-6.0.4.1.zip",
-                         "url":  "https://download.kde.org/stable/krita/6.0.4.1/krita-x64-6.0.4.1.zip",
-                         "sha256":  "F85EEABA95C947BF7EFA31F9723F1458AA985F2F89E26AFCA8BF98628CE41413",
-                         "license":  "GPL-3.0-or-later",
-                         "home":  "https://krita.org",
-                         "sourceCode":  "https://download.kde.org/stable/krita/6.0.4.1/",
-                         "sources":  [
-                                         "https://download.kde.org/stable/krita/6.0.4.1/krita-6.0.4.1.tar.xz"
-                                     ],
-                         "licenseFiles":  [
-                                              "https://invent.kde.org/graphics/krita/-/raw/v6.0.4.1/LICENSES/GPL-3.0-or-later.txt"
-                                          ],
-                         "sourceGaps":  "Bản Windows kèm Qt, KDE Frameworks, các thư viện ảnh: mã nguồn theo bản dựng của dự án Krita (krita-deps).",
-                         "note":  "Mã băm: tệp .sha256 chính thức trên download.kde.org.",
                          "update":  {
                                         "kind":  "fixed"
                                     }
