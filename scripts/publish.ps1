@@ -49,7 +49,20 @@ $sums = [System.Collections.Generic.List[string]]::new()
 $bin = Join-Path $work $binName
 if (-not ($existing -contains $binName)) {
     Write-Host "Tai tep chay: $($p.url)"
-    if (-not (Fetch $p.url $bin)) { throw "Tai that bai: $($p.url)" }
+    if (-not (Fetch $p.url $bin)) {
+        # NGUỒN GỐC ĐÃ GỠ BẢN CŨ (16/11: BtbN xoá bản dựng FFmpeg hằng ngày, ImageMagick xoá bản portable cũ → 404): dùng bản Vietnews giữ trong nhánh "tep-goc"
+        # (goc/<tệp> hoặc goc/<tệp>.part001… khi > 100 MB — giới hạn tệp của git). Mã băm ghim vẫn là điều kiện phát hành.
+        $goc = Join-Path $root "goc"
+        $whole = Join-Path $goc $binName
+        $parts = @(Get-ChildItem $goc -Filter "$binName.part*" -ErrorAction SilentlyContinue | Sort-Object Name)
+        if (Test-Path $whole) { Copy-Item $whole $bin }
+        elseif ($parts.Count) {
+            $o = [IO.File]::Create($bin)
+            try { foreach ($pt in $parts) { $i2 = [IO.File]::OpenRead($pt.FullName); try { $i2.CopyTo($o) } finally { $i2.Dispose() } } } finally { $o.Dispose() }
+        }
+        else { throw "Tai that bai: $($p.url) - nguon goc da go va nhanh tep-goc khong co $binName" }
+        Write-Host "Nguon goc khong con - dung ban Vietnews giu trong nhanh tep-goc"
+    }
     $h = Sha $bin
     if ($h -ne $p.sha256.ToLowerInvariant()) { throw "MA BAM KHONG KHOP cho $binName : $h (ghim $($p.sha256)) - KHONG phat hanh" }
     Write-Host "Ma bam khop: $h"

@@ -38,6 +38,15 @@ jobs:
         id: ${{ fromJson(needs.list.outputs.ids) }}
     steps:
       - uses: actions/checkout@v4
+      # bản gốc Vietnews giữ khi nguồn gốc đã gỡ bản cũ (nhánh tep-goc, có thể chưa có)
+      - uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          ref: tep-goc
+          path: goc-tam
+      - name: Gom bản gốc (nếu có)
+        shell: pwsh
+        run: if (Test-Path goc-tam/goc) { Move-Item goc-tam/goc goc }
       - name: Phát hành ${{ matrix.id }}
         shell: pwsh
         env:
