@@ -20,8 +20,10 @@ $tag = ("$($p.id)-$($p.version)" -replace '[^A-Za-z0-9._-]', '-')
 $work = Join-Path $env:RUNNER_TEMP "vas-$tag"
 New-Item -ItemType Directory -Force $work | Out-Null
 
-function Fetch($url, $dest) {
-    & curl.exe -L --fail --silent --show-error --retry 4 --retry-delay 5 --connect-timeout 30 -o $dest $url
+function Fetch($url, $dest, [switch]$Anon) {
+    # -Anon: kho SVN đòi đăng nhập ẩn danh (svn.xvid.org: user "anonymous", mật khẩu rỗng)
+    $a = if ($Anon) { @("-u", "anonymous:") } else { @() }
+    & curl.exe -L --fail --silent --show-error --retry 4 --retry-delay 5 --connect-timeout 30 @a -o $dest $url
     return $LASTEXITCODE -eq 0 -and (Test-Path $dest)
 }
 function Sha($f) { (Get-FileHash $f -Algorithm SHA256).Hash.ToLowerInvariant() }
@@ -92,13 +94,13 @@ function Pack($dir, $out) {
 function SvnTree($url, $dest) {
     # danh sách WebDAV của SVN (HTML): <a href="tên">, thư mục kết thúc '/'
     New-Item -ItemType Directory -Force $dest | Out-Null
-    $html = & curl.exe -sL --fail --retry 4 $url
+    $html = & curl.exe -sL --fail --retry 4 -u "anonymous:" $url
     if ($LASTEXITCODE) { return $false }
     foreach ($h in [regex]::Matches(($html -join "`n"), 'href="([^"?#]+)"') | ForEach-Object { $_.Groups[1].Value } | Select-Object -Unique) {
         if ($h -match '^(\.\./|/|https?:)' -or $h -eq './') { continue }
         $name = [uri]::UnescapeDataString($h.TrimEnd('/'))
         if ($h.EndsWith('/')) { if (-not (SvnTree ($url + $h) (Join-Path $dest $name))) { return $false } }
-        elseif (-not (Fetch ($url + $h) (Join-Path $dest $name))) { return $false }
+        elseif (-not (Fetch ($url + $h) (Join-Path $dest $name) -Anon)) { return $false }
     }
     return $true
 }
